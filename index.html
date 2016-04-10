@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Jesus H. Christ">
+  <meta name="contact" content="info@scarejesus.com">
+  <meta name="keywords" content="Scare Jesus!">
+  <meta name="description" content="Do you want to scare the hell out of Jesus Christ?">
+  <meta property="og:title" content="Scare Jesus!">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="http://scarejesus.com/scare-jesus.png">
+  <meta property="og:url" content="http://scarejesus.com">
+  <meta property="og:description" content="Do you want to scare the hell out of Jesus Christ?">
+  <meta itemprop="name" content="Scare Jesus!">
+  <meta itemprop="description" content="Do you want to scare the hell out of Jesus Christ?">
+  <meta itemprop="image" content="http://scarejesus.com/scare-jesus.png">
+  <meta itemprop="url" content="http://scarejesus.com/">
+  <title>Scare Jesus!</title>
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+  <script>
+    if( navigator.userAgent.match( /(iPhone|iPod|Android)/i ) )
+      document.write( '<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">' );
+  </script>
+  <script src="assets/js/flipcounter.min.js"></script>
+  <link rel="stylesheet" href="assets/css/counter.css" type="text/css">
+  <style>
+    *,
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      font-family: sans-serif;
+      background-color: #fff;
+    }
+    body,
+    html {
+      overflow: hidden;
+    }
+    #counter-wrapper {
+      float: left;
+      width: 100%;
+      height: 110px;
+    }
+    #counter {
+      position: absolute;
+      background: red;
+      height: 100px;
+      left: auto;
+      right: 25px;
+      top: 25px;
+    }
+    #christ {
+      float: left;
+      width: 100%;
+    }
+    #jesus {
+      background-image: url(jesus.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      width: 100%;
+      height: 600px;
+    }
+    #jesus.scared {
+      background-image: url(jesus-scared.jpg);
+    }
+    #scare {
+      width: 100%;
+    }
+    #scare button {
+      background-image: url(scare.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      width: 200px;
+      height: 200px;
+      outline: none;
+      border: 0px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="wrapper">
+    <section id="counter-wrapper">
+      <div id="counter" class="flip-counter"></div>
+    </section>
+    <section id="christ">
+      <header id="jesus"></header>
+      <div id="scare">
+        <button title="Scare Jesus"></button>
+      </div>
+    </section>
+    <section id="share">
+      <header>SHARE</header>
+      <div>
+        share buttons
+      </div>
+    </section>
+  </div>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-51942530-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <script>
+  (function() {
+
+    var s_scare = false;
+    var myCounter;
+
+    var get_score = function() {
+      $.get( "http://scarejesus.maraz.co/get_score.php", function( data ) {
+        myCounter.setValue(data);
+      });
+    };
+
+    var vote = function() {
+      ga('send', 'event', 'Jesus', 'Scared', 'First Campaign');
+      $.get( "http://scarejesus.maraz.co/increment.php", function( data ) {
+        myCounter.setValue(data);
+      });
+    };
+
+    var scare_jesus = function() {
+      s_scare = true;
+      vote();
+      $('#jesus').addClass('scared');
+      setTimeout(function() {
+        $('#jesus').removeClass('scared');
+        s_scare = false;
+      }, 1000);
+    };
+
+    $('#scare button').click(function() {
+      if(!s_scare) {
+        scare_jesus();
+      };
+    });
+
+    $(window).resize(function() {
+      var h = $(window).height() - 110;
+      $('#jesus').height(h * 0.75);
+      $('#scare button').height(h * 0.25);
+    });
+
+    var init = function() {
+      myCounter = new flipCounter("counter", {inc: 1});
+      myCounter.setIncrement(1);
+      myCounter.setAuto(false);
+      get_score();
+      $(window).trigger('resize');
+    };
+    init();
+
+  })();
+  </script>
+</body>
+</html>
