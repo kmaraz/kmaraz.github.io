@@ -134,13 +134,13 @@
       setTimeout(function() {
         $('#jesus').removeClass('scared');
         s_scare = false;
-      }, 1000);
+      }, 500);
     };
 
     $('#scare button').click(function() {
-      if(!s_scare) {
+      //if(!s_scare) {
         scare_jesus();
-      };
+      //};
     });
 
     $(window).resize(function() {
