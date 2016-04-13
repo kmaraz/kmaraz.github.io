@@ -108,10 +108,18 @@
     </section>
   </div>
 
+  <audio id="sound0" src="sounds/0.mp3"></audio>
+  <audio id="sound1" src="sounds/1.mp3"></audio>
+  <audio id="sound2" src="sounds/2.mp3"></audio>
+  <audio id="sound3" src="sounds/3.mp3"></audio>
+  <audio id="sound4" src="sounds/4.mp3"></audio>
+  <audio id="sound5" src="sounds/5.mp3"></audio>
+  <audio id="sound6" src="sounds/6.mp3"></audio>
+  <audio id="sound7" src="sounds/7.mp3"></audio>
+
   <script>
   (function() {
 
-    var s_scare = false;
     var myCounter;
 
     var get_score = function() {
@@ -127,20 +135,29 @@
       });
     };
 
+    var playSound = function() {
+    	var sound, i;
+    	for (i = 0; i <= 7; i++) {
+    		sound = document.getElementById('sound' + i);
+    		sound.pause();
+				sound.currentTime = 0;
+    	}
+    	i = Math.floor(Math.random() * 8)
+      sound = document.getElementById('sound' + i);
+      sound.play();
+    }
+
     var scare_jesus = function() {
-      s_scare = true;
       vote();
+      playSound();
       $('#jesus').addClass('scared');
       setTimeout(function() {
         $('#jesus').removeClass('scared');
-        s_scare = false;
       }, 500);
     };
 
     $('#scare button').click(function() {
-      //if(!s_scare) {
-        scare_jesus();
-      //};
+      scare_jesus();
     });
 
     $(window).resize(function() {
