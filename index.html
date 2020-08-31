@@ -106,6 +106,15 @@
       </section>
     </div>
 
+    <audio id="sound0" src="sounds/0.mp3"></audio>
+    <audio id="sound1" src="sounds/1.mp3"></audio>
+    <audio id="sound2" src="sounds/2.mp3"></audio>
+    <audio id="sound3" src="sounds/3.mp3"></audio>
+    <audio id="sound4" src="sounds/4.mp3"></audio>
+    <audio id="sound5" src="sounds/5.mp3"></audio>
+    <audio id="sound6" src="sounds/6.mp3"></audio>
+    <audio id="sound7" src="sounds/7.mp3"></audio>
+
     <script>
       (function (i, s, o, g, r, a, m) {
         i["GoogleAnalyticsObject"] = r;
@@ -148,9 +157,22 @@
           });
         };
 
+        var playSound = function () {
+          var sound, i;
+          for (i = 0; i <= 7; i++) {
+            sound = document.getElementById("sound" + i);
+            sound.pause();
+            sound.currentTime = 0;
+          }
+          i = Math.floor(Math.random() * 8);
+          sound = document.getElementById("sound" + i);
+          sound.play();
+        };
+
         var scare_jesus = function () {
           //      s_scare = true;
           vote();
+          playSound();
           $("#jesus").addClass("scared");
           setTimeout(function () {
             $("#jesus").removeClass("scared");
