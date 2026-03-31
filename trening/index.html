@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Domáci tréning</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f1e8;
+      --card: #fffdf8;
+      --line: #d5cdbd;
+      --text: #1f1c17;
+      --muted: #5f584c;
+      --accent: #0f766e;
+      --accent-strong: #115e59;
+      --danger: #9a3412;
+      --shadow: 0 14px 32px rgba(31, 28, 23, 0.08);
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(15, 118, 110, 0.08), transparent 28%),
+        linear-gradient(180deg, #f7f3eb 0%, var(--bg) 100%);
+      color: var(--text);
+    }
+
+    main {
+      width: min(100%, 760px);
+      margin: 0 auto;
+      padding: 20px 16px 40px;
+    }
+
+    h1,
+    h2,
+    p {
+      margin: 0;
+    }
+
+    .page-header {
+      margin-bottom: 18px;
+    }
+
+    .page-header h1 {
+      font-size: clamp(1.8rem, 4vw, 2.4rem);
+      margin-bottom: 8px;
+    }
+
+    .page-header p {
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid rgba(213, 205, 189, 0.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    .stack {
+      display: grid;
+      gap: 16px;
+    }
+
+    fieldset {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      display: grid;
+      gap: 10px;
+    }
+
+    legend {
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .option-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .option {
+      position: relative;
+    }
+
+    .option input {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .option span {
+      display: block;
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px 12px;
+      text-align: center;
+      font-weight: 700;
+      background: #faf7f1;
+    }
+
+    .option input:checked + span {
+      background: rgba(15, 118, 110, 0.12);
+      border-color: rgba(15, 118, 110, 0.6);
+      color: var(--accent-strong);
+    }
+
+    button {
+      appearance: none;
+      border: 0;
+      border-radius: 14px;
+      padding: 14px 16px;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .primary {
+      width: 100%;
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .secondary {
+      width: 100%;
+      background: #ece5d8;
+      color: var(--text);
+    }
+
+    .toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .eyebrow {
+      font-size: 0.85rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent-strong);
+      margin-bottom: 8px;
+    }
+
+    .meta {
+      color: var(--muted);
+      line-height: 1.5;
+      margin-top: 8px;
+    }
+
+    .checklist {
+      display: grid;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .task {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px 14px;
+      background: #faf7f1;
+      min-height: 64px;
+    }
+
+    .task input {
+      width: 22px;
+      height: 22px;
+      margin: 0;
+      accent-color: var(--accent);
+      flex: 0 0 auto;
+    }
+
+    .task strong {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 4px;
+    }
+
+    .task span {
+      color: var(--muted);
+      line-height: 1.35;
+      display: block;
+    }
+
+    .done {
+      text-align: center;
+      display: grid;
+      gap: 14px;
+    }
+
+    .done h2 {
+      font-size: clamp(1.5rem, 4vw, 2rem);
+    }
+
+    .done p {
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    @media (max-width: 540px) {
+      .option-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .toolbar {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="page-header">
+      <h1>Domáci tréning</h1>
+      <p>Vyber si tréning, prejdi rozcvičku a potom odklikávaj jednotlivé cviky. Refresh stránky všetko resetne.</p>
+    </header>
+
+    <section id="setup-screen" class="card stack">
+      <fieldset>
+        <legend>Tréning</legend>
+        <div class="option-grid">
+          <label class="option">
+            <input type="radio" name="workout" value="A" checked>
+            <span>Tréning A</span>
+          </label>
+          <label class="option">
+            <input type="radio" name="workout" value="B">
+            <span>Tréning B</span>
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Počet kôl</legend>
+        <div class="option-grid">
+          <label class="option">
+            <input type="radio" name="rounds" value="2" checked>
+            <span>2 kolá</span>
+          </label>
+          <label class="option">
+            <input type="radio" name="rounds" value="3">
+            <span>3 kolá</span>
+          </label>
+        </div>
+      </fieldset>
+
+      <button id="start-button" class="primary" type="button">Spustiť tréning</button>
+    </section>
+
+    <section id="session-screen" class="hidden">
+      <div class="toolbar">
+        <div>
+          <p id="phase-label" class="eyebrow"></p>
+          <h2 id="section-title"></h2>
+        </div>
+        <button id="reset-button" class="secondary" type="button">Reset</button>
+      </div>
+
+      <section id="active-card" class="card">
+        <p id="section-meta" class="meta"></p>
+        <div id="checklist" class="checklist"></div>
+      </section>
+
+      <section id="done-card" class="card done hidden">
+        <p class="eyebrow">Hotovo</p>
+        <h2>Tréning dokončený</h2>
+        <p id="done-meta"></p>
+        <button id="done-reset-button" class="primary" type="button">Začať odznova</button>
+      </section>
+    </section>
+
+  </main>
+
+  <script>
+    const warmupItems = [
+      { name: "Ľahké drepy", detail: "10 opakovaní" },
+      { name: "Hip hinge / good morning bez záťaže", detail: "10 opakovaní" },
+      { name: "Cat-cow", detail: "10 opakovaní" },
+      { name: "Krúženie pažami", detail: "20 vpred + 20 vzad" },
+      { name: "Plank", detail: "20 sekúnd" }
+    ];
+
+    const workoutItems = {
+      A: [
+        { name: "Drep", detail: "8 až 12 opakovaní" },
+        { name: "Kliky", detail: "5 až 10 opakovaní" },
+        { name: "Glute bridge", detail: "12 až 15 opakovaní" },
+        { name: "Bird-dog", detail: "6 až 8 na stranu" },
+        { name: "Skracovačky alebo dead bug", detail: "10 až 15 alebo 6 až 8 na stranu" }
+      ],
+      B: [
+        { name: "Split squat alebo výpad vzad", detail: "6 až 10 na stranu" },
+        { name: "Kliky", detail: "5 až 10 opakovaní" },
+        { name: "Good morning bez záťaže", detail: "12 až 15 opakovaní" },
+        { name: "Reverse snow angel alebo prone cobra", detail: "8 až 12 pomaly" },
+        { name: "Side plank", detail: "15 až 30 sekúnd na stranu" }
+      ]
+    };
+
+    const state = {
+      phase: "setup",
+      workout: "A",
+      totalRounds: 2,
+      currentRound: 0,
+      remainingItems: []
+    };
+
+    let wakeLockSentinel = null;
+
+    const setupScreen = document.getElementById("setup-screen");
+    const sessionScreen = document.getElementById("session-screen");
+    const activeCard = document.getElementById("active-card");
+    const doneCard = document.getElementById("done-card");
+    const phaseLabel = document.getElementById("phase-label");
+    const sectionTitle = document.getElementById("section-title");
+    const sectionMeta = document.getElementById("section-meta");
+    const checklist = document.getElementById("checklist");
+    const doneMeta = document.getElementById("done-meta");
+
+    document.getElementById("start-button").addEventListener("click", startSession);
+    document.getElementById("reset-button").addEventListener("click", resetSession);
+    document.getElementById("done-reset-button").addEventListener("click", resetSession);
+
+    document.addEventListener("visibilitychange", async () => {
+      if (document.visibilityState === "visible" && isSessionActive()) {
+        await requestWakeLock();
+      }
+    });
+
+    function getSelectedValue(name) {
+      return document.querySelector(`input[name="${name}"]:checked`).value;
+    }
+
+    function isSessionActive() {
+      return state.phase === "warmup" || state.phase === "workout";
+    }
+
+    async function requestWakeLock() {
+      if (!("wakeLock" in navigator)) {
+        return;
+      }
+
+      if (wakeLockSentinel !== null) {
+        return;
+      }
+
+      try {
+        wakeLockSentinel = await navigator.wakeLock.request("screen");
+
+        wakeLockSentinel.addEventListener("release", () => {
+          wakeLockSentinel = null;
+        });
+      } catch (error) {
+        // Wake lock je len best-effort. Ak neprejde, tréning beží ďalej bez UI hlášky.
+      }
+    }
+
+    async function releaseWakeLock() {
+      if (wakeLockSentinel === null) {
+        return;
+      }
+
+      try {
+        await wakeLockSentinel.release();
+      } catch (error) {
+        // Ignorované. Pri refreshi alebo zmene karty môže byť sentinel už uvoľnený.
+      } finally {
+        wakeLockSentinel = null;
+      }
+    }
+
+    function startSession() {
+      state.workout = getSelectedValue("workout");
+      state.totalRounds = Number(getSelectedValue("rounds"));
+      state.currentRound = 0;
+      state.phase = "warmup";
+      state.remainingItems = warmupItems.map((item) => ({ ...item }));
+      render();
+      requestWakeLock();
+    }
+
+    async function resetSession() {
+      state.phase = "setup";
+      state.workout = "A";
+      state.totalRounds = 2;
+      state.currentRound = 0;
+      state.remainingItems = [];
+      document.querySelector('input[name="workout"][value="A"]').checked = true;
+      document.querySelector('input[name="rounds"][value="2"]').checked = true;
+      await releaseWakeLock();
+      render();
+    }
+
+    function advancePhase() {
+      if (state.phase === "warmup") {
+        state.phase = "workout";
+        state.currentRound = 1;
+        state.remainingItems = workoutItems[state.workout].map((item) => ({ ...item }));
+        return;
+      }
+
+      if (state.phase === "workout" && state.currentRound < state.totalRounds) {
+        state.currentRound += 1;
+        state.remainingItems = workoutItems[state.workout].map((item) => ({ ...item }));
+        return;
+      }
+
+      state.phase = "done";
+      state.remainingItems = [];
+      releaseWakeLock();
+    }
+
+    function completeItem(index) {
+      state.remainingItems.splice(index, 1);
+
+      if (state.remainingItems.length === 0) {
+        advancePhase();
+      }
+
+      render();
+    }
+
+    function renderChecklist() {
+      checklist.replaceChildren();
+
+      state.remainingItems.forEach((item, index) => {
+        const label = document.createElement("label");
+        label.className = "task";
+
+        const input = document.createElement("input");
+        input.type = "checkbox";
+        input.setAttribute("aria-label", `${item.name} hotovo`);
+        input.addEventListener("change", () => completeItem(index));
+
+        const textWrap = document.createElement("div");
+        const title = document.createElement("strong");
+        title.textContent = item.name;
+        const detail = document.createElement("span");
+        detail.textContent = item.detail;
+
+        textWrap.append(title, detail);
+        label.append(input, textWrap);
+        checklist.append(label);
+      });
+    }
+
+    function render() {
+      const inSetup = state.phase === "setup";
+      const inDone = state.phase === "done";
+
+      setupScreen.classList.toggle("hidden", !inSetup);
+      sessionScreen.classList.toggle("hidden", inSetup);
+      activeCard.classList.toggle("hidden", inDone);
+      doneCard.classList.toggle("hidden", !inDone);
+
+      if (inSetup) {
+        return;
+      }
+
+      if (inDone) {
+        phaseLabel.textContent = "";
+        sectionTitle.textContent = "";
+        sectionMeta.textContent = "";
+        doneMeta.textContent = `Rozcvička + Tréning ${state.workout}, ${state.totalRounds} kolá.`;
+        return;
+      }
+
+      if (state.phase === "warmup") {
+        const completed = warmupItems.length - state.remainingItems.length;
+        phaseLabel.textContent = "Rozcvička";
+        sectionTitle.textContent = "Priprav sa";
+        sectionMeta.textContent = `Hotovo ${completed}/${warmupItems.length}. Po rozcvičke sa spustí Tréning ${state.workout} na ${state.totalRounds} kolá.`;
+      } else {
+        const totalItems = workoutItems[state.workout].length;
+        const completed = totalItems - state.remainingItems.length;
+        phaseLabel.textContent = `Tréning ${state.workout}`;
+        sectionTitle.textContent = `${state.currentRound}. kolo z ${state.totalRounds}`;
+        sectionMeta.textContent = `Hotovo ${completed}/${totalItems}. Po odškrtnutí poslednej položky sa prepne ďalšie kolo.`;
+      }
+
+      renderChecklist();
+    }
+
+    render();
+  </script>
+</body>
+</html>
