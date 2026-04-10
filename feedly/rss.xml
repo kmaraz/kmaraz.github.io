@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>Feedly Digest</title>
+    <link>https://www.maraz.sk/feedly/</link>
+    <description>Current article list from the Feedly digest on maraz.sk.</description>
+    <lastBuildDate>Fri, 10 Apr 2026 22:20:12 +0000</lastBuildDate>
+    <item>
+      <title>[Engineering] font-family Doesn’t Fall Back the Way You Think</title>
+      <link>https://csswizardry.com/2026/04/font-family-doesnt-fall-back-the-way-you-think/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-10/933319677495e537a4a147f733be7f81dd1a206e</guid>
+      <pubDate>Fri, 10 Apr 2026 22:20:12 +0000</pubDate>
+      <category>Engineering</category>
+      <description>&lt;p&gt;Harry Roberts explains a subtle CSS rule: once an element declares its own font-family, fallback resolution happens inside that declaration instead of inheriting the parent stack. It is worth keeping because it turns a common assumption into a concrete rendering and performance rule for design systems.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;font-family inheritance carries the full computed value, and child declarations do not borrow fallback fonts from ancestors.&lt;/li&gt;&lt;li&gt;A declaration like h1 { font-family: &amp;quot;Open Sans&amp;quot;; } can fall back to the user agent default while the web font is still loading.&lt;/li&gt;&lt;li&gt;Typography tokens should include their own fallback stacks instead of relying on body or root defaults.&lt;/li&gt;&lt;li&gt;Font-stack mistakes can show up as visible flashes of wrong text and layout shift, not only as stylistic inconsistencies.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Informatics] How To Improve UX In Legacy Systems</title>
+      <link>https://smashingmagazine.com/2026/04/legacy-systems/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-10/901c06be681984398cecd4f5808c248cd227c965</guid>
+      <pubDate>Fri, 10 Apr 2026 22:20:12 +0000</pubDate>
+      <category>Informatics</category>
+      <description>&lt;p&gt;Vitaly Friedman frames legacy UX work as a migration problem across workflows, dependencies, and user trust rather than a visual refresh. It stays because it lays out practical migration strategies and makes the rewrite-vs-increment decision explicit.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Legacy systems often encode critical business knowledge, so discovery should start with workflow and dependency mapping rather than redesign instincts.&lt;/li&gt;&lt;li&gt;One broken legacy step can define the perceived quality of the whole product, even when the surrounding UI is modern.&lt;/li&gt;&lt;li&gt;Migration strategy should be chosen deliberately: big-bang, incremental, parallel, incremental-parallel, or targeted legacy UI upgrades.&lt;/li&gt;&lt;li&gt;Stakeholder trust and heavy-user involvement are part of the delivery work because you are migrating habits and operations, not only screens.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Reproducing the AWS Outage Race Condition with a Model Checker</title>
+      <link>https://www.reddit.com/r/programming/comments/1shmtl3/reproducing_the_aws_outage_race_condition_with_a/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-10/737eba86f18ea286d7deb16d1d94284d2f552fe5</guid>
+      <pubDate>Fri, 10 Apr 2026 22:20:12 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Using AWS’s own outage post-mortem as a starting point, this piece models a simplified DynamoDB DNS-management race in Spin/Promela and shows how the failure can emerge from a bad interleaving between concurrent enactors. It is worth keeping because it demonstrates a concrete way to turn an incident narrative into an executable concurrency model.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Post-mortem narratives can often be reduced into a smaller state model that is precise enough to expose the failure mechanism.&lt;/li&gt;&lt;li&gt;Model checking is useful for reasoning about rare interleavings that logs and intuition can miss.&lt;/li&gt;&lt;li&gt;Cleanup logic around versioned plans can be as dangerous as apply logic when multiple workers operate independently.&lt;/li&gt;&lt;li&gt;Formal methods become practical when used as focused debugging tools for high-risk concurrency behavior.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>
