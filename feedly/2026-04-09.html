@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feedly Digest</title>
+    <style>
+      :root {
+        --bg: #f4efe7;
+        --card: #fffaf3;
+        --ink: #1d1a16;
+        --line: #d8c8b0;
+        --accent: #9f4a00;
+      }
+      body {
+        margin: 0;
+        font-family: "Iowan Old Style", "Palatino Linotype", serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
+          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
+      }
+      main {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 48px 20px 80px;
+      }
+      .meta {
+        color: #5f5549;
+        margin-bottom: 32px;
+      }
+      section {
+        margin-bottom: 36px;
+      }
+      .card {
+        margin-top: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 18px 20px;
+        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
+      }
+      a {
+        color: var(--accent);
+      }
+      ul {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Feedly Digest</h1>
+      <p class="meta">Generated: 2026-04-09T13:30:00Z</p>
+      <section>
+        <h2>Informatics</h2>
+        <article class="card">
+          <h3><a href="https://leaddev.com/ai/shipping-faster-thinking-less-the-ai-code-verification-trap">Shipping faster, thinking less? The AI code verification trap</a></h3>
+          <p>Charles Humble argues that AI has made code generation cheap while making verification the real bottleneck. The piece shows how “prompt and review” workflows can hollow out engineering craft, weaken judgment, and raise burnout risk unless teams keep humans in charge of architecture, observability, and slow verification.</p>
+          <ul><li>Cheap generation shifts the scarce resource from writing code to verifying behavior and intent.</li><li>Reviewing machine output all day de-skills engineers because authorship and learning move out of the loop.</li><li>Exploratory AI use works best when prototypes are disposable and the final design remains human-owned.</li><li>Formal verification may become more practical with AI, but good specifications still require deep human judgment.</li></ul>
+        </article>
+      </section><section>
+        <h2>Programming</h2>
+        <article class="card">
+          <h3><a href="https://engineering.fb.com/2026/04/08/security/trust-but-canary-configuration-safety-at-scale-meta-tech-podcast/">Trust But Canary: Configuration Safety at Scale</a></h3>
+          <p>Meta frames configuration safety as an operational system built from canaries, progressive rollouts, health checks, and review loops that improve the system instead of blaming operators. The useful point is the mindset: treat config as production code with staged exposure, measurable health, and fast rollback signals.</p>
+          <ul><li>Configuration changes need the same staged rollout discipline as application deploys.</li><li>Canaries only work when health signals are good enough to detect regressions before full rollout.</li><li>Blame-free incident reviews improve rollout safety more than stricter manual gates alone.</li><li>AI is useful here as signal reduction and faster bisection support, not as the core trust mechanism.</li></ul>
+        </article>
+      </section><section>
+        <h2>Psychology</h2>
+        <article class="card">
+          <h3><a href="https://mindblog.dericbownds.net/2026/04/ai-agency-and-quiet-hollowing-of-mind.html">AI, Agency, and the Quiet Hollowing of Mind</a></h3>
+          <p>Deric Bownds summarizes Colin Lewis’s idea of “agency decay”: AI rarely removes people in one step; it first turns them from doers into supervisors and then leaves them formally accountable after substantive reasoning has moved elsewhere. The article is valuable because it reframes human judgment as operational infrastructure, not sentimentality.</p>
+          <ul><li>Agency can erode long before jobs disappear because supervision replaces active reasoning in small increments.</li><li>Oversight without substantive cognition leaves humans accountable while reducing their ability to detect failure.</li><li>Efficiency metrics miss judgment, contestability, and moral responsibility, so they are incomplete system objectives.</li><li>Retaining human judgment in high-stakes domains is a resilience mechanism, not a nostalgia tax.</li></ul>
+        </article>
+      </section><section>
+        <h2>Philosophy</h2>
+        <article class="card">
+          <h3><a href="https://pluralistic.net/2026/04/09/bernstein-2/">Pluralistic: Cindy Cohn&#x27;s &quot;Privacy&#x27;s Defender&quot; (09 Apr 2026)</a></h3>
+          <p>Cory Doctorow presents Cindy Cohn’s memoir as a history of digital-rights strategy, from the Bernstein encryption case to the post-9/11 fight against mass surveillance. The article’s practical value is in showing how durable technical freedom often depends on legal framing, coalition-building, and long-term institutional tactics.</p>
+          <ul><li>Technical and economic arguments often fail until someone finds the legal frame that changes the battlefield.</li><li>The Bernstein case mattered because it established code as protected speech and unlocked civilian encryption.</li><li>Privacy fights are tightly linked to speech rights and broader human-rights strategy.</li><li>Winning these battles requires narrative skill, credible experts, and sustained coalition work over years.</li></ul>
+        </article>
+      </section><section>
+        <h2>Reddit Programming</h2>
+        <article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1sgfc1f/managing_mcp_tools_in_production/">Managing MCP tools in production?</a></h3>
+          <p>The thread describes a recurring production problem: teams keep writing tiny MCP servers for APIs that lack native MCP support, which creates duplicated auth work, scattered hosts, and unnecessary ops load. It is worth keeping because it surfaces a real emerging platform gap around tool authentication, permissioning, and service ownership for agent ecosystems.</p>
+          <ul><li>API-by-API MCP wrappers create repeated integration work and fragmented operational responsibility.</li><li>The missing layer is a shared auth and permission system for tools, not another pile of bespoke proxies.</li><li>Agent infrastructure is starting to need Zapier/Auth0-style platform primitives for tool access control.</li><li>The absence of a clear market winner is itself useful signal that this category is still immature.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1sgbw3i/what_do_you_do_when_you_notice_duplicate/">What do you do when you notice duplicate workstreams independently solving the same problem?</a></h3>
+          <p>This thread asks how a senior engineer should respond after spotting multiple teams independently solving the same cross-functional problems without coordination. The value is organizational, not just technical: it highlights the need for shared problem discovery, explicit ownership, and intervention patterns that reduce parallel waste without turning into politics for its own sake.</p>
+          <ul><li>Duplicate workstreams are often a discovery and communication failure before they are an implementation failure.</li><li>Engineers with cross-team visibility can create leverage by surfacing overlap early and proposing a shared path.</li><li>A useful intervention focuses on problem framing, ownership, and reuse opportunities instead of defending one team’s solution.</li><li>This is platform thinking in miniature: once overlap is visible, someone has to decide whether the answer is coordination, consolidation, or a shared service.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1sg1glq/ive_been_trying_to_work_towards_level_5/">I&#x27;ve been trying to work towards &quot;Level 5&quot; AI-assisted development for a year. I&#x27;m not quite there, but this is the flow that&#x27;s working for me.</a></h3>
+          <p>The post presents a pragmatic AI-assisted development workflow that rejects vague “vibe coding” in favor of structured specs, deliberate agent orchestration, and review discipline. It is useful because it reinforces a pattern that is showing up repeatedly across good AI engineering work: process quality and specification quality matter more than swapping models.</p>
+          <ul><li>Higher-leverage AI development comes from structured specs and workflow design more than from model choice alone.</li><li>Managing coding agents at scale is an operational problem with handoffs, review loops, and artifact discipline.</li><li>The useful distinction is between ad hoc prompting and a repeatable engineering process for agents.</li><li>This aligns with the broader verification theme: stronger inputs and tighter process reduce downstream review cost.</li></ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

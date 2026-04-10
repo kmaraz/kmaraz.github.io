@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feedly Digest</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f5efe4;
+        --ink: #1f1b16;
+        --card: #fffaf2;
+        --accent: #a64b00;
+        --line: #d9cbb5;
+      }
+      body {
+        margin: 0;
+        font-family: "Iowan Old Style", "Palatino Linotype", serif;
+        background:
+          radial-gradient(circle at top left, rgba(166, 75, 0, 0.12), transparent 30%),
+          linear-gradient(180deg, #f7f0e6 0%, var(--bg) 100%);
+        color: var(--ink);
+      }
+      main {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 48px 20px 80px;
+      }
+      h1, h2, h3 {
+        margin: 0;
+      }
+      h1 {
+        font-size: clamp(2rem, 4vw, 3.4rem);
+        margin-bottom: 12px;
+      }
+      .meta {
+        color: #5f5648;
+        margin-bottom: 36px;
+      }
+      section {
+        margin-bottom: 36px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 20px;
+        box-shadow: 0 10px 30px rgba(54, 36, 12, 0.05);
+        margin-top: 16px;
+      }
+      a {
+        color: var(--accent);
+      }
+      ul {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Feedly Digest</h1>
+      <p class="meta">Generated: 2026-04-10T09:51:11.252Z</p>
+      
+    <section>
+      <h2>Engineering</h2>
+      
+      <article class="card">
+        <h3><a href="https://cutlefish.substack.com/p/tbm-415-demand-mix-shaping-and-ai">TBM 415: Demand Mix, Discovery, and AI as a (Dys)function Multiplier</a></h3>
+        <p>John Cutler argues that product teams cannot reason clearly about process or AI adoption until they make their demand mix explicit: what enters the funnel, who shapes it, and how much agency teams have upstream. The durable point is that AI amplifies the operating system already in place, so interrupt-heavy organizations get faster chaos while learning-oriented teams get faster exploration and better decision support.</p>
+        <ul><li>Team process is downstream of demand mix and mandate level, so the same practice works differently under different input conditions.</li><li>Interrupt-heavy funnels push teams toward triage, negotiation, and survival rather than learning and leverage.</li><li>AI multiplies the existing funnel shape, which makes system design more important than tool enthusiasm.</li><li>The real scarce resource is often focus, clarity, and decision quality rather than raw implementation capacity.</li></ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>Programming</h2>
+      
+      <article class="card">
+        <h3><a href="https://engineering.fb.com/2026/04/09/developer-tools/escaping-the-fork-how-meta-modernized-webrtc-across-50-use-cases/">Escaping the Fork: How Meta Modernized WebRTC Across 50+ Use Cases</a></h3>
+        <p>Meta describes a multiyear migration away from a heavily customized internal WebRTC fork by wrapping legacy and upstream implementations behind a shim layer, running both versions in one binary for A/B testing, and automating the renamespacing and patch workflow needed inside a monorepo. It is worth keeping because it turns a common open-source maintenance trap into a concrete migration pattern with rollout safety.</p>
+        <ul><li>Long-lived internal forks accumulate hidden operational debt by blocking upstream security, performance, and feature upgrades.</li><li>A version-agnostic shim layer lets application code stay stable while implementations are swapped and compared underneath.</li><li>Dual-stack rollout safety required solving symbol collisions and namespacing so two WebRTC versions could coexist in one process.</li><li>Upgrade automation matters as much as architecture because manual patch rebasing recreates the same trap on the next release.</li></ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>Tech</h2>
+      
+      <article class="card">
+        <h3><a href="https://www.debugbear.com/blog/lazy-loading-performance">How to Use Lazy Loading Without Hurting Web Performance</a></h3>
+        <p>This guide frames lazy loading as a prioritization tool, not a universal optimization. It shows how deferring the wrong resources can hurt LCP, CLS, and INP by delaying hero content, introducing layout shifts, and pushing work into interaction moments. The value is in the crisp operational rules for selective use.</p>
+        <ul><li>Do not lazy-load hero images, above-the-fold content, or other critical UI because it directly delays LCP.</li><li>Reserve layout space for deferred content or lazy loading will create CLS and visible jank.</li><li>Lazy loading does not remove work; it moves work, and moving it into interaction time can worsen INP.</li><li>Native browser support and selective application are safer than blanket JavaScript-driven lazy loading.</li></ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>Reddit Programming</h2>
+      
+      <article class="card">
+        <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1sgvmxb/why_is_communication_so_overlooked_by_senior_devs/">Why is communication so overlooked by Senior Devs?</a></h3>
+        <p>This thread surfaces a repeated senior-engineering failure mode: teams demand rigor in code and tolerate messy communication systems that degrade onboarding, fragment context, and force engineers to fight to stay informed. It stays because the examples are concrete and the pain is broadly recognizable across mature organizations.</p>
+        <ul><li>Communication failures impose fixed organizational costs, especially during onboarding and cross-team coordination.</li><li>A culture of 'figure it out yourself' is often a poor time tradeoff disguised as rigor.</li><li>Private decisions and channel sprawl shift work from execution to context recovery.</li><li>Communication hygiene needs the same intentional maintenance mindset as code quality.</li></ul>
+      </article>
+
+      <article class="card">
+        <h3><a href="https://www.reddit.com/r/programming/comments/1sh4li2/one_method_was_using_71_of_cpu_heres_the_flame/">One Method Was Using 71% of CPU. Here's the Flame Graph.</a></h3>
+        <p>This performance writeup moves from bad latency, heap use, and GC pauses into profiler evidence that one hot method dominated total CPU time. It is useful because it reinforces a disciplined optimization loop: measure, profile, isolate the hotspot, and tie the fix back to outcome metrics.</p>
+        <ul><li>Flame graphs keep optimization work anchored to evidence instead of guesswork.</li><li>A single hot method can dominate system cost, so concentration matters more than broad tuning.</li><li>Performance investigations are more transferable when they connect code changes to latency, heap, and GC outcomes.</li><li>Good profiling practice is part of design work, not only a late-stage emergency response.</li></ul>
+      </article>
+
+      <article class="card">
+        <h3><a href="https://www.reddit.com/r/programming/comments/1sh4ehp/i_wrote_a_postgresql_patch_to_make_materialized/">I wrote a PostgreSQL patch to make materialized view refreshes O(delta) instead of O(total)</a></h3>
+        <p>The post points out that PostgreSQL materialized view refreshes still behave like whole-dataset maintenance, then argues for a delta-based approach that scales with changed rows instead. It is worth keeping because it corrects a common assumption about Postgres and highlights a concrete path toward cheaper derived-data maintenance.</p>
+        <ul><li>PostgreSQL materialized views still become blunt tools when refresh cost tracks total data size instead of changed data.</li><li>Teams often discover too late that native refresh semantics do not match near-real-time workloads.</li><li>Incremental maintenance changes the economics of serving derived data under frequent updates.</li><li>Database bottlenecks often come from maintenance strategy, not only query shape.</li></ul>
+      </article>
+
+      <article class="card">
+        <h3><a href="https://www.reddit.com/r/programming/comments/1sgzwez/the_aws_lambda_kiss_of_death/">The AWS Lambda 'Kiss of Death'</a></h3>
+        <p>This incident story starts from production database freezes and traces the path through Lambda-driven connection spikes in a Galera-backed system. It is worth keeping because it captures a concrete serverless failure mode: elastic compute can overwhelm a stateful backend long before the compute layer looks stressed.</p>
+        <ul><li>Serverless concurrency can turn small inefficiencies into sudden database saturation.</li><li>Elastic frontends need explicit controls for connection growth and downstream backpressure.</li><li>Stateful bottlenecks often hide behind healthy-looking compute metrics.</li><li>Incident debugging gets sharper when it follows write stalls and connection behavior instead of slogans about serverless simplicity.</li></ul>
+      </article>
+
+      <article class="card">
+        <h3><a href="https://www.reddit.com/r/programming/comments/1sgpgq2/the_empty_middle_of_ai_coding/">The Empty Middle of AI Coding</a></h3>
+        <p>The article argues AI coding discourse is dominated by two loud camps: skeptics who deny value and vibe coders who overclaim autonomy, while most practical adoption sits in a quieter middle of bounded, disciplined use. It stays because that framing matches repeated field experience and is more actionable than either extreme narrative.</p>
+        <ul><li>The highest-signal AI coding use cases usually live inside structured workflows rather than one-shot automation claims.</li><li>Polarized discourse hides the operational middle where teams actually learn what works.</li><li>Periodic re-evaluation matters because workflow quality changes the outcome as much as model quality.</li><li>The relevant question is how AI fits into a disciplined engineering process, not whether it replaces coding wholesale.</li></ul>
+      </article>
+
+      <article class="card">
+        <h3><a href="https://www.reddit.com/r/programming/comments/1sgkrif/signals_are_not_guarantees_the_mismatch_between/">Signals Are Not Guarantees - the mismatch between what e2e tests say and what they actually check</a></h3>
+        <p>This piece argues that many end-to-end tests assert UI signals that correlate with behavior instead of the actual guarantees the system promises to users. It is worth keeping because the distinction is sharp, reusable, and immediately improves how teams review test intent.</p>
+        <ul><li>Signals such as spinners, banners, or checked boxes are proxies and should not be confused with the protected behavior.</li><li>Representation-level assertions make test suites brittle under harmless UI changes.</li><li>A strong end-to-end test states the user-visible guarantee and verifies that guarantee directly.</li><li>Test review should ask what contract is being protected, not only whether a selector currently passes.</li></ul>
+      </article>
+    </section>
+    </main>
+  </body>
+</html>
