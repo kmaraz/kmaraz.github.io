@@ -4,30 +4,46 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Fri, 10 Apr 2026 22:20:12 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Apr 2026 21:09:25 +0000</lastBuildDate>
     <item>
-      <title>[Engineering] font-family Doesn’t Fall Back the Way You Think</title>
-      <link>https://csswizardry.com/2026/04/font-family-doesnt-fall-back-the-way-you-think/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-10/933319677495e537a4a147f733be7f81dd1a206e</guid>
-      <pubDate>Fri, 10 Apr 2026 22:20:12 +0000</pubDate>
-      <category>Engineering</category>
-      <description>&lt;p&gt;Harry Roberts explains a subtle CSS rule: once an element declares its own font-family, fallback resolution happens inside that declaration instead of inheriting the parent stack. It is worth keeping because it turns a common assumption into a concrete rendering and performance rule for design systems.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;font-family inheritance carries the full computed value, and child declarations do not borrow fallback fonts from ancestors.&lt;/li&gt;&lt;li&gt;A declaration like h1 { font-family: &amp;quot;Open Sans&amp;quot;; } can fall back to the user agent default while the web font is still loading.&lt;/li&gt;&lt;li&gt;Typography tokens should include their own fallback stacks instead of relying on body or root defaults.&lt;/li&gt;&lt;li&gt;Font-stack mistakes can show up as visible flashes of wrong text and layout shift, not only as stylistic inconsistencies.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Programming] Signals Are Not Guarantees - the mismatch between what e2e tests say and what they actually check</title>
+      <link>https://www.reddit.com/r/programming/comments/1sgkrif/signals_are_not_guarantees_the_mismatch_between/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-11/67a90df6231818b126b038463d6add0fd4097941</guid>
+      <pubDate>Sat, 11 Apr 2026 21:09:25 +0000</pubDate>
+      <category>Programming</category>
+      <description>&lt;p&gt;This piece argues that many end-to-end tests assert UI signals instead of the behavioral guarantees users actually care about. It is worth keeping because it turns flaky e2e maintenance into a sharper testing rule: assert the promise, not the representation.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A disappearing spinner or visible banner is evidence, not the product contract by itself.&lt;/li&gt;&lt;li&gt;Behavior-focused assertions survive UI refactors better than representation-focused checks.&lt;/li&gt;&lt;li&gt;Good e2e tests encode the user-visible guarantee that must remain true across implementation changes.&lt;/li&gt;&lt;li&gt;Flaky suites often come from testing incidental signals that drift away from the real outcome.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Informatics] How To Improve UX In Legacy Systems</title>
-      <link>https://smashingmagazine.com/2026/04/legacy-systems/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-10/901c06be681984398cecd4f5808c248cd227c965</guid>
-      <pubDate>Fri, 10 Apr 2026 22:20:12 +0000</pubDate>
-      <category>Informatics</category>
-      <description>&lt;p&gt;Vitaly Friedman frames legacy UX work as a migration problem across workflows, dependencies, and user trust rather than a visual refresh. It stays because it lays out practical migration strategies and makes the rewrite-vs-increment decision explicit.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Legacy systems often encode critical business knowledge, so discovery should start with workflow and dependency mapping rather than redesign instincts.&lt;/li&gt;&lt;li&gt;One broken legacy step can define the perceived quality of the whole product, even when the surrounding UI is modern.&lt;/li&gt;&lt;li&gt;Migration strategy should be chosen deliberately: big-bang, incremental, parallel, incremental-parallel, or targeted legacy UI upgrades.&lt;/li&gt;&lt;li&gt;Stakeholder trust and heavy-user involvement are part of the delivery work because you are migrating habits and operations, not only screens.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Programming] I wrote a PostgreSQL patch to make materialized view refreshes O(delta) instead of O(total)</title>
+      <link>https://www.reddit.com/r/programming/comments/1sh4ehp/i_wrote_a_postgresql_patch_to_make_materialized/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-11/ecdb5595a52bdcdf8a7f5ce9de4adfce1217cc0e</guid>
+      <pubDate>Sat, 11 Apr 2026 21:09:25 +0000</pubDate>
+      <category>Programming</category>
+      <description>&lt;p&gt;The article highlights a costly PostgreSQL limitation: materialized view refreshes still process the full dataset even when only a small delta changed. It stays because it clarifies the real cost model and shows why incremental maintenance matters in production systems.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;PostgreSQL materialized views do not provide incremental refresh out of the box.&lt;/li&gt;&lt;li&gt;Large views turn tiny source changes into whole-dataset work unless you build a delta-aware path.&lt;/li&gt;&lt;li&gt;The operational question is how much changed, not how large the total view is.&lt;/li&gt;&lt;li&gt;Teams depending on near-real-time derived tables need to validate refresh complexity early.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Reproducing the AWS Outage Race Condition with a Model Checker</title>
-      <link>https://www.reddit.com/r/programming/comments/1shmtl3/reproducing_the_aws_outage_race_condition_with_a/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-10/737eba86f18ea286d7deb16d1d94284d2f552fe5</guid>
-      <pubDate>Fri, 10 Apr 2026 22:20:12 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;Using AWS’s own outage post-mortem as a starting point, this piece models a simplified DynamoDB DNS-management race in Spin/Promela and shows how the failure can emerge from a bad interleaving between concurrent enactors. It is worth keeping because it demonstrates a concrete way to turn an incident narrative into an executable concurrency model.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Post-mortem narratives can often be reduced into a smaller state model that is precise enough to expose the failure mechanism.&lt;/li&gt;&lt;li&gt;Model checking is useful for reasoning about rare interleavings that logs and intuition can miss.&lt;/li&gt;&lt;li&gt;Cleanup logic around versioned plans can be as dangerous as apply logic when multiple workers operate independently.&lt;/li&gt;&lt;li&gt;Formal methods become practical when used as focused debugging tools for high-risk concurrency behavior.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Programming] One Method Was Using 71% of CPU. Here's the Flame Graph.</title>
+      <link>https://www.reddit.com/r/programming/comments/1sh4li2/one_method_was_using_71_of_cpu_heres_the_flame/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-11/2880c57d684456ae9a18b59410924c56a4228628</guid>
+      <pubDate>Sat, 11 Apr 2026 21:09:25 +0000</pubDate>
+      <category>Programming</category>
+      <description>&lt;p&gt;This walkthrough uses Java Flight Recorder and Mission Control to show iterative performance work: remove the hottest method, re-profile, and let the next bottleneck surface. It is worth keeping because it gives a concrete workflow for turning profiler output into disciplined optimization rounds.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Performance tuning works in rounds because the next bottleneck becomes visible only after the loudest one is removed.&lt;/li&gt;&lt;li&gt;Start from the overview signals: heap, GC, CPU, and contention point you to different classes of problems.&lt;/li&gt;&lt;li&gt;Profile under realistic concurrency or you will miss lock contention that stays invisible at lighter load.&lt;/li&gt;&lt;li&gt;JFR and JMC provide enough evidence to justify optimizations with concrete before-and-after numbers.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Programming] Stamp It! All Programs Must Report Their Version</title>
+      <link>https://www.reddit.com/r/programming/comments/1sdy11q/stamp_it_all_programs_must_report_their_version/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-11/c164294714e313ba435d8135f4099887f02ceedb</guid>
+      <pubDate>Sat, 11 Apr 2026 21:09:25 +0000</pubDate>
+      <category>Programming</category>
+      <description>&lt;p&gt;Michael Stapelberg argues that incident response gets needlessly delayed when software cannot clearly report what build is running. It is worth keeping because the fix is simple and durable: stamp version data into builds, plumb it through runtime surfaces, and report it where operators debug.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Version reporting is operational tooling, not cosmetic metadata.&lt;/li&gt;&lt;li&gt;The most useful identifier is the VCS revision because other release details can be derived from it.&lt;/li&gt;&lt;li&gt;Runtime diagnostics should report the effective running binary and loaded configuration, not only the invoked binary.&lt;/li&gt;&lt;li&gt;Clear build stamps remove hours of uncertainty during rollback, reproduction, and support work.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[ExperiencedDevs] I've been trying to work towards "Level 5" AI-assisted development for a year. I'm not quite there, but this is the flow that's working for me.</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1sg1glq/ive_been_trying_to_work_towards_level_5/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-11/f434eb1afc10bef001a7ea0cff74c6463bf0bc9e</guid>
+      <pubDate>Sat, 11 Apr 2026 21:09:25 +0000</pubDate>
+      <category>ExperiencedDevs</category>
+      <description>&lt;p&gt;This thread frames high-autonomy AI development as a process problem more than a model problem. It stays because the core claim is transferable: structured specs, review flow, and task management create more leverage than chasing one-shot coding performance.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Agentic development quality depends heavily on spec quality and decomposition discipline.&lt;/li&gt;&lt;li&gt;Higher autonomy comes from workflow structure, not from giving a stronger model a looser prompt.&lt;/li&gt;&lt;li&gt;Review and orchestration are part of the system design when multiple coding agents are involved.&lt;/li&gt;&lt;li&gt;The practical ceiling on AI-assisted development is often process maturity, not raw model capability.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
