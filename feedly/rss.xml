@@ -4,46 +4,14 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Sat, 11 Apr 2026 21:09:25 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Apr 2026 08:18:45 +0000</lastBuildDate>
     <item>
-      <title>[Programming] Signals Are Not Guarantees - the mismatch between what e2e tests say and what they actually check</title>
-      <link>https://www.reddit.com/r/programming/comments/1sgkrif/signals_are_not_guarantees_the_mismatch_between/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-11/67a90df6231818b126b038463d6add0fd4097941</guid>
-      <pubDate>Sat, 11 Apr 2026 21:09:25 +0000</pubDate>
-      <category>Programming</category>
-      <description>&lt;p&gt;This piece argues that many end-to-end tests assert UI signals instead of the behavioral guarantees users actually care about. It is worth keeping because it turns flaky e2e maintenance into a sharper testing rule: assert the promise, not the representation.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A disappearing spinner or visible banner is evidence, not the product contract by itself.&lt;/li&gt;&lt;li&gt;Behavior-focused assertions survive UI refactors better than representation-focused checks.&lt;/li&gt;&lt;li&gt;Good e2e tests encode the user-visible guarantee that must remain true across implementation changes.&lt;/li&gt;&lt;li&gt;Flaky suites often come from testing incidental signals that drift away from the real outcome.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Programming] I wrote a PostgreSQL patch to make materialized view refreshes O(delta) instead of O(total)</title>
-      <link>https://www.reddit.com/r/programming/comments/1sh4ehp/i_wrote_a_postgresql_patch_to_make_materialized/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-11/ecdb5595a52bdcdf8a7f5ce9de4adfce1217cc0e</guid>
-      <pubDate>Sat, 11 Apr 2026 21:09:25 +0000</pubDate>
-      <category>Programming</category>
-      <description>&lt;p&gt;The article highlights a costly PostgreSQL limitation: materialized view refreshes still process the full dataset even when only a small delta changed. It stays because it clarifies the real cost model and shows why incremental maintenance matters in production systems.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;PostgreSQL materialized views do not provide incremental refresh out of the box.&lt;/li&gt;&lt;li&gt;Large views turn tiny source changes into whole-dataset work unless you build a delta-aware path.&lt;/li&gt;&lt;li&gt;The operational question is how much changed, not how large the total view is.&lt;/li&gt;&lt;li&gt;Teams depending on near-real-time derived tables need to validate refresh complexity early.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Programming] One Method Was Using 71% of CPU. Here's the Flame Graph.</title>
-      <link>https://www.reddit.com/r/programming/comments/1sh4li2/one_method_was_using_71_of_cpu_heres_the_flame/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-11/2880c57d684456ae9a18b59410924c56a4228628</guid>
-      <pubDate>Sat, 11 Apr 2026 21:09:25 +0000</pubDate>
-      <category>Programming</category>
-      <description>&lt;p&gt;This walkthrough uses Java Flight Recorder and Mission Control to show iterative performance work: remove the hottest method, re-profile, and let the next bottleneck surface. It is worth keeping because it gives a concrete workflow for turning profiler output into disciplined optimization rounds.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Performance tuning works in rounds because the next bottleneck becomes visible only after the loudest one is removed.&lt;/li&gt;&lt;li&gt;Start from the overview signals: heap, GC, CPU, and contention point you to different classes of problems.&lt;/li&gt;&lt;li&gt;Profile under realistic concurrency or you will miss lock contention that stays invisible at lighter load.&lt;/li&gt;&lt;li&gt;JFR and JMC provide enough evidence to justify optimizations with concrete before-and-after numbers.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Programming] Stamp It! All Programs Must Report Their Version</title>
-      <link>https://www.reddit.com/r/programming/comments/1sdy11q/stamp_it_all_programs_must_report_their_version/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-11/c164294714e313ba435d8135f4099887f02ceedb</guid>
-      <pubDate>Sat, 11 Apr 2026 21:09:25 +0000</pubDate>
-      <category>Programming</category>
-      <description>&lt;p&gt;Michael Stapelberg argues that incident response gets needlessly delayed when software cannot clearly report what build is running. It is worth keeping because the fix is simple and durable: stamp version data into builds, plumb it through runtime surfaces, and report it where operators debug.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Version reporting is operational tooling, not cosmetic metadata.&lt;/li&gt;&lt;li&gt;The most useful identifier is the VCS revision because other release details can be derived from it.&lt;/li&gt;&lt;li&gt;Runtime diagnostics should report the effective running binary and loaded configuration, not only the invoked binary.&lt;/li&gt;&lt;li&gt;Clear build stamps remove hours of uncertainty during rollback, reproduction, and support work.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[ExperiencedDevs] I've been trying to work towards "Level 5" AI-assisted development for a year. I'm not quite there, but this is the flow that's working for me.</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1sg1glq/ive_been_trying_to_work_towards_level_5/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-11/f434eb1afc10bef001a7ea0cff74c6463bf0bc9e</guid>
-      <pubDate>Sat, 11 Apr 2026 21:09:25 +0000</pubDate>
-      <category>ExperiencedDevs</category>
-      <description>&lt;p&gt;This thread frames high-autonomy AI development as a process problem more than a model problem. It stays because the core claim is transferable: structured specs, review flow, and task management create more leverage than chasing one-shot coding performance.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Agentic development quality depends heavily on spec quality and decomposition discipline.&lt;/li&gt;&lt;li&gt;Higher autonomy comes from workflow structure, not from giving a stronger model a looser prompt.&lt;/li&gt;&lt;li&gt;Review and orchestration are part of the system design when multiple coding agents are involved.&lt;/li&gt;&lt;li&gt;The practical ceiling on AI-assisted development is often process maturity, not raw model capability.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Reddit Programming] 20 Years on AWS and Never Not My Job</title>
+      <link>https://www.reddit.com/r/programming/comments/1sipvi3/20_years_on_aws_and_never_not_my_job/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-12/28e95b6fef0fda1c6da492f225aa382fe031280f</guid>
+      <pubDate>Sun, 12 Apr 2026 08:18:45 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Colin Percival recounts two decades of working at AWS&amp;#x27;s edge as an external operator and FreeBSD maintainer, showing how concrete critiques around signing, consistency, IAM, IMDS, virtualization, and boot modes gradually fed back into the platform. It is worth keeping because it compresses a long cloud-platform learning curve into a dense firsthand record of which design complaints aged well and how persistent technical feedback can shape infrastructure.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Concrete threat models and design critiques from long-term external users can materially improve a platform when they are specific, technically grounded, and sustained over time.&lt;/li&gt;&lt;li&gt;Early security and API decisions, such as unsigned responses, canonicalization bugs, or metadata-exposed credentials, can remain latent liabilities for years before they fail loudly.&lt;/li&gt;&lt;li&gt;Pre-build design feedback on consistency semantics, IAM key scoping, hypervisor choices, and boot modes often yields more leverage than late alpha access after the architecture has hardened.&lt;/li&gt;&lt;li&gt;Infrastructure abstractions leak at the edges: supporting alternative runtimes exposed real dependencies on ABI stability, driver support, hypervisor versions, and instance boot semantics.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
