@@ -4,14 +4,86 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Sun, 12 Apr 2026 08:18:45 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Apr 2026 08:24:40 +0000</lastBuildDate>
     <item>
-      <title>[Reddit Programming] 20 Years on AWS and Never Not My Job</title>
-      <link>https://www.reddit.com/r/programming/comments/1sipvi3/20_years_on_aws_and_never_not_my_job/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-12/28e95b6fef0fda1c6da492f225aa382fe031280f</guid>
-      <pubDate>Sun, 12 Apr 2026 08:18:45 +0000</pubDate>
+      <title>[Frontend] The economics of software teams</title>
+      <link>https://leadershipintech.com/newsletters/2256-the-economics-of-software-teams</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-13-10-15/9d4345ffe6010b34f9a9f79c2964dd7bea62bc62</guid>
+      <pubDate>Mon, 13 Apr 2026 08:24:40 +0000</pubDate>
+      <category>Frontend</category>
+      <description><p>This piece treats software teams as capital allocation decisions and works through what a team actually costs, what it must generate to justify itself, and why most organizations lack visibility into either number. It is worth keeping because it reframes engineering management around economic observability at the moment AI is increasing pressure on headcount assumptions.</p><ul><li>Team size should be justified with explicit cost and output assumptions rather than habit or status.</li><li>Economic visibility belongs in engineering management alongside roadmap and delivery tracking.</li><li>LLM-driven productivity pressure will expose organizations that treat engineering headcount as an unquestioned asset.</li></ul></description>
+    </item>
+    <item>
+      <title>[Informatics] Linklint</title>
+      <link>https://nedbatchelder.com/blog/202604/linklint</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-13-10-15/00bdb86f89f8f8febb7f4c6249a83c73587f99eb</guid>
+      <pubDate>Mon, 13 Apr 2026 08:24:40 +0000</pubDate>
+      <category>Informatics</category>
+      <description><p>Ned Batchelder describes a Sphinx extension that suppresses redundant links during documentation builds by rewriting the doctree instead of editing source files. It is worth keeping because it is a compact example of AST-level tooling solving a real documentation quality problem while preserving accessibility constraints.</p><ul><li>Build-time tree rewrites can remove documentation noise without forcing source-format churn on authors.</li><li>Suppression rules stay tractable when they target narrow, defensible cases such as duplicate links in one paragraph or self-links inside a section.</li><li>Accessibility constraints should shape tooling decisions early, especially when visual cleanup would otherwise weaken link affordances.</li></ul></description>
+    </item>
+    <item>
+      <title>[Philosophy] Pluralistic: Austerity creates fascism (13 Apr 2026)</title>
+      <link>https://pluralistic.net/2026/04/12/always-great/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-13-10-15/7a8c7aadcbb3b49bb5fae34c836c396773344de6</guid>
+      <pubDate>Mon, 13 Apr 2026 08:24:40 +0000</pubDate>
+      <category>Philosophy</category>
+      <description><p>Doctorow uses the AI bubble as a live entry point for a broader political-economy argument: market crashes become socially explosive when governments answer elite losses with austerity for everyone else. It is worth keeping because it offers a durable model for separating financial collapse from the policy choices that turn collapse into authoritarian backlash.</p><ul><li>Economic crashes do their widest social damage through austerity policy choices, not through direct losses in ordinary workers’ financial portfolios.</li><li>When elites socialize losses and privatize gains, political anger becomes available to authoritarian movements.</li><li>Evaluating a technology bubble requires asking how institutions will distribute the fallout if the capital structure breaks.</li></ul></description>
+    </item>
+    <item>
+      <title>[Psychology] The Default Mode Network as a Bidirectional Interface Between World and Mind</title>
+      <link>https://mindblog.dericbownds.net/2026/04/the-default-mode-network-as.html</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-13-10-15/69ac4d582b2be990add1e3332aacfed1a493f830</guid>
+      <pubDate>Mon, 13 Apr 2026 08:24:40 +0000</pubDate>
+      <category>Psychology</category>
+      <description><p>This post summarizes work showing that the default mode network contains receiver-like subregions engaged during perceptual decisions and sender-like subregions engaged during memory-guided thought. It is worth keeping because it turns a vague “internal thought” story into a more precise architectural model of how attention shifts between sensed input and internally constructed representations.</p><ul><li>The default mode network is functionally split rather than serving as a single undifferentiated internal-thought system.</li><li>Perceptually guided cognition leans on afferent, integrative DMN zones, while memory-guided cognition leans on efferent zones connected more broadly to perceptual-motor and attentional systems.</li><li>A useful mental model for cognition is dynamic switching between externally constrained interpretation and internally generated simulation.</li></ul></description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Why the &quot;Low-Level&quot; stigma?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1sjjl5u/why_the_lowlevel_stigma/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-13-10-15/886409a576ff94a3f64e89808d518920f0aec1bb</guid>
+      <pubDate>Mon, 13 Apr 2026 08:24:40 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;Colin Percival recounts two decades of working at AWS&amp;#x27;s edge as an external operator and FreeBSD maintainer, showing how concrete critiques around signing, consistency, IAM, IMDS, virtualization, and boot modes gradually fed back into the platform. It is worth keeping because it compresses a long cloud-platform learning curve into a dense firsthand record of which design complaints aged well and how persistent technical feedback can shape infrastructure.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Concrete threat models and design critiques from long-term external users can materially improve a platform when they are specific, technically grounded, and sustained over time.&lt;/li&gt;&lt;li&gt;Early security and API decisions, such as unsigned responses, canonicalization bugs, or metadata-exposed credentials, can remain latent liabilities for years before they fail loudly.&lt;/li&gt;&lt;li&gt;Pre-build design feedback on consistency semantics, IAM key scoping, hypervisor choices, and boot modes often yields more leverage than late alpha access after the architecture has hardened.&lt;/li&gt;&lt;li&gt;Infrastructure abstractions leak at the edges: supporting alternative runtimes exposed real dependencies on ABI stability, driver support, hypervisor versions, and instance boot semantics.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description><p>This thread argues that dismissing low-level work as obsolete produces developers who can operate frameworks without understanding runtime consequences. It is worth keeping because it captures a recurring failure mode in modern tooling-heavy and AI-assisted workflows: abstractions become magic when nobody understands the layers underneath them.</p><ul><li>Low-level fundamentals improve debugging, performance reasoning, and judgment even for engineers who never write assembly professionally.</li><li>Abstractions stay safe only when enough people on the team can reason about the mechanisms they hide.</li><li>Training pipelines that optimize only for tool fluency risk producing operators with weak systems intuition.</li></ul></description>
+    </item>
+    <item>
+      <title>[Reddit Programming] The Psychology of Bad Code Part 2 – Building Systems That Support Secure Developer Behavior</title>
+      <link>https://www.reddit.com/r/programming/comments/1sjvssn/the_psychology_of_bad_code_part_2_building/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-13-10-15/00445d90cfec3160f65ac0896d148099cb70664f</guid>
+      <pubDate>Mon, 13 Apr 2026 08:24:40 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description><p>The post applies behavioral-economics thinking to application security and focuses on building systems that nudge developers toward secure behavior instead of relying on intention alone. It is worth keeping because the framing is practical, portable, and stronger than generic “train developers better” advice.</p><ul><li>Secure behavior scales when the safest path is also the easiest path through tooling and defaults.</li><li>Repeated insecure choices often indicate weak system design rather than weak developer character.</li><li>Security programs should optimize environment design and feedback loops, not only awareness campaigns.</li></ul></description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Flat Error Codes Are Not Enough</title>
+      <link>https://www.reddit.com/r/programming/comments/1sjg9v6/flat_error_codes_are_not_enough/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-13-10-15/0f55a977ae373d8211b0301dd009372a0390a74b</guid>
+      <pubDate>Mon, 13 Apr 2026 08:24:40 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description><p>This article pushes back on ultra-flat library error models and argues for preserving richer structure and context as errors move up the call graph. It is worth keeping because it addresses a common API-design simplification that makes failures harder to diagnose and harder to handle programmatically.</p><ul><li>Error messages alone are not a sufficient replacement for typed or structured failure information.</li><li>High-level business context should accumulate without erasing the low-level cause chain.</li><li>Good error design serves user-facing communication and machine-facing recovery logic at the same time.</li></ul></description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Paying Google to Hack macOS Users?</title>
+      <link>https://www.reddit.com/r/programming/comments/1sjejjk/paying_google_to_hack_macos_users/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-13-10-15/43c11f50e77bd991b011228ed5561153b39b883f</guid>
+      <pubDate>Mon, 13 Apr 2026 08:24:40 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description><p>The piece attacks the normalization of `curl | shell` install flows and uses current examples to show how convenience patterns turn remote script execution into an accepted supply-chain habit. It is worth keeping because the operational lesson is immediate and broadly applicable across developer tooling.</p><ul><li>Remote install scripts are executable supply-chain dependencies and deserve the same scrutiny as any other production input.</li><li>Convenience-heavy installation patterns spread quickly from niche tools to mainstream vendors once they stop feeling exceptional.</li><li>Safer installation paths need to be explicit, reviewable, and easier to audit than ad hoc shell pipelines.</li></ul></description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Things I miss about Spring Boot after switching to Go</title>
+      <link>https://www.reddit.com/r/programming/comments/1sjcdya/things_i_miss_about_spring_boot_after_switching/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-13-10-15/2ef7380429ff806e42d070f3ffdfb9b8e87fbd72</guid>
+      <pubDate>Mon, 13 Apr 2026 08:24:40 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description><p>This reflection uses a Java-to-Go move to make the hidden value of mature framework conventions visible again, especially in infrastructure-heavy backend work. It is worth keeping because it surfaces stack tradeoffs in terms of delivery ergonomics and repeated integration cost rather than language identity.</p><ul><li>Framework batteries remove large amounts of repeated infrastructure work even when they feel heavy or opinionated.</li><li>Simpler runtime stacks often shift complexity outward onto application teams and internal conventions.</li><li>Language and framework choices should be judged on delivery system behavior, not only on surface syntax or benchmark narratives.</li></ul></description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Monorepo vs Polyrepo for AI-driven development</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1siqkc5/monorepo_vs_polyrepo_for_aidriven_development/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-13-10-15/2a47e778c1554c886e7323c27b99cbdcd8bdcd81</guid>
+      <pubDate>Mon, 13 Apr 2026 08:24:40 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description><p>This discussion argues that monorepos gain additional leverage under AI-assisted development because context, documentation, shared instructions, and system-wide changes stay colocated. It is worth keeping because it reframes repository topology as a tooling-context problem rather than a pure source-control preference.</p><ul><li>AI-assisted workflows benefit from shared context, shared conventions, and a single place to discover system structure.</li><li>Fragmented repositories amplify differences in tests, documentation, and coordination overhead that humans and agents both have to pay.</li><li>Repository strategy should be evaluated against change flow and context assembly costs, not only team-boundary arguments.</li></ul></description>
     </item>
   </channel>
 </rss>
