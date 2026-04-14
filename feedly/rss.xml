@@ -4,86 +4,14 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Tue, 14 Apr 2026 08:40:57 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Apr 2026 11:42:00 +0000</lastBuildDate>
     <item>
-      <title>[Informatics] The architecture gap your AI agent will expose</title>
-      <link>https://leaddev.com/uncategorized/the-architecture-gap-your-ai-agent-will-expose</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-14/1a3e61ec3f742e944731a85feac58332c6727a0a</guid>
-      <pubDate>Tue, 14 Apr 2026 08:40:57 +0000</pubDate>
-      <category>Informatics</category>
-      <description>&lt;p&gt;This piece argues that agent failures are architectural failures as much as model failures. It is worth keeping because it turns vague AI-agent anxiety into concrete system design work: isolated test environments, explicit write boundaries, and observability built around reasoning and state transitions.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AgentOps needs capabilities beyond MLOps, especially state management, tool orchestration, behavioral evaluation, and dynamic execution monitoring.&lt;/li&gt;&lt;li&gt;Small production-like testing pods are a practical way to observe agent behavior and limit blast radius before real deployment.&lt;/li&gt;&lt;li&gt;Engineering teams should define which systems are AI-writable, which remain human-controlled, and what logging is required to reconstruct agent decisions.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Informatics] Use of AI has us creating more code than we can review</title>
-      <link>https://leaddev.com/ai/as-ai-helps-us-write-more-code-whos-catching-the-bugs</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-14/79a0bff6a2afb19fe57d3ea7fb72d11236165608</guid>
-      <pubDate>Tue, 14 Apr 2026 08:40:57 +0000</pubDate>
-      <category>Informatics</category>
-      <description>&lt;p&gt;LeadDev frames AI-assisted development as a code-review bottleneck problem, not a coding-speed problem. It is worth keeping because it combines survey data with a useful shift in review practice: humans are moving from line-by-line inspection toward validating intent, constraints, and the output of earlier automated checks.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI increases code volume and release size faster than manual review capacity grows.&lt;/li&gt;&lt;li&gt;Human review is moving left toward specs, acceptance criteria, and pre-merge validation rather than only reading final diffs.&lt;/li&gt;&lt;li&gt;Legible AI-generated code can still hide more logic, security, and maintainability defects than human-written code.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Tech] Chrome DevTools Throttling Is Not Accurate</title>
-      <link>https://3perf.com/blog/chrome-throttling/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-14/ef42a7fc73eb9c4974bc02e4447eafe71dd535cd</guid>
-      <pubDate>Tue, 14 Apr 2026 08:40:57 +0000</pubDate>
-      <category>Tech</category>
-      <description>&lt;p&gt;This article explains why Chrome DevTools network throttling is a rough request-level approximation rather than a faithful model of real slow networks. It is worth keeping because it gives a concrete reason many performance investigations go wrong and names better packet-level alternatives.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;DevTools splits bandwidth across requests and misses packet-level behavior such as prioritization, loss, and handshake effects.&lt;/li&gt;&lt;li&gt;Critical resources can appear much slower in DevTools than they do on realistic mobile networks.&lt;/li&gt;&lt;li&gt;Use packet-level tools like WebPageTest, Network Link Conditioner, or sitespeed throttling when network realism matters.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Visualization] William S. Cleveland, RIP</title>
-      <link>https://flowingdata.com/2026/04/14/william-s-cleveland-rip/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-14/7aa24d1c6433ff6bfb717e6911a89cdf43f75a3e</guid>
-      <pubDate>Tue, 14 Apr 2026 08:40:57 +0000</pubDate>
-      <category>Visualization</category>
-      <description>&lt;p&gt;This obituary is a compact reminder of how much modern visualization still inherits from William Cleveland’s work on graphical perception and data-first statistical practice. It is worth keeping because it ties current charting habits back to the researcher who helped turn visualization into a disciplined field.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Cleveland helped shift statistics toward learning from real data instead of centering only mathematical theory.&lt;/li&gt;&lt;li&gt;His research on graphical perception shaped later visualization work and many everyday charting conventions.&lt;/li&gt;&lt;li&gt;Foundational texts and field-building ideas still matter because modern tooling quietly embeds their assumptions.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] Everything Should Be Typed: Scalar Types Are Not Enough</title>
-      <link>https://www.reddit.com/r/programming/comments/1skg8vj/everything_should_be_typed_scalar_types_are_not/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-14/5e3042da127168ccad69688b8302ade920b39d62</guid>
-      <pubDate>Tue, 14 Apr 2026 08:40:57 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;This post argues that scalar types create false confidence because they preserve representation while erasing meaning. It is worth keeping because it makes a sharp practical case for newtypes or branded types around IDs, units, and money values to prevent entire classes of semantic bugs.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Scalar sameness lets identifier, amount, and unit mixups compile cleanly even when the meaning is wrong.&lt;/li&gt;&lt;li&gt;Structs solve positional ambiguity, but they still accept semantically invalid assignments when fields share primitive types.&lt;/li&gt;&lt;li&gt;Distinct domain types let the compiler enforce meaning instead of only checking raw shape.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] Send a Program, Not a Data Structure</title>
-      <link>https://www.reddit.com/r/programming/comments/1skd09v/send_a_program_not_a_data_structure/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-14/1a6369f649b7447b927be99bd1f1b1e2d44f89be</guid>
-      <pubDate>Tue, 14 Apr 2026 08:40:57 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;This essay uses PostScript, shaders, SQL, eBPF, and Pretext to explain a durable architecture choice: whether the sender should ship fixed data or a program for an interpreter. It is worth keeping because it gives a reusable mental model for recognizing when a growing data format is really trying to encode behavior.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;If receiver logic keeps expanding to interpret richer data, the format may be carrying behavior it should not carry.&lt;/li&gt;&lt;li&gt;Stable interpreters can concentrate complexity more cleanly than endlessly evolving wire formats and parsers.&lt;/li&gt;&lt;li&gt;Sending programs introduces security, debuggability, and termination concerns, so it is an architectural tradeoff, not a free win.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] I learned something about GPUs today</title>
-      <link>https://www.reddit.com/r/programming/comments/1sk9bhg/i_learned_something_about_gpus_today/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-14/140d92554c768db0de212e6e3aadba271dbbb822</guid>
-      <pubDate>Tue, 14 Apr 2026 08:40:57 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;This debugging writeup shows how per-instance integer-like data became unstable in a fragment shader because perspective-correct interpolation introduced tiny float drift on some GPUs. It is worth keeping because it captures a concrete GPU mental model that many experienced application developers still miss.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Writing the same value to every vertex of a triangle does not guarantee identical values in every fragment on real hardware.&lt;/li&gt;&lt;li&gt;Float carriers for categorical or integer-like data can produce hardware-specific off-by-one behavior across shader stages.&lt;/li&gt;&lt;li&gt;Tiny biasing tricks or non-interpolated paths are often safer when shader data represents categories rather than measurements.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] A bug on the dark side of the Moon</title>
-      <link>https://www.reddit.com/r/programming/comments/1sk962j/a_bug_on_the_dark_side_of_the_moon/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-14/2bc2e25696bc4951eb1646fb0fa721599024cbe0</guid>
-      <pubDate>Tue, 14 Apr 2026 08:40:57 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;This piece describes finding a lock leak in Apollo Guidance Computer gyro code by distilling assembly into behavioral specifications with Allium. It is worth keeping because it combines historical failure analysis with a strong example of specification-driven auditing surfacing bugs in famous codebases.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Heavily read or historically important code can still hide simple error-path bugs when scrutiny stays informal.&lt;/li&gt;&lt;li&gt;Behavioral specs are useful compression because they model lifecycle constraints that raw code browsing can miss.&lt;/li&gt;&lt;li&gt;The most revealing defects often live in abnormal exits where general cleanup runs and resource-specific cleanup does not.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] Anti-patterns in event modelling - Passive Aggressive Events</title>
-      <link>https://www.reddit.com/r/programming/comments/1sk7epc/antipatterns_in_event_modelling_passive/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-14/4b999d33085892dfc9d87f00c7c7abd6d095af9a</guid>
-      <pubDate>Tue, 14 Apr 2026 08:40:57 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;This article argues that many event-driven designs hide commands behind event language and then act surprised when critical-path workflows become brittle. It is worth keeping because it offers a clean test for separating true events from coordination messages that need explicit ownership and observability.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;If one specific consumer must take one specific next action, the message is effectively a command.&lt;/li&gt;&lt;li&gt;Events can be ignored, but commands can be rejected, and that difference shapes failure handling.&lt;/li&gt;&lt;li&gt;Critical-path workflows benefit from explicit coordinators and observability rather than passive chains of expected follow-up events.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] Why I built a new HTTP client after working on HTTPX</title>
-      <link>https://www.reddit.com/r/programming/comments/1sk70tx/why_i_built_a_new_http_client_after_working_on/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-14/a355f5b553c973ee339b20b46e31f82b2b39e13a</guid>
-      <pubDate>Tue, 14 Apr 2026 08:40:57 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;This reflection from a former HTTPX maintainer argues that most HTTP clients couple HTTP semantics and transport mechanics too tightly. It is worth keeping because the separation it proposes is a portable design lesson, not just a library announcement.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;HTTP protocol behavior and transport behavior evolve at different speeds and deserve separate layers.&lt;/li&gt;&lt;li&gt;Strict protocol-transport separation improves testability and makes backend swaps less disruptive.&lt;/li&gt;&lt;li&gt;Many complaints about a client being slow are really complaints about its transport implementation, not its HTTP semantics.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Philosophy] Pluralistic: In praise of (some) compartmentalization (14 Apr 2026)</title>
+      <link>https://pluralistic.net/2026/04/14/compartment/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-14/9fe5970b4dbc570b3057d942155eb909aee188b4</guid>
+      <pubDate>Tue, 14 Apr 2026 11:42:00 +0000</pubDate>
+      <category>Philosophy</category>
+      <description>&lt;p&gt;Doctorow separates useful compartmentalization from passive escape by contrasting goal-directed flow with the low-purpose distraction he calls zombie flow. It is worth keeping because it offers a durable model for directing attention under stress without drifting into AI-slop habits or using work to avoid necessary emotional labor.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Flow is most useful when it has a clear goal and an achievable challenge; passive scrolling removes purpose while preserving the trance.&lt;/li&gt;&lt;li&gt;Compartmentalization helps when it cools reactive emotion and makes deliberate action possible.&lt;/li&gt;&lt;li&gt;The same habit turns harmful when work becomes an excuse to defer obligations to people who actually need attention.&lt;/li&gt;&lt;li&gt;Recommendation systems and AI slop optimize for familiarity and frictionless engagement, which produces zombie flow rather than satisfaction.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
