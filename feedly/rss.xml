@@ -4,14 +4,46 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Tue, 14 Apr 2026 11:42:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2026 07:19:55 +0000</lastBuildDate>
     <item>
-      <title>[Philosophy] Pluralistic: In praise of (some) compartmentalization (14 Apr 2026)</title>
-      <link>https://pluralistic.net/2026/04/14/compartment/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-14/9fe5970b4dbc570b3057d942155eb909aee188b4</guid>
-      <pubDate>Tue, 14 Apr 2026 11:42:00 +0000</pubDate>
-      <category>Philosophy</category>
-      <description>&lt;p&gt;Doctorow separates useful compartmentalization from passive escape by contrasting goal-directed flow with the low-purpose distraction he calls zombie flow. It is worth keeping because it offers a durable model for directing attention under stress without drifting into AI-slop habits or using work to avoid necessary emotional labor.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Flow is most useful when it has a clear goal and an achievable challenge; passive scrolling removes purpose while preserving the trance.&lt;/li&gt;&lt;li&gt;Compartmentalization helps when it cools reactive emotion and makes deliberate action possible.&lt;/li&gt;&lt;li&gt;The same habit turns harmful when work becomes an excuse to defer obligations to people who actually need attention.&lt;/li&gt;&lt;li&gt;Recommendation systems and AI slop optimize for familiarity and frictionless engagement, which produces zombie flow rather than satisfaction.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Informatics] The Radio State Machine</title>
+      <link>https://css-tricks.com/the-radio-state-machine/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-15/3dc4b6db75ac99b6e063f3ba3824c3e3b3aa8a2e</guid>
+      <pubDate>Wed, 15 Apr 2026 07:19:55 +0000</pubDate>
+      <category>Informatics</category>
+      <description>&lt;p&gt;Amit Sheen shows how hidden checkboxes, radio groups, labels, and modern selectors can express small visual state machines entirely in CSS. It is worth keeping because it gives a concrete frontend pattern for UI state that is purely presentational and does not justify JavaScript orchestration.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;CSS state tricks are appropriate when the state is visual and ephemeral, such as toggles, panels, and mode switches.&lt;/li&gt;&lt;li&gt;Radio groups turn one-off checkbox hacks into explicit finite-state transitions with mutually exclusive modes.&lt;/li&gt;&lt;li&gt;Keeping purely visual state in CSS keeps behavior close to presentation and avoids unnecessary JavaScript coupling.&lt;/li&gt;&lt;li&gt;The boundary matters: business rules, persistence, and data-dependent behavior still belong in JavaScript.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] The real work of maintenance happens before you touch the code</title>
+      <link>https://www.reddit.com/r/programming/comments/1slab5m/the_real_work_of_maintenance_happens_before_you/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-15/a696a971a8ba0d9ac074f57b4015e5c62ba215f8</guid>
+      <pubDate>Wed, 15 Apr 2026 07:19:55 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Rein Henrichs argues that maintenance work starts with preserving shared understanding, because engineers operate through partial representations such as logs, dashboards, and code rather than direct access to the system itself. It is worth keeping because it ties incidents, weak signals, and operational coordination into a single model of why complex systems become hard to maintain.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Maintainability depends on common ground between people, not only on cleaner code or fresher dependencies.&lt;/li&gt;&lt;li&gt;Operational artifacts are representations of reality; when they drift or stay fragmented, teams lose situational awareness.&lt;/li&gt;&lt;li&gt;Incident command is a coordination function that restores alignment under pressure instead of a purely technical control role.&lt;/li&gt;&lt;li&gt;SLOs capture customer-facing symptoms, while judgment, context, and shared understanding still govern most internal maintenance work.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Completion is a Substrate, not a UI</title>
+      <link>https://www.reddit.com/r/programming/comments/1sl77ob/completion_is_a_substrate_not_a_ui/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-15/9ce3c8d20ded051d82a91db8ff6d898324d0cb11</guid>
+      <pubDate>Wed, 15 Apr 2026 07:19:55 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Charlie Holland frames incremental completion as an interaction substrate for the common “pick a thing, act on it” pattern, not as a convenience widget layered on top of an existing interface. It is worth keeping because it offers a strong conceptual model for tool design that directly connects memory limits, interaction cost, and programmable developer workflows.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A large share of software workflows reduce to selection plus action, which makes completion architecture a high-leverage design surface.&lt;/li&gt;&lt;li&gt;Incremental completion lowers cognitive cost by narrowing candidate sets progressively instead of forcing recall or broad browsing.&lt;/li&gt;&lt;li&gt;The useful abstraction is a stack of replaceable layers: candidate sources, matching, sorting, annotation, and actions.&lt;/li&gt;&lt;li&gt;Treating completion as infrastructure can change how tools and data are organized, not only how results are surfaced.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] How Traefik uses Kubernetes informers and dynamic config to update routing without restarts</title>
+      <link>https://www.reddit.com/r/programming/comments/1sl4n6o/how_traefik_uses_kubernetes_informers_and_dynamic/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-15/481f3b85e93ea49d6fdabbde452b28349139a1b4</guid>
+      <pubDate>Wed, 15 Apr 2026 07:19:55 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;This walkthrough traces Traefik’s hot-reload path from Kubernetes informers through provider aggregation, configuration watchers, and handler switching. It is worth keeping because it gives a concrete mental model for how a gateway can apply routing changes live during rollouts without restarting the server.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Providers watch cluster resources such as Ingresses, Services, EndpointSlices, Secrets, and CRDs, then rebuild dynamic configuration when events arrive.&lt;/li&gt;&lt;li&gt;A configuration watcher fans those updates out to listeners that swap the active request handler for future traffic.&lt;/li&gt;&lt;li&gt;Request handling stays decoupled from configuration discovery, which makes live updates practical and keeps control flow understandable.&lt;/li&gt;&lt;li&gt;Rolling deployments work because backend endpoint changes propagate through the runtime pipeline quickly enough for new requests to hit fresh pods.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Contributing Callsite Revalidation Opt-out to React Router</title>
+      <link>https://dev.to/pavkode/contributing-to-react-router-implementing-callsite-revalidation-opt-out-without-prior-experience-1k8f</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-15/479c8829cb873f635f2d2ec2c3990bac6357dd22</guid>
+      <pubDate>Wed, 15 Apr 2026 07:19:55 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Pavel Kostromin explains a narrowly scoped React Router contribution that lets callers opt out of broad automatic revalidation at the callsite instead of scattering route-level guards across the tree. It is worth keeping because it combines a concrete frontend data-flow improvement with a useful account of how to land a change inside a mature open-source codebase.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Route-level revalidation hooks are too diffuse for localized mutations that should not trigger a full stack of loader reruns.&lt;/li&gt;&lt;li&gt;A callsite default gives the mutation initiator direct control over refresh breadth while preserving route-level override logic.&lt;/li&gt;&lt;li&gt;Clear problem framing and a modular extension point matter more than prior codebase familiarity when contributing to established projects.&lt;/li&gt;&lt;li&gt;Tooling friction inside bundled or generated code can be the real blocker to debugging, even when the feature itself is conceptually simple.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
