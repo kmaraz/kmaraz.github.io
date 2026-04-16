@@ -4,38 +4,22 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Wed, 15 Apr 2026 22:12:16 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2026 12:55:05 +0000</lastBuildDate>
     <item>
-      <title>[Engineering] TBM 416: Investment Stewardship (As Habit)</title>
-      <link>https://cutlefish.substack.com/p/tbm-416-investment-stewardship-as</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-15/6119a2af08b145e35c2703560adb68a8cf87dcbf</guid>
-      <pubDate>Wed, 15 Apr 2026 22:12:16 +0000</pubDate>
-      <category>Engineering</category>
-      <description>&lt;p&gt;John Cutler argues that engineering ROI is a stewardship practice, not a spreadsheet exercise: teams earn the right to talk about return only by building leading indicators, explicit bets, and hiring discipline over time. It is worth keeping because it gives a durable frame for evaluating engineering investment without collapsing into vanity metrics or fake precision.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Engineering ROI work starts long before a finance challenge, through repeated habit-building around leading indicators, hypotheses, and updates.&lt;/li&gt;&lt;li&gt;Headcount is a stewardship question; adding people to a dysfunctional system often hides the underlying problem instead of improving return.&lt;/li&gt;&lt;li&gt;Useful investment models are directional and iterative, which makes honest proxies and Bayesian-style updates more valuable than precise-looking nonsense.&lt;/li&gt;&lt;li&gt;Finance conversations improve when product and engineering teams make the causal chain explicit and accept that many outcomes arrive with long lags.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Frontend] Encoding team standards</title>
+      <link>https://martinfowler.com/articles/reduce-friction-ai/encoding-team-standards.html</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-16-14-38/d223187555c51d0a6107c869bda913039fa5d893</guid>
+      <pubDate>Thu, 16 Apr 2026 12:55:05 +0000</pubDate>
+      <category>Frontend</category>
+      <description><p>Rahul Garg argues that team-specific AI instructions should move from personal prompting habits into versioned repository artifacts. It is worth keeping because it turns AI-assisted coding consistency into an infrastructure problem with a concrete operating model for generation, review, and security workflows.</p><ul><li>Treat AI instructions like shared config: version them, review them in pull requests, and keep them in the repo.</li><li>Encode priorities and severity thresholds in the instructions so team judgment executes consistently across different developers.</li><li>Start with one high-leverage instruction, usually generation or review, then expand only after adoption exposes real gaps.</li><li>Use incidents, review drift, and repeated corrections as input for updating the instruction set, just like any other engineering infrastructure.</li></ul></description>
     </item>
     <item>
-      <title>[Reddit Programming] Dealing with a Team with primitive Infra that seems fine with it. Cultural Mismatch?</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1smeh9m/dealing_with_a_team_with_primitive_infra_that/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-15/a1f7a16fd88aaade2afa795a3c352ef55e2637f5</guid>
-      <pubDate>Wed, 15 Apr 2026 22:12:16 +0000</pubDate>
+      <title>[Reddit Programming] Dependency cooldown using the publish age as a signal for package resolution</title>
+      <link>https://github.com/safedep/pmg/blob/main/docs/dependency-cooldown.md</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-16-14-38/25949893cd79ce5688ab69342fcca0c2689118db</guid>
+      <pubDate>Thu, 16 Apr 2026 12:55:05 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;This `r/ExperiencedDevs` thread starts with a team trapped in bloated microservices, weak observability, and constant firefighting, then converges on a more useful response than “rebuild the platform”: tie infra work to repeated pain, start with one small leverage point, and avoid cargo-cult complexity. It is worth keeping because it sharpens the difference between intentionally simple infrastructure and underpowered infrastructure that quietly taxes every incident and release.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Microservices without tracing, log management, service discovery, and usable test environments create an outsized debugging tax.&lt;/li&gt;&lt;li&gt;Infrastructure work gets traction when it is attached to visible recurring pain such as broken releases, outage triage, or repetitive arguments.&lt;/li&gt;&lt;li&gt;The practical move is incremental: buy back a little time with one well-chosen improvement, then compound from there.&lt;/li&gt;&lt;li&gt;Simple infrastructure can be correct for low-complexity systems, so the real question is fitness for operational load rather than prestige tooling.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] As agents write more code, how do you maintain your mental model of the system?</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1sm7s9d/as_agents_write_more_code_how_do_you_maintain/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-15/8452e5958e42d85742549e4534e2fb18e2a001c5</guid>
-      <pubDate>Wed, 15 Apr 2026 22:12:16 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;The thread asks how engineers stay oriented when agents generate most of the implementation, and the best answers converge on the same point: understanding now has to be preserved through explicit architecture, decomposition, and review discipline. It is worth keeping because it turns a vague fear about AI detachment into a concrete operating model for maintaining debugging ability and system judgment.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A usable mental model comes from knowing service boundaries, message flow, and responsibility splits, even when the agent writes the code.&lt;/li&gt;&lt;li&gt;Planning and decomposition remain the control points where engineers keep ownership of the system shape.&lt;/li&gt;&lt;li&gt;Reading generated code still matters, especially for incident response and for checking that the implementation matches the intended architecture.&lt;/li&gt;&lt;li&gt;Post-hoc documentation helps, though it is weaker than designing the structure first and verifying the generated changes against it.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] My company embraces vibe coders</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1slxc6c/my_company_embraces_vibe_coders/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-15/468a2b12bdedf634cffb63a846c2593582370f90</guid>
-      <pubDate>Wed, 15 Apr 2026 22:12:16 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;This thread is partly a vent and partly a field report on what uncontrolled vibe coding looks like inside an existing organization: hidden runtime costs, cleanup work pushed onto experienced engineers, and teams treating generated output as if standards no longer apply. It is worth keeping because the comments quickly turn that frustration into concrete governance advice around surfacing cost, enforcing quality gates, and making low-quality AI output impossible to ignore.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The first visible failure mode is often operational cost or wasteful polling, not only ugly code style.&lt;/li&gt;&lt;li&gt;Specs, linting, tests, and pipeline enforcement are the practical boundary between experimentation and unbounded code slop.&lt;/li&gt;&lt;li&gt;Experienced engineers should expose the impact of low-quality AI output instead of silently absorbing the cleanup burden.&lt;/li&gt;&lt;li&gt;AI adoption without ownership and quality controls redistributes toil upward to the people already responsible for reliability.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description><p>PMG&apos;s dependency cooldown filters very recent package versions out of registry metadata during version resolution. It is worth keeping because it is a concrete, low-friction supply-chain defense that reduces exposure to freshly published malicious or broken releases without changing normal semver ranges.</p><ul><li>Cooldown acts at metadata resolution time, so the package manager falls back to older eligible versions automatically when the version range allows it.</li><li>If only too-new versions satisfy the range, the install fails explicitly instead of silently selecting a risky fresh publish.</li><li>The control currently depends on proxy mode and covers npm; direct tarball installs and some lockfile or cache-based flows bypass it.</li><li>A per-command skip flag preserves an emergency escape hatch without removing the default policy for normal installs.</li></ul></description>
     </item>
   </channel>
 </rss>
