@@ -4,22 +4,46 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Thu, 16 Apr 2026 12:55:05 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Apr 2026 07:51:31 +0000</lastBuildDate>
     <item>
-      <title>[Frontend] Encoding team standards</title>
-      <link>https://martinfowler.com/articles/reduce-friction-ai/encoding-team-standards.html</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-16-14-38/d223187555c51d0a6107c869bda913039fa5d893</guid>
-      <pubDate>Thu, 16 Apr 2026 12:55:05 +0000</pubDate>
-      <category>Frontend</category>
-      <description><p>Rahul Garg argues that team-specific AI instructions should move from personal prompting habits into versioned repository artifacts. It is worth keeping because it turns AI-assisted coding consistency into an infrastructure problem with a concrete operating model for generation, review, and security workflows.</p><ul><li>Treat AI instructions like shared config: version them, review them in pull requests, and keep them in the repo.</li><li>Encode priorities and severity thresholds in the instructions so team judgment executes consistently across different developers.</li><li>Start with one high-leverage instruction, usually generation or review, then expand only after adoption exposes real gaps.</li><li>Use incidents, review drift, and repeated corrections as input for updating the instruction set, just like any other engineering infrastructure.</li></ul></description>
+      <title>[Engineering] TBM 417: Before You Fire All Your Glue People Because of AI</title>
+      <link>https://cutlefish.substack.com/p/tbm-417-before-you-fire-all-your</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-17/95a195163c12b6566d0850d9f90041d986c64a62</guid>
+      <pubDate>Fri, 17 Apr 2026 07:51:31 +0000</pubDate>
+      <category>Engineering</category>
+      <description>&lt;p&gt;John Cutler examines how organizations misapply AI heuristics to invisible coordination work and end up stripping out the people who preserve context, follow-through, and cross-team coherence. It is worth keeping because it gives a durable test for deciding which work AI can accelerate and which work still depends on human glue.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Visible artifacts are a weak proxy for the coordination work underneath them; replacing the person while keeping the artifact can hollow out the system.&lt;/li&gt;&lt;li&gt;AI is strongest on work that teams already agree should happen and can describe clearly; ambiguous cross-functional maintenance needs a higher skepticism level.&lt;/li&gt;&lt;li&gt;Staff reductions driven by surface-level heuristics can create delayed structural failures that only appear after the coordinating people are gone.&lt;/li&gt;&lt;li&gt;Evaluate candidate AI substitutions by tracing who currently creates context, drives follow-through, and resolves edge-case ambiguity.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Dependency cooldown using the publish age as a signal for package resolution</title>
-      <link>https://github.com/safedep/pmg/blob/main/docs/dependency-cooldown.md</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-16-14-38/25949893cd79ce5688ab69342fcca0c2689118db</guid>
-      <pubDate>Thu, 16 Apr 2026 12:55:05 +0000</pubDate>
+      <title>[Informatics] A Well-Designed JavaScript Module System is Your First Architecture Decision</title>
+      <link>https://css-tricks.com/the-javascript-module-system-architecture/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-17/1116047fe1fcb48ff4153d8da76370ab6f57f1c8</guid>
+      <pubDate>Fri, 17 Apr 2026 07:51:31 +0000</pubDate>
+      <category>Informatics</category>
+      <description>&lt;p&gt;Victor Amejimaobari argues that JavaScript modules define system boundaries, dependency direction, and team interfaces, then uses module graphs, barrel files, and coupling failures to show how module choices become architectural decisions. It is worth keeping because it turns everyday import and export choices into a concrete frontend maintainability model.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;ESM static imports improve analyzability and tree-shaking, so module-system constraints shape build behavior as much as runtime behavior.&lt;/li&gt;&lt;li&gt;Module graphs expose circular dependencies, overloaded utility modules, and boundary violations early enough to prevent large refactors later.&lt;/li&gt;&lt;li&gt;Barrel files trade import convenience for build-time and bundle-size costs that become material in large frontends.&lt;/li&gt;&lt;li&gt;Module boundaries tend to mirror team boundaries, so ownership and communication patterns show up directly in architecture.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Programming] Capacity Efficiency at Meta: How Unified AI Agents Optimize Performance at Hyperscale</title>
+      <link>https://engineering.fb.com/2026/04/16/developer-tools/capacity-efficiency-at-meta-how-unified-ai-agents-optimize-performance-at-hyperscale/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-17/ae58d0f241447e722c5d34bd05a86f33cc54bfa9</guid>
+      <pubDate>Fri, 17 Apr 2026 07:51:31 +0000</pubDate>
+      <category>Programming</category>
+      <description>&lt;p&gt;Meta describes a unified agent platform for performance engineering that combines standardized tools with domain-specific skills, then reuses the same foundation for regression mitigation and proactive optimization. It is worth keeping because it is one of the clearest large-scale examples of AI agents as infrastructure instead of chat wrappers.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A shared tool layer plus separate skill layers lets one agent platform support both reactive incident work and proactive optimization work.&lt;/li&gt;&lt;li&gt;Encoded expert reasoning shortens the path from regression signal to ready-to-review fix, which removes investigation as the main scaling bottleneck.&lt;/li&gt;&lt;li&gt;The platform design centers on reusable context gathering, validation criteria, and guardrails, which makes new agent workflows cheaper to add.&lt;/li&gt;&lt;li&gt;Reviewing AI-generated fixes can free senior engineers from repetitive triage and move their time toward higher-leverage product work.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Programming] Post-Quantum Cryptography Migration at Meta: Framework, Lessons, and Takeaways</title>
+      <link>https://engineering.fb.com/2026/04/16/security/post-quantum-cryptography-migration-at-meta-framework-lessons-and-takeaways/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-17/55a42ca08402276a7c21bfe8b0177f63d042002e</guid>
+      <pubDate>Fri, 17 Apr 2026 07:51:31 +0000</pubDate>
+      <category>Programming</category>
+      <description>&lt;p&gt;Meta lays out a post-quantum migration framework built around prioritization, cryptographic inventory, external dependency tracking, guardrails, and staged maturity levels from awareness to deployment. It is worth keeping because it turns a vague future-security concern into an operational migration program.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;PQC readiness starts with inventory and prioritization, because teams cannot migrate what they have not mapped or ranked.&lt;/li&gt;&lt;li&gt;Migration levels provide a planning language for partial progress, which helps teams move before every dependency is resolved.&lt;/li&gt;&lt;li&gt;Guardrails matter alongside rollout: deprecating vulnerable key generation and API usage reduces fresh quantum debt during the migration.&lt;/li&gt;&lt;li&gt;Hybrid deployments provide a practical safety margin while PQC standards, hardware support, and implementations continue to mature.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Reality check around requirements management</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1sn3v5u/reality_check_around_requirements_management/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-17/9fc502d9bf3be039693c3ef8e5c3d027023b2f74</guid>
+      <pubDate>Fri, 17 Apr 2026 07:51:31 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description><p>PMG&apos;s dependency cooldown filters very recent package versions out of registry metadata during version resolution. It is worth keeping because it is a concrete, low-friction supply-chain defense that reduces exposure to freshly published malicious or broken releases without changing normal semver ranges.</p><ul><li>Cooldown acts at metadata resolution time, so the package manager falls back to older eligible versions automatically when the version range allows it.</li><li>If only too-new versions satisfy the range, the install fails explicitly instead of silently selecting a risky fresh publish.</li><li>The control currently depends on proxy mode and covers npm; direct tarball installs and some lockfile or cache-based flows bypass it.</li><li>A per-command skip flag preserves an emergency escape hatch without removing the default policy for normal installs.</li></ul></description>
+      <description>&lt;p&gt;This r/ExperiencedDevs thread describes a long-lived enterprise system whose requirements were reverse-engineered into a structured repository, then allowed to decay back into scattered files, oral history, and dead tooling. It is worth keeping because it captures the operational cost of treating system behavior knowledge as optional documentation instead of core infrastructure.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Requirements knowledge decays quickly when the steady-state editing workflow is weaker than the original transformation workflow.&lt;/li&gt;&lt;li&gt;Deleting old trackers and document stores before migration completes destroys the recovery paths teams rely on for edge-case behavior.&lt;/li&gt;&lt;li&gt;Large domain-heavy systems accumulate month-long investigation cycles when behavior, rationale, and test intent are scattered across people and files.&lt;/li&gt;&lt;li&gt;Living specifications are a delivery asset for support, onboarding, testing, and safe change management.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
