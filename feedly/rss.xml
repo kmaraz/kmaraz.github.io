@@ -4,46 +4,46 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Fri, 17 Apr 2026 07:51:31 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Apr 2026 13:35:20 +0000</lastBuildDate>
     <item>
-      <title>[Engineering] TBM 417: Before You Fire All Your Glue People Because of AI</title>
-      <link>https://cutlefish.substack.com/p/tbm-417-before-you-fire-all-your</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-17/95a195163c12b6566d0850d9f90041d986c64a62</guid>
-      <pubDate>Fri, 17 Apr 2026 07:51:31 +0000</pubDate>
-      <category>Engineering</category>
-      <description>&lt;p&gt;John Cutler examines how organizations misapply AI heuristics to invisible coordination work and end up stripping out the people who preserve context, follow-through, and cross-team coherence. It is worth keeping because it gives a durable test for deciding which work AI can accelerate and which work still depends on human glue.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Visible artifacts are a weak proxy for the coordination work underneath them; replacing the person while keeping the artifact can hollow out the system.&lt;/li&gt;&lt;li&gt;AI is strongest on work that teams already agree should happen and can describe clearly; ambiguous cross-functional maintenance needs a higher skepticism level.&lt;/li&gt;&lt;li&gt;Staff reductions driven by surface-level heuristics can create delayed structural failures that only appear after the coordinating people are gone.&lt;/li&gt;&lt;li&gt;Evaluate candidate AI substitutions by tracing who currently creates context, drives follow-through, and resolves edge-case ambiguity.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Philosophy] Pluralistic: Tiktokification shall set us free (17 Apr 2026)</title>
+      <link>https://pluralistic.net/2026/04/17/for-youze/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-18/0fcebc4f90d20a2b77ac8f016c999598aa46706b</guid>
+      <pubDate>Sat, 18 Apr 2026 13:35:20 +0000</pubDate>
+      <category>Philosophy</category>
+      <description>&lt;p&gt;Doctorow argues that platforms envy TikTok-style feeds because creators and AI slop can be optimized for engagement more predictably than friends, so social platforms are deliberately replacing the non-fungible social graph with interchangeable content. It is worth keeping because it provides a durable model for why algorithmic feeds and AI-generated media can weaken the very lock-in that made social networks valuable.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Friends are the platform&amp;#x27;s stickiest asset because shared history is non-fungible and hard to replace elsewhere.&lt;/li&gt;&lt;li&gt;Reels, creators, and AI slop are fungible, which makes feeds easier to swap across competing platforms.&lt;/li&gt;&lt;li&gt;Platforms are trading long-term moat for short-term engagement by suppressing friend activity in favor of interchangeable content.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Informatics] A Well-Designed JavaScript Module System is Your First Architecture Decision</title>
-      <link>https://css-tricks.com/the-javascript-module-system-architecture/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-17/1116047fe1fcb48ff4153d8da76370ab6f57f1c8</guid>
-      <pubDate>Fri, 17 Apr 2026 07:51:31 +0000</pubDate>
-      <category>Informatics</category>
-      <description>&lt;p&gt;Victor Amejimaobari argues that JavaScript modules define system boundaries, dependency direction, and team interfaces, then uses module graphs, barrel files, and coupling failures to show how module choices become architectural decisions. It is worth keeping because it turns everyday import and export choices into a concrete frontend maintainability model.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;ESM static imports improve analyzability and tree-shaking, so module-system constraints shape build behavior as much as runtime behavior.&lt;/li&gt;&lt;li&gt;Module graphs expose circular dependencies, overloaded utility modules, and boundary violations early enough to prevent large refactors later.&lt;/li&gt;&lt;li&gt;Barrel files trade import convenience for build-time and bundle-size costs that become material in large frontends.&lt;/li&gt;&lt;li&gt;Module boundaries tend to mirror team boundaries, so ownership and communication patterns show up directly in architecture.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Psychology] From Animal to Humans - Multimodality as a safeguard of honesty in communication and language</title>
+      <link>https://mindblog.dericbownds.net/2026/04/from-animal-to-humans-multimodality-as.html</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-18/a343ae06ac8577b4c4bb66ad6e939a713189793d</guid>
+      <pubDate>Sat, 18 Apr 2026 13:35:20 +0000</pubDate>
+      <category>Psychology</category>
+      <description>&lt;p&gt;This post summarizes an upcoming paper arguing that multimodal communication helps preserve honesty through cross-validation and harder-to-fake signal combinations, then adds a sharper commentary about digital environments where signals are already recombined by platforms and algorithms. It is worth keeping because it offers a useful model for evaluating communication quality in AI-mediated and socially mediated systems.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Multiple channels can improve honesty when they originate from one coherent source and can cross-check one another.&lt;/li&gt;&lt;li&gt;Digital platforms weaken that assumption by mixing personal intent with group style, packaging, ranking, and algorithmic amplification.&lt;/li&gt;&lt;li&gt;Reliable interpretation now requires reading the message, the framing conditions, and the circulation path together.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Programming] Capacity Efficiency at Meta: How Unified AI Agents Optimize Performance at Hyperscale</title>
-      <link>https://engineering.fb.com/2026/04/16/developer-tools/capacity-efficiency-at-meta-how-unified-ai-agents-optimize-performance-at-hyperscale/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-17/ae58d0f241447e722c5d34bd05a86f33cc54bfa9</guid>
-      <pubDate>Fri, 17 Apr 2026 07:51:31 +0000</pubDate>
-      <category>Programming</category>
-      <description>&lt;p&gt;Meta describes a unified agent platform for performance engineering that combines standardized tools with domain-specific skills, then reuses the same foundation for regression mitigation and proactive optimization. It is worth keeping because it is one of the clearest large-scale examples of AI agents as infrastructure instead of chat wrappers.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A shared tool layer plus separate skill layers lets one agent platform support both reactive incident work and proactive optimization work.&lt;/li&gt;&lt;li&gt;Encoded expert reasoning shortens the path from regression signal to ready-to-review fix, which removes investigation as the main scaling bottleneck.&lt;/li&gt;&lt;li&gt;The platform design centers on reusable context gathering, validation criteria, and guardrails, which makes new agent workflows cheaper to add.&lt;/li&gt;&lt;li&gt;Reviewing AI-generated fixes can free senior engineers from repetitive triage and move their time toward higher-leverage product work.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Programming] Post-Quantum Cryptography Migration at Meta: Framework, Lessons, and Takeaways</title>
-      <link>https://engineering.fb.com/2026/04/16/security/post-quantum-cryptography-migration-at-meta-framework-lessons-and-takeaways/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-17/55a42ca08402276a7c21bfe8b0177f63d042002e</guid>
-      <pubDate>Fri, 17 Apr 2026 07:51:31 +0000</pubDate>
-      <category>Programming</category>
-      <description>&lt;p&gt;Meta lays out a post-quantum migration framework built around prioritization, cryptographic inventory, external dependency tracking, guardrails, and staged maturity levels from awareness to deployment. It is worth keeping because it turns a vague future-security concern into an operational migration program.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;PQC readiness starts with inventory and prioritization, because teams cannot migrate what they have not mapped or ranked.&lt;/li&gt;&lt;li&gt;Migration levels provide a planning language for partial progress, which helps teams move before every dependency is resolved.&lt;/li&gt;&lt;li&gt;Guardrails matter alongside rollout: deprecating vulnerable key generation and API usage reduces fresh quantum debt during the migration.&lt;/li&gt;&lt;li&gt;Hybrid deployments provide a practical safety margin while PQC standards, hardware support, and implementations continue to mature.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] Reality check around requirements management</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1sn3v5u/reality_check_around_requirements_management/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-17/9fc502d9bf3be039693c3ef8e5c3d027023b2f74</guid>
-      <pubDate>Fri, 17 Apr 2026 07:51:31 +0000</pubDate>
+      <title>[Reddit Programming] Saving challenging projects was my niche, but AI codebases are making me miserable</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1sosciu/saving_challenging_projects_was_my_niche_but_ai/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-18/fe79d824cbd92155a78b4ea52d5e55ebc0afee87</guid>
+      <pubDate>Sat, 18 Apr 2026 13:35:20 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;This r/ExperiencedDevs thread describes a long-lived enterprise system whose requirements were reverse-engineered into a structured repository, then allowed to decay back into scattered files, oral history, and dead tooling. It is worth keeping because it captures the operational cost of treating system behavior knowledge as optional documentation instead of core infrastructure.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Requirements knowledge decays quickly when the steady-state editing workflow is weaker than the original transformation workflow.&lt;/li&gt;&lt;li&gt;Deleting old trackers and document stores before migration completes destroys the recovery paths teams rely on for edge-case behavior.&lt;/li&gt;&lt;li&gt;Large domain-heavy systems accumulate month-long investigation cycles when behavior, rationale, and test intent are scattered across people and files.&lt;/li&gt;&lt;li&gt;Living specifications are a delivery asset for support, onboarding, testing, and safe change management.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;This r/ExperiencedDevs thread comes from an engineer who used to rescue troubled systems and argues that AI-generated codebases are harder to recover because they expand surface area and erase the local reasoning that makes manual rehabilitation possible. It is worth keeping because it describes the maintenance-side failure mode of AI-assisted coding more concretely than generic AI-slop complaints.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Repairability depends on coherent local conventions and traceable intent, not only on feature output speed.&lt;/li&gt;&lt;li&gt;AI-assisted expansion can turn rescue work into archaeology because many changes are superficially valid yet semantically ungrounded.&lt;/li&gt;&lt;li&gt;Teams need stricter review boundaries, ownership, and pruning discipline when AI increases code volume.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] How do I handle a vibecoding manager</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1soamj0/how_do_i_handle_a_vibecoding_manager/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-18/e6f1c4a57e88b8836957ff0b85eff589bf6df52b</guid>
+      <pubDate>Sat, 18 Apr 2026 13:35:20 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;This r/ExperiencedDevs thread describes a new infrastructure manager opening Claude-generated PRs and meaningless tests in a core service without understanding the system. It is worth keeping because it treats unsafe AI use as a management and governance problem instead of a prompt-quality problem.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Authority plus shallow context can inject low-quality AI changes faster than teams can safely review them.&lt;/li&gt;&lt;li&gt;Evidence-based pushback should focus on broken invariants, useless tests, and operational risk.&lt;/li&gt;&lt;li&gt;Core services need explicit standards for ownership, review depth, and when AI-generated changes are unacceptable.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] What do you call this problem, and how do you deal with it? The "it will be fixed in the new version, so lets not put any work into the old version"</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1so6xls/what_do_you_call_this_problem_and_how_do_you_deal/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-18/fe38aad9f7604201d4c464963a47de02ac717cfc</guid>
+      <pubDate>Sat, 18 Apr 2026 13:35:20 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;This r/ExperiencedDevs discussion names the familiar trap where a promised rewrite becomes the excuse for neglecting the current system even though the migration takes far longer than planned. It is worth keeping because it gives a durable framing for modernization debt as a governance failure.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Rewrite promises do not remove the need for minimum viable controls and maintenance in the current system.&lt;/li&gt;&lt;li&gt;The longer cutover takes, the more unmanaged pain compounds in the supposedly temporary legacy path.&lt;/li&gt;&lt;li&gt;Teams need explicit criteria for what still gets fixed, documented, and versioned before the replacement is real.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
