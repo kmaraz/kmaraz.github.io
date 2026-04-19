@@ -4,46 +4,38 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Sat, 18 Apr 2026 13:35:20 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 Apr 2026 15:21:31 +0000</lastBuildDate>
     <item>
-      <title>[Philosophy] Pluralistic: Tiktokification shall set us free (17 Apr 2026)</title>
-      <link>https://pluralistic.net/2026/04/17/for-youze/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-18/0fcebc4f90d20a2b77ac8f016c999598aa46706b</guid>
-      <pubDate>Sat, 18 Apr 2026 13:35:20 +0000</pubDate>
-      <category>Philosophy</category>
-      <description>&lt;p&gt;Doctorow argues that platforms envy TikTok-style feeds because creators and AI slop can be optimized for engagement more predictably than friends, so social platforms are deliberately replacing the non-fungible social graph with interchangeable content. It is worth keeping because it provides a durable model for why algorithmic feeds and AI-generated media can weaken the very lock-in that made social networks valuable.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Friends are the platform&amp;#x27;s stickiest asset because shared history is non-fungible and hard to replace elsewhere.&lt;/li&gt;&lt;li&gt;Reels, creators, and AI slop are fungible, which makes feeds easier to swap across competing platforms.&lt;/li&gt;&lt;li&gt;Platforms are trading long-term moat for short-term engagement by suppressing friend activity in favor of interchangeable content.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Psychology] From Animal to Humans - Multimodality as a safeguard of honesty in communication and language</title>
-      <link>https://mindblog.dericbownds.net/2026/04/from-animal-to-humans-multimodality-as.html</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-18/a343ae06ac8577b4c4bb66ad6e939a713189793d</guid>
-      <pubDate>Sat, 18 Apr 2026 13:35:20 +0000</pubDate>
-      <category>Psychology</category>
-      <description>&lt;p&gt;This post summarizes an upcoming paper arguing that multimodal communication helps preserve honesty through cross-validation and harder-to-fake signal combinations, then adds a sharper commentary about digital environments where signals are already recombined by platforms and algorithms. It is worth keeping because it offers a useful model for evaluating communication quality in AI-mediated and socially mediated systems.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Multiple channels can improve honesty when they originate from one coherent source and can cross-check one another.&lt;/li&gt;&lt;li&gt;Digital platforms weaken that assumption by mixing personal intent with group style, packaging, ranking, and algorithmic amplification.&lt;/li&gt;&lt;li&gt;Reliable interpretation now requires reading the message, the framing conditions, and the circulation path together.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] Saving challenging projects was my niche, but AI codebases are making me miserable</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1sosciu/saving_challenging_projects_was_my_niche_but_ai/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-18/fe79d824cbd92155a78b4ea52d5e55ebc0afee87</guid>
-      <pubDate>Sat, 18 Apr 2026 13:35:20 +0000</pubDate>
+      <title>[Reddit Programming] owLSM Rule Creation and Evaluation</title>
+      <link>https://cybereason-public.github.io/owLSM/architecture/rule-evaluation.html</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-19/31b3bfc826227db12eb400c3ce5e974f2702edd0</guid>
+      <pubDate>Sun, 19 Apr 2026 15:21:31 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;This r/ExperiencedDevs thread comes from an engineer who used to rescue troubled systems and argues that AI-generated codebases are harder to recover because they expand surface area and erase the local reasoning that makes manual rehabilitation possible. It is worth keeping because it describes the maintenance-side failure mode of AI-assisted coding more concretely than generic AI-slop complaints.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Repairability depends on coherent local conventions and traceable intent, not only on feature output speed.&lt;/li&gt;&lt;li&gt;AI-assisted expansion can turn rescue work into archaeology because many changes are superficially valid yet semantically ungrounded.&lt;/li&gt;&lt;li&gt;Teams need stricter review boundaries, ownership, and pruning discipline when AI increases code volume.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;owLSM lays out an end-to-end design for compiling Sigma-like YAML rules into JSON tables and then into eBPF map structures, with postfix expressions, cached predicates, and precomputed DFAs handling evaluation in kernel space. It is worth keeping because it turns a vague rules-engine-in-eBPF idea into a concrete architecture with explicit staging boundaries and runtime tradeoffs.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Compile rich rule syntax into normalized predicate tables before it reaches constrained runtimes.&lt;/li&gt;&lt;li&gt;Use postfix tokens and stack evaluation to keep kernel-side rule execution simple and predictable.&lt;/li&gt;&lt;li&gt;Precompute contains and regex DFAs in userspace so expensive parsing stays off the hot path.&lt;/li&gt;&lt;li&gt;Partition rules by event type and cache predicate results per event to reduce repeated work.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] How do I handle a vibecoding manager</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1soamj0/how_do_i_handle_a_vibecoding_manager/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-18/e6f1c4a57e88b8836957ff0b85eff589bf6df52b</guid>
-      <pubDate>Sat, 18 Apr 2026 13:35:20 +0000</pubDate>
+      <title>[Reddit Programming] Optimizing Ruby Path Methods</title>
+      <link>https://byroot.github.io/ruby/performance/2026/04/18/faster-paths.html</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-19/b3ff0245f8417768683af1eb5460dd83003ed09d</guid>
+      <pubDate>Sun, 19 Apr 2026 15:21:31 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;This r/ExperiencedDevs thread describes a new infrastructure manager opening Claude-generated PRs and meaningless tests in a core service without understanding the system. It is worth keeping because it treats unsafe AI use as a management and governance problem instead of a prompt-quality problem.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Authority plus shallow context can inject low-quality AI changes faster than teams can safely review them.&lt;/li&gt;&lt;li&gt;Evidence-based pushback should focus on broken invariants, useless tests, and operational risk.&lt;/li&gt;&lt;li&gt;Core services need explicit standards for ownership, review depth, and when AI-generated changes are unacceptable.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Jean Boussier shows how Bootsnap and Ruby path handling were slowed by avoidable syscall patterns and conservative encoding logic, then tracks the fixes from profiling to API design, ending with Dir.scan and a much faster File.join. It is worth keeping because it is a concrete example of performance work that improves both local latency and massively parallel CI cost.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Profile setup-time hotspots because small per-worker costs compound across large CI fleets.&lt;/li&gt;&lt;li&gt;Use simple happy-path benchmarks to estimate optimization headroom before changing internals.&lt;/li&gt;&lt;li&gt;Add fast paths for dominant encodings and input shapes while preserving correctness for rare cases.&lt;/li&gt;&lt;li&gt;Expose the right filesystem metadata in the API to eliminate N+1 syscalls at the source.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] What do you call this problem, and how do you deal with it? The "it will be fixed in the new version, so lets not put any work into the old version"</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1so6xls/what_do_you_call_this_problem_and_how_do_you_deal/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-18/fe38aad9f7604201d4c464963a47de02ac717cfc</guid>
-      <pubDate>Sat, 18 Apr 2026 13:35:20 +0000</pubDate>
+      <title>[Reddit Programming] Reverse Engineering ME2's USB with a Heat Gun and a Knife</title>
+      <link>https://github.com/coremaze/ME2-Writeup</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-19/6f8cbac823051ace0ec7fce15d1eef3ea2b93ca7</guid>
+      <pubDate>Sun, 19 Apr 2026 15:21:31 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;This r/ExperiencedDevs discussion names the familiar trap where a promised rewrite becomes the excuse for neglecting the current system even though the migration takes far longer than planned. It is worth keeping because it gives a durable framing for modernization debt as a governance failure.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Rewrite promises do not remove the need for minimum viable controls and maintenance in the current system.&lt;/li&gt;&lt;li&gt;The longer cutover takes, the more unmanaged pain compounds in the supposedly temporary legacy path.&lt;/li&gt;&lt;li&gt;Teams need explicit criteria for what still gets fixed, documented, and versioned before the replacement is real.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;This write-up documents a full recovery path for an undocumented USB interface: dump flash, identify the hidden microcontroller by die-photo matching, recover the instruction set, trace vendor SCSI extensions, and exploit an out-of-bounds read to extract internal ROM. It is worth keeping because it is a high-signal case study in turning incomplete hardware clues into a working protocol implementation.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;When software artifacts are gone, hardware teardown plus firmware dumping can rebuild the protocol surface.&lt;/li&gt;&lt;li&gt;Instruction-set discovery can come from physical die identification as much as from binary analysis.&lt;/li&gt;&lt;li&gt;Known transports such as USB mass storage and SCSI provide strong anchors for naming unknown code paths.&lt;/li&gt;&lt;li&gt;Small command-handler bugs can become powerful reverse-engineering primitives such as arbitrary reads.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] What Really Happened in Y2K?</title>
+      <link>https://www.gresham.ac.uk/watch-now/what-really-happened-y2k</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-19/7eaa492f3cce1c4fc36b4fab6e25556c962e27ee</guid>
+      <pubDate>Sun, 19 Apr 2026 15:21:31 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Martyn Thomas argues that Y2K was a real systems risk that looked quiet in production because inventory work, remediation, and cross-industry coordination succeeded before the rollover. It is worth keeping because it reframes Y2K as a near miss and a concrete lesson in software engineering, resilience, and executive action.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Legacy representation shortcuts become systemic risk when the same assumption is embedded across many systems.&lt;/li&gt;&lt;li&gt;Inventory accuracy, supply-chain visibility, and deadline-driven governance were core parts of the Y2K remediation success.&lt;/li&gt;&lt;li&gt;Avoid single points of failure and excessive coupling because simultaneous faults create cascade risk.&lt;/li&gt;&lt;li&gt;Large preventive remediation programs can succeed when objectives, authority, and urgency are clear.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
