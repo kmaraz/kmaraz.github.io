@@ -4,54 +4,46 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Mon, 20 Apr 2026 05:33:59 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Apr 2026 16:27:38 +0000</lastBuildDate>
     <item>
-      <title>[Frontend] Under the hood of MDN's new frontend</title>
-      <link>https://developer.mozilla.org/en-US/blog/mdn-front-end-deep-dive/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-20/c848817388910444fe8ea50e68ef3bd69397a767</guid>
-      <pubDate>Mon, 20 Apr 2026 05:33:59 +0000</pubDate>
-      <category>Frontend</category>
-      <description>&lt;p&gt;MDN explains how it replaced a React SPA wrapper and tangled CSS/build setup with server-rendered HTML plus Lit web components for isolated interactive islands. It is worth keeping because it is a concrete frontend architecture refactor that shows how to cut hydration and maintenance cost on a content-heavy site without giving up rich interactivity.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Content-heavy sites can avoid SPA hydration overhead by combining static/server templating with small interactive islands.&lt;/li&gt;&lt;li&gt;Per-component CSS and JS loading reduces render-blocking bloat and cross-component regressions.&lt;/li&gt;&lt;li&gt;Lit and web components can support incremental migration even when an existing React app still exists.&lt;/li&gt;&lt;li&gt;Treat the content build pipeline as a first-class renderer instead of wrapping static HTML in an app shell.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Tech] Shopify Speed Optimization: Fixing The Real Bottlenecks</title>
+      <link>https://www.debugbear.com/blog/shopify-speed-optimization</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-20/dcd9ae096c5cea23774f1b793e6adc8da42233d1</guid>
+      <pubDate>Mon, 20 Apr 2026 16:27:38 +0000</pubDate>
+      <category>Tech</category>
+      <description>&lt;p&gt;DebugBear reframes Shopify performance work around bottlenecks users feel first: overweight hero media, synchronous carousel code, and third-party scripts that delay the initial paint. The practical value is the concrete sequencing and thresholds, including smaller hero assets, poster images before video, and treating app script execution order as a first-class architectural concern.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Optimize the hero section before lower-page assets because above-the-fold media dominates perceived speed and LCP.&lt;/li&gt;&lt;li&gt;Poster images preserve video-driven design without making the video file the initial rendering bottleneck.&lt;/li&gt;&lt;li&gt;Heavy carousel libraries hurt twice: transfer size and main-thread execution before the hero can paint.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Programming] Good APIs age slowly</title>
-      <link>https://yusufaytas.com/good-apis-age-slowly</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-20/010a681f5cc18670a0241c6fce195c6a7dd2b00c</guid>
-      <pubDate>Mon, 20 Apr 2026 05:33:59 +0000</pubDate>
-      <category>Programming</category>
-      <description>&lt;p&gt;Yusuf Aytas argues that API quality is measured by how well a contract survives new consumers, changing implementations, and shifting requirements, not by how elegant the first version looks. It is worth keeping because it compresses a durable API design mental model into a short piece focused on boundaries, coupling, and long-term maintenance cost.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Design contracts around stable domain concepts instead of current frontend payload shapes.&lt;/li&gt;&lt;li&gt;Expose less than feels convenient because visible internals quickly become obligations.&lt;/li&gt;&lt;li&gt;Convenient APIs often hide assumptions that later reappear as debugging and migration work.&lt;/li&gt;&lt;li&gt;Versioning does not repair unstable boundaries; it mainly relocates the cost.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] How do you interview someone with the expectation they'll be using AI tooling?</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1spb7g5/how_do_you_interview_someone_with_the_expectation/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-20/ca56e2c42a70ccb53af6976004ac10c34c6dfc29</guid>
-      <pubDate>Mon, 20 Apr 2026 05:33:59 +0000</pubDate>
+      <title>[Reddit Programming] Stripe’s payments APIs: The first 10 years</title>
+      <link>https://stripe.dev/blog/payment-api-design</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-20/36cdf64ffe6c7cc06782eeb58c2a0668896be6d3</guid>
+      <pubDate>Mon, 20 Apr 2026 16:27:38 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;This thread converges on a practical AI-era interview loop: evaluate debugging, code review, and reasoning under uncertainty instead of raw code generation speed. It is worth keeping because the comments turn vague “test AI usage” talk into concrete tactics such as seeded logic flaws, live explanation, and review-based exercises.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Make debugging and code review primary interview tasks when models can draft boilerplate quickly.&lt;/li&gt;&lt;li&gt;Seed non-syntactic flaws such as unsafe defaults or typosquatted dependencies to test judgment.&lt;/li&gt;&lt;li&gt;Require candidates to explain fixes live so understanding is measured directly.&lt;/li&gt;&lt;li&gt;Optimize interviews for error detection and reasoning quality, not tokens typed.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Michelle Bu’s retrospective shows how Stripe moved from a narrow Charge and Token model toward PaymentIntents by treating API evolution as a product-debt problem, not a sequence of additive parameters. The durable lesson is that a unified contract needs predictable states and guarantees across payment methods before it needs elegance.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;API product debt accumulates when each new edge case becomes another flag instead of a model change.&lt;/li&gt;&lt;li&gt;Payment abstractions should encode initiation and finalization semantics consistently across methods.&lt;/li&gt;&lt;li&gt;Durable API design came from first-principles redesign around a small set of reusable concepts.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] How to mentor vibecoding junior?</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1sp1ew8/how_to_mentor_vibecoding_junior/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-20/eb780085581526dd89b8e0852ec170b09573cf5c</guid>
-      <pubDate>Mon, 20 Apr 2026 05:33:59 +0000</pubDate>
+      <title>[Reddit Programming] Modern Frontend Complexity: essential or accidental?</title>
+      <link>https://binaryigor.com/modern-frontend-complexity.html</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-20/7dbf93fb4ce4322acd17b5506de948c64e81329c</guid>
+      <pubDate>Mon, 20 Apr 2026 16:27:38 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The useful advice here is procedural: block unsafe PRs, require authors to explain code in their own words, and use concrete review gates so reviewers are not absorbing the missing thinking behind AI-generated changes. It is worth keeping because it frames AI overuse as a team quality and responsibility problem that needs explicit controls.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Treat fully understood and debugged code as part of the deliverable, not an optional follow-up.&lt;/li&gt;&lt;li&gt;Use PR gates, repeated-feedback examples, and explicit explanation requirements to surface quality issues.&lt;/li&gt;&lt;li&gt;Do not let reviewers silently refactor or absorb unexplained AI code as cleanup labor.&lt;/li&gt;&lt;li&gt;Escalate persistent quality failures with concrete evidence from reviews and missed standards.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Igor Roztropiński separates essential frontend complexity from accidental tooling complexity by focusing on the widening gap between browser runtime and modern TSX and SPA build stacks. The useful part is the concrete simplification proposal: push more UI back to server-rendered HTML, use HTMX for fragment navigation, and keep Web Components behavioral instead of framework-owned.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A large share of frontend complexity comes from source-to-runtime translation layers, bundlers, polyfills, and framework conventions.&lt;/li&gt;&lt;li&gt;Server-rendered HTML plus fragment swaps can preserve interactivity while shrinking the amount of client code teams must reason about.&lt;/li&gt;&lt;li&gt;Behavioral Web Components let teams reuse interaction logic without tying structure to a full framework.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Has anyone successfully shipped a greenfield production app (100k+ users) using llm assist?</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1sp1vf7/has_anyone_successfully_shipped_a_greenfield/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-20/3b7120e452d87eaa7f2d2364be1f1742795fc823</guid>
-      <pubDate>Mon, 20 Apr 2026 05:33:59 +0000</pubDate>
+      <title>[Reddit Programming] Mobile breaks differently</title>
+      <link>https://blog.measure.sh/p/mobile-breaks-differently</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-20/597f09d29fe6ca8dbd5ca13d54d57a7e81ca9993</guid>
+      <pubDate>Mon, 20 Apr 2026 16:27:38 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The strongest responses separate where AI helps from where humans must stay decisive: architecture, boundaries, and requirements need explicit human ownership, while AI can accelerate implementation inside that frame. It is worth keeping because the thread also names concrete failure modes around traceability, fabricated defaults, and structural bugs in AI-heavy greenfield work.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Set architecture, patterns, and repo-specific rules before delegating implementation to agents.&lt;/li&gt;&lt;li&gt;Force at least one human-written failure-case test per AI-generated function or endpoint while context is fresh.&lt;/li&gt;&lt;li&gt;Traceability should connect generated code, commit or PR metadata, and deployed artifacts.&lt;/li&gt;&lt;li&gt;Models that invent defaults or skip clarification need human review even when throughput looks good.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Anup Cowkur argues that mobile observability breaks when teams reuse backend assumptions for an environment they do not control. The piece is strong because it names the operational differences that change the design: irreversible releases, ANRs, symbolication pipelines, session reconstruction, and telemetry budgets constrained by battery and bandwidth.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Mobile failures are release-management problems as much as code problems because fixes depend on app-store approval and user updates.&lt;/li&gt;&lt;li&gt;ANRs and symbolication need first-class pipelines; backend-style error tracking misses both.&lt;/li&gt;&lt;li&gt;Session reconstruction matters more than single-request traces because user journeys span backgrounding, retries, network loss, and OS intervention.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] How do you actually start understanding a large codebase?</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1sp8l59/how_do_you_actually_start_understanding_a_large/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-20/d9ea78ae73e1dcba0aabc9f565021d1c313015b0</guid>
-      <pubDate>Mon, 20 Apr 2026 05:33:59 +0000</pubDate>
+      <title>[Reddit Programming] Disgruntled researcher leaks “BlueHammer” Windows zero-day exploit</title>
+      <link>https://www.bleepingcomputer.com/news/security/disgruntled-researcher-leaks-bluehammer-windows-zero-day-exploit/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-20/df12b911b9a91e57067419e6ca525129afc13839</guid>
+      <pubDate>Mon, 20 Apr 2026 16:27:38 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The best answers reject the idea of understanding a whole codebase at once and recommend building a mental model from narrow slices: start from a concrete use case, work backward from behavior or call stacks, and learn supporting frameworks one dependency at a time. It is worth keeping because it translates a vague “read the code” problem into a practical debugging workflow.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Aim for one vertical slice or one abstraction layer at a time instead of whole-system comprehension.&lt;/li&gt;&lt;li&gt;Work backward from observable behavior, fan-out diagrams, or call stacks when forward tracing explodes.&lt;/li&gt;&lt;li&gt;Ignore private helpers early and learn major framework abstractions in isolation.&lt;/li&gt;&lt;li&gt;Feature work and debugging remain the fastest path to real system understanding.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;BleepingComputer documents how a privately reported Windows privilege-escalation bug turned into a public zero-day after disclosure handling broke down. The durable signal is procedural: coordinated disclosure fails when reporting friction and slow response make researchers expect inaction, and the blast radius jumps again once a working exploit is public and forked.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A local privilege-escalation chain still leads to full machine compromise once an attacker lands locally.&lt;/li&gt;&lt;li&gt;Disclosure programs need low-friction submission and credible responsiveness or researchers will route around them.&lt;/li&gt;&lt;li&gt;A public proof of concept changes the risk profile quickly because confirmation and forks accelerate copycat exploitation.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
