@@ -4,38 +4,54 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Sun, 19 Apr 2026 15:21:31 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Apr 2026 05:33:59 +0000</lastBuildDate>
     <item>
-      <title>[Reddit Programming] owLSM Rule Creation and Evaluation</title>
-      <link>https://cybereason-public.github.io/owLSM/architecture/rule-evaluation.html</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-19/31b3bfc826227db12eb400c3ce5e974f2702edd0</guid>
-      <pubDate>Sun, 19 Apr 2026 15:21:31 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;owLSM lays out an end-to-end design for compiling Sigma-like YAML rules into JSON tables and then into eBPF map structures, with postfix expressions, cached predicates, and precomputed DFAs handling evaluation in kernel space. It is worth keeping because it turns a vague rules-engine-in-eBPF idea into a concrete architecture with explicit staging boundaries and runtime tradeoffs.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Compile rich rule syntax into normalized predicate tables before it reaches constrained runtimes.&lt;/li&gt;&lt;li&gt;Use postfix tokens and stack evaluation to keep kernel-side rule execution simple and predictable.&lt;/li&gt;&lt;li&gt;Precompute contains and regex DFAs in userspace so expensive parsing stays off the hot path.&lt;/li&gt;&lt;li&gt;Partition rules by event type and cache predicate results per event to reduce repeated work.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Frontend] Under the hood of MDN's new frontend</title>
+      <link>https://developer.mozilla.org/en-US/blog/mdn-front-end-deep-dive/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-20/c848817388910444fe8ea50e68ef3bd69397a767</guid>
+      <pubDate>Mon, 20 Apr 2026 05:33:59 +0000</pubDate>
+      <category>Frontend</category>
+      <description>&lt;p&gt;MDN explains how it replaced a React SPA wrapper and tangled CSS/build setup with server-rendered HTML plus Lit web components for isolated interactive islands. It is worth keeping because it is a concrete frontend architecture refactor that shows how to cut hydration and maintenance cost on a content-heavy site without giving up rich interactivity.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Content-heavy sites can avoid SPA hydration overhead by combining static/server templating with small interactive islands.&lt;/li&gt;&lt;li&gt;Per-component CSS and JS loading reduces render-blocking bloat and cross-component regressions.&lt;/li&gt;&lt;li&gt;Lit and web components can support incremental migration even when an existing React app still exists.&lt;/li&gt;&lt;li&gt;Treat the content build pipeline as a first-class renderer instead of wrapping static HTML in an app shell.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Optimizing Ruby Path Methods</title>
-      <link>https://byroot.github.io/ruby/performance/2026/04/18/faster-paths.html</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-19/b3ff0245f8417768683af1eb5460dd83003ed09d</guid>
-      <pubDate>Sun, 19 Apr 2026 15:21:31 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;Jean Boussier shows how Bootsnap and Ruby path handling were slowed by avoidable syscall patterns and conservative encoding logic, then tracks the fixes from profiling to API design, ending with Dir.scan and a much faster File.join. It is worth keeping because it is a concrete example of performance work that improves both local latency and massively parallel CI cost.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Profile setup-time hotspots because small per-worker costs compound across large CI fleets.&lt;/li&gt;&lt;li&gt;Use simple happy-path benchmarks to estimate optimization headroom before changing internals.&lt;/li&gt;&lt;li&gt;Add fast paths for dominant encodings and input shapes while preserving correctness for rare cases.&lt;/li&gt;&lt;li&gt;Expose the right filesystem metadata in the API to eliminate N+1 syscalls at the source.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Programming] Good APIs age slowly</title>
+      <link>https://yusufaytas.com/good-apis-age-slowly</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-20/010a681f5cc18670a0241c6fce195c6a7dd2b00c</guid>
+      <pubDate>Mon, 20 Apr 2026 05:33:59 +0000</pubDate>
+      <category>Programming</category>
+      <description>&lt;p&gt;Yusuf Aytas argues that API quality is measured by how well a contract survives new consumers, changing implementations, and shifting requirements, not by how elegant the first version looks. It is worth keeping because it compresses a durable API design mental model into a short piece focused on boundaries, coupling, and long-term maintenance cost.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Design contracts around stable domain concepts instead of current frontend payload shapes.&lt;/li&gt;&lt;li&gt;Expose less than feels convenient because visible internals quickly become obligations.&lt;/li&gt;&lt;li&gt;Convenient APIs often hide assumptions that later reappear as debugging and migration work.&lt;/li&gt;&lt;li&gt;Versioning does not repair unstable boundaries; it mainly relocates the cost.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Reverse Engineering ME2's USB with a Heat Gun and a Knife</title>
-      <link>https://github.com/coremaze/ME2-Writeup</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-19/6f8cbac823051ace0ec7fce15d1eef3ea2b93ca7</guid>
-      <pubDate>Sun, 19 Apr 2026 15:21:31 +0000</pubDate>
+      <title>[Reddit Programming] How do you interview someone with the expectation they'll be using AI tooling?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1spb7g5/how_do_you_interview_someone_with_the_expectation/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-20/ca56e2c42a70ccb53af6976004ac10c34c6dfc29</guid>
+      <pubDate>Mon, 20 Apr 2026 05:33:59 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;This write-up documents a full recovery path for an undocumented USB interface: dump flash, identify the hidden microcontroller by die-photo matching, recover the instruction set, trace vendor SCSI extensions, and exploit an out-of-bounds read to extract internal ROM. It is worth keeping because it is a high-signal case study in turning incomplete hardware clues into a working protocol implementation.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;When software artifacts are gone, hardware teardown plus firmware dumping can rebuild the protocol surface.&lt;/li&gt;&lt;li&gt;Instruction-set discovery can come from physical die identification as much as from binary analysis.&lt;/li&gt;&lt;li&gt;Known transports such as USB mass storage and SCSI provide strong anchors for naming unknown code paths.&lt;/li&gt;&lt;li&gt;Small command-handler bugs can become powerful reverse-engineering primitives such as arbitrary reads.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;This thread converges on a practical AI-era interview loop: evaluate debugging, code review, and reasoning under uncertainty instead of raw code generation speed. It is worth keeping because the comments turn vague “test AI usage” talk into concrete tactics such as seeded logic flaws, live explanation, and review-based exercises.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Make debugging and code review primary interview tasks when models can draft boilerplate quickly.&lt;/li&gt;&lt;li&gt;Seed non-syntactic flaws such as unsafe defaults or typosquatted dependencies to test judgment.&lt;/li&gt;&lt;li&gt;Require candidates to explain fixes live so understanding is measured directly.&lt;/li&gt;&lt;li&gt;Optimize interviews for error detection and reasoning quality, not tokens typed.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] What Really Happened in Y2K?</title>
-      <link>https://www.gresham.ac.uk/watch-now/what-really-happened-y2k</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-19/7eaa492f3cce1c4fc36b4fab6e25556c962e27ee</guid>
-      <pubDate>Sun, 19 Apr 2026 15:21:31 +0000</pubDate>
+      <title>[Reddit Programming] How to mentor vibecoding junior?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1sp1ew8/how_to_mentor_vibecoding_junior/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-20/eb780085581526dd89b8e0852ec170b09573cf5c</guid>
+      <pubDate>Mon, 20 Apr 2026 05:33:59 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;Martyn Thomas argues that Y2K was a real systems risk that looked quiet in production because inventory work, remediation, and cross-industry coordination succeeded before the rollover. It is worth keeping because it reframes Y2K as a near miss and a concrete lesson in software engineering, resilience, and executive action.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Legacy representation shortcuts become systemic risk when the same assumption is embedded across many systems.&lt;/li&gt;&lt;li&gt;Inventory accuracy, supply-chain visibility, and deadline-driven governance were core parts of the Y2K remediation success.&lt;/li&gt;&lt;li&gt;Avoid single points of failure and excessive coupling because simultaneous faults create cascade risk.&lt;/li&gt;&lt;li&gt;Large preventive remediation programs can succeed when objectives, authority, and urgency are clear.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The useful advice here is procedural: block unsafe PRs, require authors to explain code in their own words, and use concrete review gates so reviewers are not absorbing the missing thinking behind AI-generated changes. It is worth keeping because it frames AI overuse as a team quality and responsibility problem that needs explicit controls.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Treat fully understood and debugged code as part of the deliverable, not an optional follow-up.&lt;/li&gt;&lt;li&gt;Use PR gates, repeated-feedback examples, and explicit explanation requirements to surface quality issues.&lt;/li&gt;&lt;li&gt;Do not let reviewers silently refactor or absorb unexplained AI code as cleanup labor.&lt;/li&gt;&lt;li&gt;Escalate persistent quality failures with concrete evidence from reviews and missed standards.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Has anyone successfully shipped a greenfield production app (100k+ users) using llm assist?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1sp1vf7/has_anyone_successfully_shipped_a_greenfield/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-20/3b7120e452d87eaa7f2d2364be1f1742795fc823</guid>
+      <pubDate>Mon, 20 Apr 2026 05:33:59 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The strongest responses separate where AI helps from where humans must stay decisive: architecture, boundaries, and requirements need explicit human ownership, while AI can accelerate implementation inside that frame. It is worth keeping because the thread also names concrete failure modes around traceability, fabricated defaults, and structural bugs in AI-heavy greenfield work.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Set architecture, patterns, and repo-specific rules before delegating implementation to agents.&lt;/li&gt;&lt;li&gt;Force at least one human-written failure-case test per AI-generated function or endpoint while context is fresh.&lt;/li&gt;&lt;li&gt;Traceability should connect generated code, commit or PR metadata, and deployed artifacts.&lt;/li&gt;&lt;li&gt;Models that invent defaults or skip clarification need human review even when throughput looks good.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] How do you actually start understanding a large codebase?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1sp8l59/how_do_you_actually_start_understanding_a_large/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-20/d9ea78ae73e1dcba0aabc9f565021d1c313015b0</guid>
+      <pubDate>Mon, 20 Apr 2026 05:33:59 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The best answers reject the idea of understanding a whole codebase at once and recommend building a mental model from narrow slices: start from a concrete use case, work backward from behavior or call stacks, and learn supporting frameworks one dependency at a time. It is worth keeping because it translates a vague “read the code” problem into a practical debugging workflow.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Aim for one vertical slice or one abstraction layer at a time instead of whole-system comprehension.&lt;/li&gt;&lt;li&gt;Work backward from observable behavior, fan-out diagrams, or call stacks when forward tracing explodes.&lt;/li&gt;&lt;li&gt;Ignore private helpers early and learn major framework abstractions in isolation.&lt;/li&gt;&lt;li&gt;Feature work and debugging remain the fastest path to real system understanding.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
