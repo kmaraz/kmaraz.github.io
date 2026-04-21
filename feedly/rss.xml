@@ -4,46 +4,38 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Tue, 21 Apr 2026 08:31:07 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Apr 2026 21:32:13 +0000</lastBuildDate>
     <item>
-      <title>[Informatics] Session Timeouts: The Overlooked Accessibility Barrier In Authentication Design</title>
-      <link>https://www.smashingmagazine.com/2026/04/session-timeouts-accessibility-barrier-authentication-design/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-21/bc16b5626c888a2c4df5770e9bb374a06d471e26</guid>
-      <pubDate>Tue, 21 Apr 2026 08:31:07 +0000</pubDate>
-      <category>Informatics</category>
-      <description>&lt;p&gt;Eleanor Hecks shows how ordinary session timeout policies become accessibility failures for users with motor, cognitive, or vision impairments, then turns the problem into concrete design guidance around warning windows, extend controls, and preserved progress.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Inactivity heuristics can mistake reading, screen-reader navigation, and slower motor input for abandonment.&lt;/li&gt;&lt;li&gt;Warn before expiry and provide a simple way to extend the session without restarting the task.&lt;/li&gt;&lt;li&gt;Preserve draft state so reauthentication does not erase long forms or multi-step flows.&lt;/li&gt;&lt;li&gt;Explicit absolute time limits can be easier to handle than short activity-based timeouts.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Programming] Modernizing the Facebook Groups Search to Unlock the Power of Community Knowledge</title>
+      <link>https://engineering.fb.com/2026/04/21/ml-applications/modernizing-the-facebook-groups-search-to-unlock-the-power-of-community-knowledge/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-21/862e3ef86c29d09ecb1b4a290931549f11e270cf</guid>
+      <pubDate>Tue, 21 Apr 2026 21:32:13 +0000</pubDate>
+      <category>Programming</category>
+      <description>&lt;p&gt;Meta describes a Groups Search redesign that pairs lexical retrieval with dense semantic search, re-ranks candidates with a multi-task model, and uses LLM-based offline evaluation to judge nuanced relevance; the transferable part is the layered retrieval-and-evaluation architecture for messy community knowledge, not the product metrics.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Hybrid retrieval closes wording gaps by running exact-term lookup and dense vector search in parallel.&lt;/li&gt;&lt;li&gt;A shared ranking layer can combine lexical and semantic features while optimizing for several engagement outcomes at once.&lt;/li&gt;&lt;li&gt;LLM-graded offline evaluation gives search teams a scalable way to measure borderline relevance instead of binary matches only.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] The older I get the more I value boring, predictable tooling</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1sqnjk6/the_older_i_get_the_more_i_value_boring/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-21/69bc2393d20b7a63902e61369747979ff1e1a39c</guid>
-      <pubDate>Tue, 21 Apr 2026 08:31:07 +0000</pubDate>
+      <title>[Reddit Programming] The Great Stream Fix: Interleaving Writes in Seastar with AI-Powered Invariants Tracing</title>
+      <link>https://www.scylladb.com/2026/04/21/interleaving-writes-in-seastar</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-21/3172fb52d418f37424713de3a237f86bf598a51b</guid>
+      <pubDate>Tue, 21 Apr 2026 21:32:13 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;This thread compresses a mature tooling heuristic: the cost of novelty shows up later as onboarding friction, opaque build setups, and painful production debugging, so experienced engineers increasingly optimize for tools that stay understandable under stress.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Evaluate tooling by debuggability, operability, and handoff cost to the next engineer.&lt;/li&gt;&lt;li&gt;Novel abstractions age badly when failures require specialized tribal knowledge.&lt;/li&gt;&lt;li&gt;Production traceability is a stronger filter than launch-week excitement.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;ScyllaDB documents how it removed Seastar&amp;#x27;s restriction on mixing buffered and zero-copy writes by building invariant-based tests across a huge state space and using AI-assisted trace analysis to isolate remnant-buffer edge cases in asynchronous I/O code.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Stateful I/O bugs become tractable when tests assert invariants over operation order, chunk size, and buffering mode instead of checking a few happy paths.&lt;/li&gt;&lt;li&gt;Mixed write modes hid assumptions about remnant-buffer capacity and state transitions that normal unit tests missed.&lt;/li&gt;&lt;li&gt;Trace analysis is useful when it is anchored to a deterministic failing case and a strong invariant, not used as a substitute for the test harness.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] [Discussion] The gap between being technically right and actually influencing decisions</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1sqyvuu/discussion_the_gap_between_being_technically/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-21/5fda194565452ae7df52139d9ac0571484788a87</guid>
-      <pubDate>Tue, 21 Apr 2026 08:31:07 +0000</pubDate>
+      <title>[Reddit Programming] HTTP resilience tradeoffs in practice: retry vs Retry-After vs hedging (scenario data)</title>
+      <link>https://www.reddit.com/r/javascript/comments/1sqmuej/http_resilience_tradeoffs_in_practice_retry_vs/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-21/e1035accf910aebed5e8b74409069c4b24283148</guid>
+      <pubDate>Tue, 21 Apr 2026 21:32:13 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The discussion argues that senior leverage increasingly comes from making technical context legible to people outside the code, especially by expressing the cost of inaction in terms stakeholders already manage.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Technical accuracy and organizational influence are separate engineering skills.&lt;/li&gt;&lt;li&gt;Translate failure modes into cost, delay, or risk that non-technical stakeholders can act on.&lt;/li&gt;&lt;li&gt;Senior judgment includes deciding how to package the argument, not only whether the argument is correct.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;This post compares three failure-handling tactics under controlled network chaos and surfaces the operational tradeoffs clearly: naive retries can raise success while worsening tail latency, Retry-After-aware retry helps in rate-limit scenarios, and hedging lowers latency by spending extra capacity.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Retry policy needs latency budgets and load budgets, because higher success rates can still degrade p95 and p99 behavior.&lt;/li&gt;&lt;li&gt;Honoring Retry-After is a distinct control path from generic backoff and matters specifically in 429-heavy environments.&lt;/li&gt;&lt;li&gt;Hedging is a tail-latency tool with real duplicate-work cost, so it belongs on carefully chosen endpoints.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] How do you answer 'is this commit in prod?' in a mostly-autonomous pipeline?</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1sqns1g/how_do_you_answer_is_this_commit_in_prod_in_a/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-21/aed9e5be88581c3901108474705911e0e6bd3124</guid>
-      <pubDate>Tue, 21 Apr 2026 08:31:07 +0000</pubDate>
+      <title>[Reddit Programming] Good architecture shouldn't need a carrot or a stick</title>
+      <link>https://frederickvanbrabant.com/blog/2026-04-17-good-architecture-shouldnt-need-a-carrot-or-a-stick/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-21/c5631dafff22f73dd6c5ead3fd40b0da205d6363</guid>
+      <pubDate>Tue, 21 Apr 2026 21:32:13 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;This thread surfaces a concrete control-plane gap in AI-heavy delivery systems: code can move from patch to production automatically while teams still lack a single trustworthy answer about what commit is running where and when someone should have been told.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Track lineage from commit to artifact to deployed workload in one queryable path.&lt;/li&gt;&lt;li&gt;Autonomous changes still need explicit audit and notification surfaces.&lt;/li&gt;&lt;li&gt;Deployment automation without rollout visibility creates avoidable operational risk.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] Our devs stopped reading security scan results entirely and I'm not sure I can blame them</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1sqghdc/our_devs_stopped_reading_security_scan_results/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-21/78bad3c911f3828c34cd5883da71226133143faa</guid>
-      <pubDate>Tue, 21 Apr 2026 08:31:07 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;The thread captures a familiar security failure mode: once scanner precision falls low enough, engineers rationally treat the tool as noise, and the security program starts training people to close real bugs as fast as fake ones.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Detection trust is part of the control, because false positives erode the system itself.&lt;/li&gt;&lt;li&gt;Tune scanners and triage flows for signal quality, not coverage metrics alone.&lt;/li&gt;&lt;li&gt;Measure whether findings are trusted and acted on, not only whether tools emit them.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Frederick Vanbrabant argues that architecture governance works best when approved building blocks become the default path of least resistance, moving teams away from architecture boards and embedded oversight toward paved-road standards that already package security, logging, and legal requirements.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Governance scales when teams inherit a ready-made platform path instead of negotiating compliance from scratch on every project.&lt;/li&gt;&lt;li&gt;Paved-road architecture turns cross-cutting requirements into reusable defaults that shorten delivery timelines.&lt;/li&gt;&lt;li&gt;A modular menu of approved building blocks can preserve architectural review while shifting most decisions from gatekeeping to composition.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
