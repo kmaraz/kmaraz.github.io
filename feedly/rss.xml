@@ -4,46 +4,46 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Mon, 20 Apr 2026 16:27:38 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Apr 2026 08:31:07 +0000</lastBuildDate>
     <item>
-      <title>[Tech] Shopify Speed Optimization: Fixing The Real Bottlenecks</title>
-      <link>https://www.debugbear.com/blog/shopify-speed-optimization</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-20/dcd9ae096c5cea23774f1b793e6adc8da42233d1</guid>
-      <pubDate>Mon, 20 Apr 2026 16:27:38 +0000</pubDate>
-      <category>Tech</category>
-      <description>&lt;p&gt;DebugBear reframes Shopify performance work around bottlenecks users feel first: overweight hero media, synchronous carousel code, and third-party scripts that delay the initial paint. The practical value is the concrete sequencing and thresholds, including smaller hero assets, poster images before video, and treating app script execution order as a first-class architectural concern.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Optimize the hero section before lower-page assets because above-the-fold media dominates perceived speed and LCP.&lt;/li&gt;&lt;li&gt;Poster images preserve video-driven design without making the video file the initial rendering bottleneck.&lt;/li&gt;&lt;li&gt;Heavy carousel libraries hurt twice: transfer size and main-thread execution before the hero can paint.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Informatics] Session Timeouts: The Overlooked Accessibility Barrier In Authentication Design</title>
+      <link>https://www.smashingmagazine.com/2026/04/session-timeouts-accessibility-barrier-authentication-design/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-21/bc16b5626c888a2c4df5770e9bb374a06d471e26</guid>
+      <pubDate>Tue, 21 Apr 2026 08:31:07 +0000</pubDate>
+      <category>Informatics</category>
+      <description>&lt;p&gt;Eleanor Hecks shows how ordinary session timeout policies become accessibility failures for users with motor, cognitive, or vision impairments, then turns the problem into concrete design guidance around warning windows, extend controls, and preserved progress.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Inactivity heuristics can mistake reading, screen-reader navigation, and slower motor input for abandonment.&lt;/li&gt;&lt;li&gt;Warn before expiry and provide a simple way to extend the session without restarting the task.&lt;/li&gt;&lt;li&gt;Preserve draft state so reauthentication does not erase long forms or multi-step flows.&lt;/li&gt;&lt;li&gt;Explicit absolute time limits can be easier to handle than short activity-based timeouts.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Stripe’s payments APIs: The first 10 years</title>
-      <link>https://stripe.dev/blog/payment-api-design</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-20/36cdf64ffe6c7cc06782eeb58c2a0668896be6d3</guid>
-      <pubDate>Mon, 20 Apr 2026 16:27:38 +0000</pubDate>
+      <title>[Reddit Programming] The older I get the more I value boring, predictable tooling</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1sqnjk6/the_older_i_get_the_more_i_value_boring/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-21/69bc2393d20b7a63902e61369747979ff1e1a39c</guid>
+      <pubDate>Tue, 21 Apr 2026 08:31:07 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;Michelle Bu’s retrospective shows how Stripe moved from a narrow Charge and Token model toward PaymentIntents by treating API evolution as a product-debt problem, not a sequence of additive parameters. The durable lesson is that a unified contract needs predictable states and guarantees across payment methods before it needs elegance.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;API product debt accumulates when each new edge case becomes another flag instead of a model change.&lt;/li&gt;&lt;li&gt;Payment abstractions should encode initiation and finalization semantics consistently across methods.&lt;/li&gt;&lt;li&gt;Durable API design came from first-principles redesign around a small set of reusable concepts.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;This thread compresses a mature tooling heuristic: the cost of novelty shows up later as onboarding friction, opaque build setups, and painful production debugging, so experienced engineers increasingly optimize for tools that stay understandable under stress.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Evaluate tooling by debuggability, operability, and handoff cost to the next engineer.&lt;/li&gt;&lt;li&gt;Novel abstractions age badly when failures require specialized tribal knowledge.&lt;/li&gt;&lt;li&gt;Production traceability is a stronger filter than launch-week excitement.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Modern Frontend Complexity: essential or accidental?</title>
-      <link>https://binaryigor.com/modern-frontend-complexity.html</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-20/7dbf93fb4ce4322acd17b5506de948c64e81329c</guid>
-      <pubDate>Mon, 20 Apr 2026 16:27:38 +0000</pubDate>
+      <title>[Reddit Programming] [Discussion] The gap between being technically right and actually influencing decisions</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1sqyvuu/discussion_the_gap_between_being_technically/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-21/5fda194565452ae7df52139d9ac0571484788a87</guid>
+      <pubDate>Tue, 21 Apr 2026 08:31:07 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;Igor Roztropiński separates essential frontend complexity from accidental tooling complexity by focusing on the widening gap between browser runtime and modern TSX and SPA build stacks. The useful part is the concrete simplification proposal: push more UI back to server-rendered HTML, use HTMX for fragment navigation, and keep Web Components behavioral instead of framework-owned.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A large share of frontend complexity comes from source-to-runtime translation layers, bundlers, polyfills, and framework conventions.&lt;/li&gt;&lt;li&gt;Server-rendered HTML plus fragment swaps can preserve interactivity while shrinking the amount of client code teams must reason about.&lt;/li&gt;&lt;li&gt;Behavioral Web Components let teams reuse interaction logic without tying structure to a full framework.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The discussion argues that senior leverage increasingly comes from making technical context legible to people outside the code, especially by expressing the cost of inaction in terms stakeholders already manage.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Technical accuracy and organizational influence are separate engineering skills.&lt;/li&gt;&lt;li&gt;Translate failure modes into cost, delay, or risk that non-technical stakeholders can act on.&lt;/li&gt;&lt;li&gt;Senior judgment includes deciding how to package the argument, not only whether the argument is correct.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Mobile breaks differently</title>
-      <link>https://blog.measure.sh/p/mobile-breaks-differently</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-20/597f09d29fe6ca8dbd5ca13d54d57a7e81ca9993</guid>
-      <pubDate>Mon, 20 Apr 2026 16:27:38 +0000</pubDate>
+      <title>[Reddit Programming] How do you answer 'is this commit in prod?' in a mostly-autonomous pipeline?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1sqns1g/how_do_you_answer_is_this_commit_in_prod_in_a/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-21/aed9e5be88581c3901108474705911e0e6bd3124</guid>
+      <pubDate>Tue, 21 Apr 2026 08:31:07 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;Anup Cowkur argues that mobile observability breaks when teams reuse backend assumptions for an environment they do not control. The piece is strong because it names the operational differences that change the design: irreversible releases, ANRs, symbolication pipelines, session reconstruction, and telemetry budgets constrained by battery and bandwidth.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Mobile failures are release-management problems as much as code problems because fixes depend on app-store approval and user updates.&lt;/li&gt;&lt;li&gt;ANRs and symbolication need first-class pipelines; backend-style error tracking misses both.&lt;/li&gt;&lt;li&gt;Session reconstruction matters more than single-request traces because user journeys span backgrounding, retries, network loss, and OS intervention.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;This thread surfaces a concrete control-plane gap in AI-heavy delivery systems: code can move from patch to production automatically while teams still lack a single trustworthy answer about what commit is running where and when someone should have been told.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Track lineage from commit to artifact to deployed workload in one queryable path.&lt;/li&gt;&lt;li&gt;Autonomous changes still need explicit audit and notification surfaces.&lt;/li&gt;&lt;li&gt;Deployment automation without rollout visibility creates avoidable operational risk.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Disgruntled researcher leaks “BlueHammer” Windows zero-day exploit</title>
-      <link>https://www.bleepingcomputer.com/news/security/disgruntled-researcher-leaks-bluehammer-windows-zero-day-exploit/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-20/df12b911b9a91e57067419e6ca525129afc13839</guid>
-      <pubDate>Mon, 20 Apr 2026 16:27:38 +0000</pubDate>
+      <title>[Reddit Programming] Our devs stopped reading security scan results entirely and I'm not sure I can blame them</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1sqghdc/our_devs_stopped_reading_security_scan_results/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-21/78bad3c911f3828c34cd5883da71226133143faa</guid>
+      <pubDate>Tue, 21 Apr 2026 08:31:07 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;BleepingComputer documents how a privately reported Windows privilege-escalation bug turned into a public zero-day after disclosure handling broke down. The durable signal is procedural: coordinated disclosure fails when reporting friction and slow response make researchers expect inaction, and the blast radius jumps again once a working exploit is public and forked.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A local privilege-escalation chain still leads to full machine compromise once an attacker lands locally.&lt;/li&gt;&lt;li&gt;Disclosure programs need low-friction submission and credible responsiveness or researchers will route around them.&lt;/li&gt;&lt;li&gt;A public proof of concept changes the risk profile quickly because confirmation and forks accelerate copycat exploitation.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The thread captures a familiar security failure mode: once scanner precision falls low enough, engineers rationally treat the tool as noise, and the security program starts training people to close real bugs as fast as fake ones.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Detection trust is part of the control, because false positives erode the system itself.&lt;/li&gt;&lt;li&gt;Tune scanners and triage flows for signal quality, not coverage metrics alone.&lt;/li&gt;&lt;li&gt;Measure whether findings are trusted and acted on, not only whether tools emit them.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
