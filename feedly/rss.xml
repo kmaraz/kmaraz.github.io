@@ -4,38 +4,54 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Tue, 21 Apr 2026 21:32:13 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Apr 2026 22:12:17 +0000</lastBuildDate>
     <item>
-      <title>[Programming] Modernizing the Facebook Groups Search to Unlock the Power of Community Knowledge</title>
-      <link>https://engineering.fb.com/2026/04/21/ml-applications/modernizing-the-facebook-groups-search-to-unlock-the-power-of-community-knowledge/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-21/862e3ef86c29d09ecb1b4a290931549f11e270cf</guid>
-      <pubDate>Tue, 21 Apr 2026 21:32:13 +0000</pubDate>
-      <category>Programming</category>
-      <description>&lt;p&gt;Meta describes a Groups Search redesign that pairs lexical retrieval with dense semantic search, re-ranks candidates with a multi-task model, and uses LLM-based offline evaluation to judge nuanced relevance; the transferable part is the layered retrieval-and-evaluation architecture for messy community knowledge, not the product metrics.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Hybrid retrieval closes wording gaps by running exact-term lookup and dense vector search in parallel.&lt;/li&gt;&lt;li&gt;A shared ranking layer can combine lexical and semantic features while optimizing for several engagement outcomes at once.&lt;/li&gt;&lt;li&gt;LLM-graded offline evaluation gives search teams a scalable way to measure borderline relevance instead of binary matches only.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Informatics] Session Timeouts: The Overlooked Accessibility Barrier In Authentication Design</title>
+      <link>https://www.smashingmagazine.com/2026/04/session-timeouts-accessibility-barrier-authentication-design/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-21/bc16b5626c888a2c4df5770e9bb374a06d471e26</guid>
+      <pubDate>Tue, 21 Apr 2026 22:12:17 +0000</pubDate>
+      <category>Informatics</category>
+      <description>&lt;p&gt;Eleanor Hecks shows that common inactivity-based session expiry patterns penalize users who read slowly, navigate with assistive tech, or need more time for motor input, then turns the fix into concrete design guidance around advance warnings, extend-session controls, and preserved progress.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Treat inactivity heuristics as an accessibility risk because reading, screen-reader navigation, and slower motor input can look idle.&lt;/li&gt;&lt;li&gt;Warn before expiry and provide an accessible control to extend the session.&lt;/li&gt;&lt;li&gt;Preserve progress with auto-save so reauthentication does not erase completed work.&lt;/li&gt;&lt;li&gt;Absolute timeouts are often easier to communicate and recover from than silent activity-based timeouts.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] The Great Stream Fix: Interleaving Writes in Seastar with AI-Powered Invariants Tracing</title>
-      <link>https://www.scylladb.com/2026/04/21/interleaving-writes-in-seastar</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-21/3172fb52d418f37424713de3a237f86bf598a51b</guid>
-      <pubDate>Tue, 21 Apr 2026 21:32:13 +0000</pubDate>
+      <title>[Reddit Programming] Announcing TypeScript 7.0 Beta</title>
+      <link>https://devblogs.microsoft.com/typescript/announcing-typescript-7-0-beta/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-21/d6fed21496d7ee62fe480aeb746c44681b859f59</guid>
+      <pubDate>Tue, 21 Apr 2026 22:12:17 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;ScyllaDB documents how it removed Seastar&amp;#x27;s restriction on mixing buffered and zero-copy writes by building invariant-based tests across a huge state space and using AI-assisted trace analysis to isolate remnant-buffer edge cases in asynchronous I/O code.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Stateful I/O bugs become tractable when tests assert invariants over operation order, chunk size, and buffering mode instead of checking a few happy paths.&lt;/li&gt;&lt;li&gt;Mixed write modes hid assumptions about remnant-buffer capacity and state transitions that normal unit tests missed.&lt;/li&gt;&lt;li&gt;Trace analysis is useful when it is anchored to a deterministic failing case and a strong invariant, not used as a substitute for the test harness.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;TypeScript 7.0 Beta ports the compiler and language service to Go, keeps TypeScript 6.0 semantics, and reports roughly 10x faster builds with parallel checkers and builders, which makes it a meaningful tooling shift for large TypeScript codebases.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The beta ships as `@typescript/native-preview` with `tsgo`, so teams can trial it side-by-side with TypeScript 6.&lt;/li&gt;&lt;li&gt;Parallel `--checkers` and `--builders` expose real scaling knobs for larger CI workloads and monorepos.&lt;/li&gt;&lt;li&gt;The transition still requires attention to 6.0 defaults such as `strict`, `module`, `types`, and `rootDir`.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] HTTP resilience tradeoffs in practice: retry vs Retry-After vs hedging (scenario data)</title>
-      <link>https://www.reddit.com/r/javascript/comments/1sqmuej/http_resilience_tradeoffs_in_practice_retry_vs/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-21/e1035accf910aebed5e8b74409069c4b24283148</guid>
-      <pubDate>Tue, 21 Apr 2026 21:32:13 +0000</pubDate>
+      <title>[Reddit Programming] Highlights from Git 2.54</title>
+      <link>https://github.blog/open-source/git/highlights-from-git-2-54/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-21/1eb2100fc09e6d323f56d1752102a850043cabab</guid>
+      <pubDate>Tue, 21 Apr 2026 22:12:17 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;This post compares three failure-handling tactics under controlled network chaos and surfaces the operational tradeoffs clearly: naive retries can raise success while worsening tail latency, Retry-After-aware retry helps in rate-limit scenarios, and hedging lowers latency by spending extra capacity.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Retry policy needs latency budgets and load budgets, because higher success rates can still degrade p95 and p99 behavior.&lt;/li&gt;&lt;li&gt;Honoring Retry-After is a distinct control path from generic backoff and matters specifically in 429-heavy environments.&lt;/li&gt;&lt;li&gt;Hedging is a tail-latency tool with real duplicate-work cost, so it belongs on carefully chosen endpoints.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Git 2.54 packages several workflow upgrades that matter in daily use: a simpler experimental `git history` command for targeted history edits, config-defined hooks, better HTTP 429 retry behavior, and geometric repacking as the default manual maintenance strategy.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;`git history reword` and `git history split` cover focused rewrite cases without a full interactive rebase.&lt;/li&gt;&lt;li&gt;Hooks can now live in config, which makes shared local automation easier to distribute and compose.&lt;/li&gt;&lt;li&gt;429 retry handling and geometric repacking improve resilience and repository maintenance with fewer custom workarounds.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Good architecture shouldn't need a carrot or a stick</title>
-      <link>https://frederickvanbrabant.com/blog/2026-04-17-good-architecture-shouldnt-need-a-carrot-or-a-stick/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-21/c5631dafff22f73dd6c5ead3fd40b0da205d6363</guid>
-      <pubDate>Tue, 21 Apr 2026 21:32:13 +0000</pubDate>
+      <title>[Reddit Programming] CSS safe alignment (flex &amp; grid)</title>
+      <link>https://iprodan.dev/l/safe-alignment/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-21/db3216441edbc03f57323438710f4bf34d8ff6f7</guid>
+      <pubDate>Tue, 21 Apr 2026 22:12:17 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;Frederick Vanbrabant argues that architecture governance works best when approved building blocks become the default path of least resistance, moving teams away from architecture boards and embedded oversight toward paved-road standards that already package security, logging, and legal requirements.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Governance scales when teams inherit a ready-made platform path instead of negotiating compliance from scratch on every project.&lt;/li&gt;&lt;li&gt;Paved-road architecture turns cross-cutting requirements into reusable defaults that shorten delivery timelines.&lt;/li&gt;&lt;li&gt;A modular menu of approved building blocks can preserve architectural review while shifting most decisions from gatekeeping to composition.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Ion Prodan explains the `safe` alignment keyword as a small CSS change that prevents centered or end-aligned flex and grid layouts from creating scroll traps when content overflows, which makes it a practical accessibility guardrail for responsive UIs.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Use values like `safe center` when overflow could hide the start of content.&lt;/li&gt;&lt;li&gt;The same behavior applies across box-alignment properties in both flex and grid.&lt;/li&gt;&lt;li&gt;The fallback is effectively start alignment when the requested alignment would make content unreachable.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Why We Rewrote Bub</title>
+      <link>https://bub.build/posts/why-rewrite-bub/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-21/84e56493e3e68cf09b0959b60831f685054590ab</guid>
+      <pubDate>Tue, 21 Apr 2026 22:12:17 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The Bub rewrite argues that agent frameworks collapse under channel-specific code, feature flags, and unowned integrations, so the maintainable path is a smaller core with cleaner extension points instead of letting every new provider and skill land in the main runtime.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Every extra channel or provider multiplies configuration surface and long-term maintenance cost.&lt;/li&gt;&lt;li&gt;Popular AI projects accumulate abandoned integrations quickly because contributors optimize for landing features, not owning them.&lt;/li&gt;&lt;li&gt;A stable agent core needs modular boundaries that keep optional capabilities outside the main system.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] hevc.js — HEVC/H.265 Decoder in WebAssembly</title>
+      <link>https://www.hevcjs.dev/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-21/fbd2c87200a75c71349cf3a5299813b84452bc95</guid>
+      <pubDate>Tue, 21 Apr 2026 22:12:17 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;hevc.js uses a from-scratch H.265 decoder in WebAssembly to transcode HEVC to H.264 in the browser, letting teams keep a single HEVC pipeline and only pay a client-side performance cost where native playback is missing.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The library avoids dual encoding and duplicated manifests by converting only for unsupported browsers.&lt;/li&gt;&lt;li&gt;The main tradeoff is startup latency on the first segment, with smoother playback once buffered.&lt;/li&gt;&lt;li&gt;The implementation is unusually concrete: spec-transcribed C++17, validated against ffmpeg, and exposed as a dash.js plugin.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
