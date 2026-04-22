@@ -4,54 +4,46 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Tue, 21 Apr 2026 22:12:17 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Apr 2026 09:10:06 +0000</lastBuildDate>
     <item>
-      <title>[Informatics] Session Timeouts: The Overlooked Accessibility Barrier In Authentication Design</title>
-      <link>https://www.smashingmagazine.com/2026/04/session-timeouts-accessibility-barrier-authentication-design/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-21/bc16b5626c888a2c4df5770e9bb374a06d471e26</guid>
-      <pubDate>Tue, 21 Apr 2026 22:12:17 +0000</pubDate>
-      <category>Informatics</category>
-      <description>&lt;p&gt;Eleanor Hecks shows that common inactivity-based session expiry patterns penalize users who read slowly, navigate with assistive tech, or need more time for motor input, then turns the fix into concrete design guidance around advance warnings, extend-session controls, and preserved progress.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Treat inactivity heuristics as an accessibility risk because reading, screen-reader navigation, and slower motor input can look idle.&lt;/li&gt;&lt;li&gt;Warn before expiry and provide an accessible control to extend the session.&lt;/li&gt;&lt;li&gt;Preserve progress with auto-save so reauthentication does not erase completed work.&lt;/li&gt;&lt;li&gt;Absolute timeouts are often easier to communicate and recover from than silent activity-based timeouts.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Engineering] TBM 418: Campfires, Trails, and Quests</title>
+      <link>https://cutlefish.substack.com/p/tbm-418-campfires-trails-and-quests</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-22/10a13eeea6399c11a15e5a4ce5952a23ea4f6767</guid>
+      <pubDate>Wed, 22 Apr 2026 09:10:06 +0000</pubDate>
+      <category>Engineering</category>
+      <description>&lt;p&gt;John Cutler argues that AI improves product work when it enriches the team’s loop of traces and conversations, and worsens it when it mass-produces polished artifacts that preserve broken planning models. The useful pattern is multiplayer: pair prompting, shared context pointers, and AI-assisted synthesis that compound into better conversations and fresher mental models.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI amplifies broken product rituals if it is used to mass-produce requirements, plans, and status artifacts without changing how teams learn.&lt;/li&gt;&lt;li&gt;Shared context pointers, pair prompting, and evolving traces make AI valuable because they raise the leverage of cross-functional conversations.&lt;/li&gt;&lt;li&gt;The core output of good AI collaboration is shared understanding that carries into later decisions, not a standalone deliverable.&lt;/li&gt;&lt;li&gt;Teams need loops where trails feed campfires and campfires update trails so the context graph keeps improving over time.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Announcing TypeScript 7.0 Beta</title>
-      <link>https://devblogs.microsoft.com/typescript/announcing-typescript-7-0-beta/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-21/d6fed21496d7ee62fe480aeb746c44681b859f59</guid>
-      <pubDate>Tue, 21 Apr 2026 22:12:17 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;TypeScript 7.0 Beta ports the compiler and language service to Go, keeps TypeScript 6.0 semantics, and reports roughly 10x faster builds with parallel checkers and builders, which makes it a meaningful tooling shift for large TypeScript codebases.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The beta ships as `@typescript/native-preview` with `tsgo`, so teams can trial it side-by-side with TypeScript 6.&lt;/li&gt;&lt;li&gt;Parallel `--checkers` and `--builders` expose real scaling knobs for larger CI workloads and monorepos.&lt;/li&gt;&lt;li&gt;The transition still requires attention to 6.0 defaults such as `strict`, `module`, `types`, and `rootDir`.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Psychology] The Physiology of Agency in the Age of AI</title>
+      <link>https://mindblog.dericbownds.net/2026/04/the-physiology-of-agency-in-age-of-ai.html</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-22/cdfd55dd147be2135d17efcb6bb5952353580b5d</guid>
+      <pubDate>Wed, 22 Apr 2026 09:10:06 +0000</pubDate>
+      <category>Psychology</category>
+      <description>&lt;p&gt;Deric Bownds argues that agency is a physiological, load-bearing emotion, so AI systems that shift people from initiating and judging work to merely ratifying machine suggestions could create learned-helplessness-like costs long before society notices them. The essay is strongest when it reframes AI agency loss as a design and public-health question rather than a free-will debate.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Wegner’s work on conscious will and Seligman’s learned helplessness research suggest perceived agency affects motivation, regulation, and health.&lt;/li&gt;&lt;li&gt;AI can preserve agency when the human remains the initiator, director, and final judge of the collaboration.&lt;/li&gt;&lt;li&gt;Systems that pre-structure reflection and decision-making too aggressively risk pushing users into passive approval loops.&lt;/li&gt;&lt;li&gt;Interface and workflow design should protect authorship and self-regulation, not only convenience and speed.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Highlights from Git 2.54</title>
-      <link>https://github.blog/open-source/git/highlights-from-git-2-54/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-21/1eb2100fc09e6d323f56d1752102a850043cabab</guid>
-      <pubDate>Tue, 21 Apr 2026 22:12:17 +0000</pubDate>
+      <title>[Reddit Programming] Bloom filters: the niche trick behind a 16× faster API | Blog | incident.io</title>
+      <link>https://incident.io/blog/bloom-filters</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-22/62ce2ccdc4b6d13aac5c046921af5fdd1b0f914b</guid>
+      <pubDate>Wed, 22 Apr 2026 09:10:06 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;Git 2.54 packages several workflow upgrades that matter in daily use: a simpler experimental `git history` command for targeted history edits, config-defined hooks, better HTTP 429 retry behavior, and geometric repacking as the default manual maintenance strategy.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;`git history reword` and `git history split` cover focused rewrite cases without a full interactive rebase.&lt;/li&gt;&lt;li&gt;Hooks can now live in config, which makes shared local automation easier to distribute and compose.&lt;/li&gt;&lt;li&gt;429 retry handling and geometric repacking improve resilience and repository maintenance with fewer custom workarounds.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;incident.io documents a concrete performance rescue for alert-history filtering: the team combined a custom bloom-filter pass over JSONB attributes with a mandatory 30-day time bound and cut P95 latency for large organizations from 5s to 0.3s. The post is valuable because it shows the full tradeoff process, including why the data model, pagination scheme, and product default had to change together.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Sparse, customer-defined JSONB attributes made filtering expensive even before query plans became pathological at scale.&lt;/li&gt;&lt;li&gt;A bloom-filter precheck reduced the number of rows that needed expensive in-memory attribute evaluation.&lt;/li&gt;&lt;li&gt;A mandatory 30-day default window fixed the longer-term scaling problem by aligning the query with actual user recency bias.&lt;/li&gt;&lt;li&gt;The team chose the more complex bloom-filter path because it looked less likely to create a second round of index-bloat problems later.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] CSS safe alignment (flex &amp; grid)</title>
-      <link>https://iprodan.dev/l/safe-alignment/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-21/db3216441edbc03f57323438710f4bf34d8ff6f7</guid>
-      <pubDate>Tue, 21 Apr 2026 22:12:17 +0000</pubDate>
+      <title>[Reddit Programming] Four Refactors and a Funeral: Migrating a Live System to Event Sourcing (in depth)</title>
+      <link>https://www.reddit.com/r/programming/comments/1ss1pu7/four_refactors_and_a_funeral_migrating_a_live/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-22/edef983f3777c8f0be1bac5b0c5f234b105b4120</guid>
+      <pubDate>Wed, 22 Apr 2026 09:10:06 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;Ion Prodan explains the `safe` alignment keyword as a small CSS change that prevents centered or end-aligned flex and grid layouts from creating scroll traps when content overflows, which makes it a practical accessibility guardrail for responsive UIs.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Use values like `safe center` when overflow could hide the start of content.&lt;/li&gt;&lt;li&gt;The same behavior applies across box-alignment properties in both flex and grid.&lt;/li&gt;&lt;li&gt;The fallback is effectively start alignment when the requested alignment would make content unreachable.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;This r/programming post surfaces the part of event-sourcing success stories that usually gets skipped: the five months of production refactors needed to move from a low-scale working system to one that could process 6,000 events per second. The signal is in the reminder that the headline benefits came after iterative migration work, not from adopting event sourcing as a clean-slate architecture.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The attractive outcomes of event sourcing arrived only after multiple live-system refactors, not at the first design pass.&lt;/li&gt;&lt;li&gt;Starting from something that works at low scale and tightening it under production load is a practical migration path.&lt;/li&gt;&lt;li&gt;The hard part of event sourcing adoption is operational evolution under traffic, not the elegance of the final model.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Why We Rewrote Bub</title>
-      <link>https://bub.build/posts/why-rewrite-bub/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-21/84e56493e3e68cf09b0959b60831f685054590ab</guid>
-      <pubDate>Tue, 21 Apr 2026 22:12:17 +0000</pubDate>
+      <title>[Reddit Programming] Everyone in the company is an engineer now. Any chance of containing this?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1ssdsq5/everyone_in_the_company_is_an_engineer_now_any/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-22/9d7058347e0f1583ad0f1e59cc05d62f1015e267</guid>
+      <pubDate>Wed, 22 Apr 2026 09:10:06 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The Bub rewrite argues that agent frameworks collapse under channel-specific code, feature flags, and unowned integrations, so the maintainable path is a smaller core with cleaner extension points instead of letting every new provider and skill land in the main runtime.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Every extra channel or provider multiplies configuration surface and long-term maintenance cost.&lt;/li&gt;&lt;li&gt;Popular AI projects accumulate abandoned integrations quickly because contributors optimize for landing features, not owning them.&lt;/li&gt;&lt;li&gt;A stable agent core needs modular boundaries that keep optional capabilities outside the main system.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] hevc.js — HEVC/H.265 Decoder in WebAssembly</title>
-      <link>https://www.hevcjs.dev/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-21/fbd2c87200a75c71349cf3a5299813b84452bc95</guid>
-      <pubDate>Tue, 21 Apr 2026 22:12:17 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;hevc.js uses a from-scratch H.265 decoder in WebAssembly to transcode HEVC to H.264 in the browser, letting teams keep a single HEVC pipeline and only pay a client-side performance cost where native playback is missing.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The library avoids dual encoding and duplicated manifests by converting only for unsupported browsers.&lt;/li&gt;&lt;li&gt;The main tradeoff is startup latency on the first segment, with smoother playback once buffered.&lt;/li&gt;&lt;li&gt;The implementation is unusually concrete: spec-transcribed C++17, validated against ffmpeg, and exposed as a dash.js plugin.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;An r/ExperiencedDevs thread on non-engineers shipping production-facing vibe-coded apps captures a governance failure that is likely to spread: organizations expanding AI-assisted prototyping into production mutation without requiring system understanding, ownership, or security authority. The thread is worth keeping because it names the real burden shift: engineers inherit the maintenance, privacy, and incident risk from workflows they do not control.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Giving non-technical staff production access creates hidden operational debt even when the generated apps look useful.&lt;/li&gt;&lt;li&gt;Guardrails are weak protection when the people deploying changes cannot explain APIs, sync patterns, or privacy boundaries.&lt;/li&gt;&lt;li&gt;Teams need explicit boundaries between prototyping and production changes, with development and security able to block unsafe rollout.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
