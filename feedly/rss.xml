@@ -4,30 +4,30 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Thu, 23 Apr 2026 08:20:58 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Apr 2026 20:19:48 +0000</lastBuildDate>
     <item>
-      <title>[Informatics] Using SELECT FOR UPDATE To Synchronize MySQL Row Access In ColdFusion</title>
-      <link>https://www.bennadel.com/blog/4888-using-select-for-update-to-synchronize-mysql-row-access-in-coldfusion.htm</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-23/ae7775655b428d2ae6e6839e593bf10882f35bf8</guid>
-      <pubDate>Thu, 23 Apr 2026 08:20:58 +0000</pubDate>
+      <title>[Engineering] The Pulse: ‘Tokenmaxxing’ as a weird new trend</title>
+      <link>https://blog.pragmaticengineer.com/the-pulse-tokenmaxxing-as-a-weird-new-trend/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-23/8f067f309ef6fa01a78ab33322e1063ba3ba2a98</guid>
+      <pubDate>Thu, 23 Apr 2026 20:19:48 +0000</pubDate>
+      <category>Engineering</category>
+      <description>&lt;p&gt;Gergely Orosz documents how internal token leaderboards at Meta, Microsoft, and Salesforce turned AI adoption into a gamified spend metric, pushing engineers toward wasteful prompting, throwaway agent runs, and avoidable quality failures. The strongest operational lesson is Shopify’s narrower model: measure usage, cut off runaway spend, and inspect expensive sessions without rewarding raw token volume.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Token totals become a gamed proxy metric as soon as status, review pressure, or quotas are attached to them.&lt;/li&gt;&lt;li&gt;Leaderboard-driven AI adoption can reduce quality by rewarding volume over outcome and by normalizing unnecessary agent runs.&lt;/li&gt;&lt;li&gt;Circuit breakers and review of unusual spend are safer controls than public rankings of who burned the most tokens.&lt;/li&gt;&lt;li&gt;Internal overuse incentives may also be serving as an expensive way to generate real-world traces for model training.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Informatics] Recreating Apple’s Vision Pro Animation in CSS</title>
+      <link>https://css-tricks.com/recreating-apples-vision-pro-animation-in-css/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-23/37eb2af1aa977bc4c3086994b0e690ba73c40a9c</guid>
+      <pubDate>Thu, 23 Apr 2026 20:19:48 +0000</pubDate>
       <category>Informatics</category>
-      <description>&lt;p&gt;Ben Nadel uses a small ColdFusion app to turn MySQL locking reads into an application-level synchronization tool, showing where `FOR SHARE` and `FOR UPDATE` belong in the data-access layer and how they act as workflow choke points during multi-step transactions.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;`FOR SHARE` keeps concurrent readers moving while blocking writers and exclusive lockers on the same rows.&lt;/li&gt;&lt;li&gt;`FOR UPDATE` turns a selected row into an exclusive coordination point for later writes and dependent child-row work.&lt;/li&gt;&lt;li&gt;Locking reads do not block ordinary non-locking selects, so concurrency costs stay concentrated around mutation paths.&lt;/li&gt;&lt;li&gt;Row locking only works as intended when every competing workflow agrees to lock the same record before mutating related state.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;John Rhea rebuilds Apple’s Vision Pro scroll animation with modern CSS primitives, using view timelines, sticky positioning, grid-overlaid background layers, and viewport-derived geometry to reproduce a complex staged effect without JavaScript scroll control. The useful signal is in the implementation tradeoffs: responsive motion becomes tractable, while Firefox support and frame-by-frame image swapping remain hard limits.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A single CSS grid cell with layered background elements can recreate the front-and-back depth effect without absolute-position sprawl.&lt;/li&gt;&lt;li&gt;View timelines plus a sticky container let the animation begin when the component enters view and stay pinned while it plays.&lt;/li&gt;&lt;li&gt;Custom properties derived from viewport dimensions make multi-stage translation distances responsive enough for intricate scroll animation.&lt;/li&gt;&lt;li&gt;Replacing scroll-scrubbed video with keyframed background-image swaps works as a proof of concept and increases asset and browser-support costs.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Columnar Storage is Normalization</title>
-      <link>https://buttondown.com/jaffray/archive/columnar-storage-is-normalization/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-23/e9f29324a9ea0b02114ae0a91f236a00b4f2c0c8</guid>
-      <pubDate>Thu, 23 Apr 2026 08:20:58 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;Justin Jaffray reframes columnar storage as an extreme form of normalization: each column behaves like its own narrow table keyed by row position, so reconstructing rows is logically the same operation as a join. The framing is useful because it connects storage layout to familiar relational reasoning instead of treating columnar formats as a separate conceptual world.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A columnar representation can be modeled as one implicit key plus one attribute per table, with ordinal position standing in for the key.&lt;/li&gt;&lt;li&gt;Reading a full row from columnar storage is conceptually a join across per-column tables.&lt;/li&gt;&lt;li&gt;The model explains why column stores favor scans, projections, and analytics that touch few columns across many rows.&lt;/li&gt;&lt;li&gt;Thinking in normalization terms makes physical layout choices easier to reason about with ordinary relational abstractions.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] Getting more calls to fix ai generated codebases than actual new builds lately</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1sskw4r/getting_more_calls_to_fix_ai_generated_codebases/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-23/ac3b04b135b3d460a79553bef4bb9f7dd32aaa20</guid>
-      <pubDate>Thu, 23 Apr 2026 08:20:58 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;An r/ExperiencedDevs thread captures a shift that matters for AI-assisted engineering: consultants are seeing more rescue work on brittle AI-generated systems than fresh build work, especially when non-technical buyers optimized for fast visible output and skipped architecture, ownership, and verification.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The failure mode is operational, not presentational: systems look finished until integration, debugging, or maintenance work begins.&lt;/li&gt;&lt;li&gt;AI-generated code becomes expensive when nobody on the team can explain boundaries, data flow, and deployment behavior end to end.&lt;/li&gt;&lt;li&gt;Short-term build speed without review discipline converts directly into later triage and rewrite work.&lt;/li&gt;&lt;li&gt;The thread reinforces the need for explicit human ownership, verification, and maintainability checks in AI-assisted delivery.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Philosophy] Pluralistic: The (other) problem with automatic conversion of free software to proprietary software (23 Apr 2026)</title>
+      <link>https://pluralistic.net/2026/04/23/poison-pill/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-23/74ce02621a0cf9d59e689f09d7a7a401ddc821a7</guid>
+      <pubDate>Thu, 23 Apr 2026 20:19:48 +0000</pubDate>
+      <category>Philosophy</category>
+      <description>&lt;p&gt;Cory Doctorow argues that AI clean-room clones of free software do create pressure on the commons, and that the headline proprietary-licensing threat is overstated because fully AI-generated reimplementations are uncopyrightable and land in the public domain. He places the more immediate enclosure mechanisms elsewhere: SaaS loopholes, tivoization, and the ways companies already capture free software without reciprocating.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Clean-room reimplementation separates function from expression, so reproducing behavior is distinct from copying protected source code.&lt;/li&gt;&lt;li&gt;A company cannot rely on fully AI-generated replacement code as proprietary inventory if that code lacks copyright protection.&lt;/li&gt;&lt;li&gt;Server-side deployment and hardware lockdown already weaken copyleft more effectively than speculative AI cloning schemes.&lt;/li&gt;&lt;li&gt;Reimplementation is part of free-software history, so the strategic question is how licensing and governance adapt to new tooling.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
