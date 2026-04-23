@@ -4,46 +4,30 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Wed, 22 Apr 2026 09:10:06 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Apr 2026 08:20:58 +0000</lastBuildDate>
     <item>
-      <title>[Engineering] TBM 418: Campfires, Trails, and Quests</title>
-      <link>https://cutlefish.substack.com/p/tbm-418-campfires-trails-and-quests</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-22/10a13eeea6399c11a15e5a4ce5952a23ea4f6767</guid>
-      <pubDate>Wed, 22 Apr 2026 09:10:06 +0000</pubDate>
-      <category>Engineering</category>
-      <description>&lt;p&gt;John Cutler argues that AI improves product work when it enriches the team’s loop of traces and conversations, and worsens it when it mass-produces polished artifacts that preserve broken planning models. The useful pattern is multiplayer: pair prompting, shared context pointers, and AI-assisted synthesis that compound into better conversations and fresher mental models.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI amplifies broken product rituals if it is used to mass-produce requirements, plans, and status artifacts without changing how teams learn.&lt;/li&gt;&lt;li&gt;Shared context pointers, pair prompting, and evolving traces make AI valuable because they raise the leverage of cross-functional conversations.&lt;/li&gt;&lt;li&gt;The core output of good AI collaboration is shared understanding that carries into later decisions, not a standalone deliverable.&lt;/li&gt;&lt;li&gt;Teams need loops where trails feed campfires and campfires update trails so the context graph keeps improving over time.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Informatics] Using SELECT FOR UPDATE To Synchronize MySQL Row Access In ColdFusion</title>
+      <link>https://www.bennadel.com/blog/4888-using-select-for-update-to-synchronize-mysql-row-access-in-coldfusion.htm</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-23/ae7775655b428d2ae6e6839e593bf10882f35bf8</guid>
+      <pubDate>Thu, 23 Apr 2026 08:20:58 +0000</pubDate>
+      <category>Informatics</category>
+      <description>&lt;p&gt;Ben Nadel uses a small ColdFusion app to turn MySQL locking reads into an application-level synchronization tool, showing where `FOR SHARE` and `FOR UPDATE` belong in the data-access layer and how they act as workflow choke points during multi-step transactions.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;`FOR SHARE` keeps concurrent readers moving while blocking writers and exclusive lockers on the same rows.&lt;/li&gt;&lt;li&gt;`FOR UPDATE` turns a selected row into an exclusive coordination point for later writes and dependent child-row work.&lt;/li&gt;&lt;li&gt;Locking reads do not block ordinary non-locking selects, so concurrency costs stay concentrated around mutation paths.&lt;/li&gt;&lt;li&gt;Row locking only works as intended when every competing workflow agrees to lock the same record before mutating related state.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Psychology] The Physiology of Agency in the Age of AI</title>
-      <link>https://mindblog.dericbownds.net/2026/04/the-physiology-of-agency-in-age-of-ai.html</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-22/cdfd55dd147be2135d17efcb6bb5952353580b5d</guid>
-      <pubDate>Wed, 22 Apr 2026 09:10:06 +0000</pubDate>
-      <category>Psychology</category>
-      <description>&lt;p&gt;Deric Bownds argues that agency is a physiological, load-bearing emotion, so AI systems that shift people from initiating and judging work to merely ratifying machine suggestions could create learned-helplessness-like costs long before society notices them. The essay is strongest when it reframes AI agency loss as a design and public-health question rather than a free-will debate.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Wegner’s work on conscious will and Seligman’s learned helplessness research suggest perceived agency affects motivation, regulation, and health.&lt;/li&gt;&lt;li&gt;AI can preserve agency when the human remains the initiator, director, and final judge of the collaboration.&lt;/li&gt;&lt;li&gt;Systems that pre-structure reflection and decision-making too aggressively risk pushing users into passive approval loops.&lt;/li&gt;&lt;li&gt;Interface and workflow design should protect authorship and self-regulation, not only convenience and speed.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] Bloom filters: the niche trick behind a 16× faster API | Blog | incident.io</title>
-      <link>https://incident.io/blog/bloom-filters</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-22/62ce2ccdc4b6d13aac5c046921af5fdd1b0f914b</guid>
-      <pubDate>Wed, 22 Apr 2026 09:10:06 +0000</pubDate>
+      <title>[Reddit Programming] Columnar Storage is Normalization</title>
+      <link>https://buttondown.com/jaffray/archive/columnar-storage-is-normalization/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-23/e9f29324a9ea0b02114ae0a91f236a00b4f2c0c8</guid>
+      <pubDate>Thu, 23 Apr 2026 08:20:58 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;incident.io documents a concrete performance rescue for alert-history filtering: the team combined a custom bloom-filter pass over JSONB attributes with a mandatory 30-day time bound and cut P95 latency for large organizations from 5s to 0.3s. The post is valuable because it shows the full tradeoff process, including why the data model, pagination scheme, and product default had to change together.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Sparse, customer-defined JSONB attributes made filtering expensive even before query plans became pathological at scale.&lt;/li&gt;&lt;li&gt;A bloom-filter precheck reduced the number of rows that needed expensive in-memory attribute evaluation.&lt;/li&gt;&lt;li&gt;A mandatory 30-day default window fixed the longer-term scaling problem by aligning the query with actual user recency bias.&lt;/li&gt;&lt;li&gt;The team chose the more complex bloom-filter path because it looked less likely to create a second round of index-bloat problems later.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Justin Jaffray reframes columnar storage as an extreme form of normalization: each column behaves like its own narrow table keyed by row position, so reconstructing rows is logically the same operation as a join. The framing is useful because it connects storage layout to familiar relational reasoning instead of treating columnar formats as a separate conceptual world.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A columnar representation can be modeled as one implicit key plus one attribute per table, with ordinal position standing in for the key.&lt;/li&gt;&lt;li&gt;Reading a full row from columnar storage is conceptually a join across per-column tables.&lt;/li&gt;&lt;li&gt;The model explains why column stores favor scans, projections, and analytics that touch few columns across many rows.&lt;/li&gt;&lt;li&gt;Thinking in normalization terms makes physical layout choices easier to reason about with ordinary relational abstractions.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Four Refactors and a Funeral: Migrating a Live System to Event Sourcing (in depth)</title>
-      <link>https://www.reddit.com/r/programming/comments/1ss1pu7/four_refactors_and_a_funeral_migrating_a_live/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-22/edef983f3777c8f0be1bac5b0c5f234b105b4120</guid>
-      <pubDate>Wed, 22 Apr 2026 09:10:06 +0000</pubDate>
+      <title>[Reddit Programming] Getting more calls to fix ai generated codebases than actual new builds lately</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1sskw4r/getting_more_calls_to_fix_ai_generated_codebases/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-23/ac3b04b135b3d460a79553bef4bb9f7dd32aaa20</guid>
+      <pubDate>Thu, 23 Apr 2026 08:20:58 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;This r/programming post surfaces the part of event-sourcing success stories that usually gets skipped: the five months of production refactors needed to move from a low-scale working system to one that could process 6,000 events per second. The signal is in the reminder that the headline benefits came after iterative migration work, not from adopting event sourcing as a clean-slate architecture.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The attractive outcomes of event sourcing arrived only after multiple live-system refactors, not at the first design pass.&lt;/li&gt;&lt;li&gt;Starting from something that works at low scale and tightening it under production load is a practical migration path.&lt;/li&gt;&lt;li&gt;The hard part of event sourcing adoption is operational evolution under traffic, not the elegance of the final model.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] Everyone in the company is an engineer now. Any chance of containing this?</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1ssdsq5/everyone_in_the_company_is_an_engineer_now_any/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-22/9d7058347e0f1583ad0f1e59cc05d62f1015e267</guid>
-      <pubDate>Wed, 22 Apr 2026 09:10:06 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;An r/ExperiencedDevs thread on non-engineers shipping production-facing vibe-coded apps captures a governance failure that is likely to spread: organizations expanding AI-assisted prototyping into production mutation without requiring system understanding, ownership, or security authority. The thread is worth keeping because it names the real burden shift: engineers inherit the maintenance, privacy, and incident risk from workflows they do not control.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Giving non-technical staff production access creates hidden operational debt even when the generated apps look useful.&lt;/li&gt;&lt;li&gt;Guardrails are weak protection when the people deploying changes cannot explain APIs, sync patterns, or privacy boundaries.&lt;/li&gt;&lt;li&gt;Teams need explicit boundaries between prototyping and production changes, with development and security able to block unsafe rollout.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;An r/ExperiencedDevs thread captures a shift that matters for AI-assisted engineering: consultants are seeing more rescue work on brittle AI-generated systems than fresh build work, especially when non-technical buyers optimized for fast visible output and skipped architecture, ownership, and verification.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The failure mode is operational, not presentational: systems look finished until integration, debugging, or maintenance work begins.&lt;/li&gt;&lt;li&gt;AI-generated code becomes expensive when nobody on the team can explain boundaries, data flow, and deployment behavior end to end.&lt;/li&gt;&lt;li&gt;Short-term build speed without review discipline converts directly into later triage and rewrite work.&lt;/li&gt;&lt;li&gt;The thread reinforces the need for explicit human ownership, verification, and maintainability checks in AI-assisted delivery.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
