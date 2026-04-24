@@ -4,30 +4,78 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Thu, 23 Apr 2026 20:19:48 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Apr 2026 13:10:38 +0000</lastBuildDate>
     <item>
-      <title>[Engineering] The Pulse: ‘Tokenmaxxing’ as a weird new trend</title>
-      <link>https://blog.pragmaticengineer.com/the-pulse-tokenmaxxing-as-a-weird-new-trend/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-23/8f067f309ef6fa01a78ab33322e1063ba3ba2a98</guid>
-      <pubDate>Thu, 23 Apr 2026 20:19:48 +0000</pubDate>
-      <category>Engineering</category>
-      <description>&lt;p&gt;Gergely Orosz documents how internal token leaderboards at Meta, Microsoft, and Salesforce turned AI adoption into a gamified spend metric, pushing engineers toward wasteful prompting, throwaway agent runs, and avoidable quality failures. The strongest operational lesson is Shopify’s narrower model: measure usage, cut off runaway spend, and inspect expensive sessions without rewarding raw token volume.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Token totals become a gamed proxy metric as soon as status, review pressure, or quotas are attached to them.&lt;/li&gt;&lt;li&gt;Leaderboard-driven AI adoption can reduce quality by rewarding volume over outcome and by normalizing unnecessary agent runs.&lt;/li&gt;&lt;li&gt;Circuit breakers and review of unusual spend are safer controls than public rankings of who burned the most tokens.&lt;/li&gt;&lt;li&gt;Internal overuse incentives may also be serving as an expensive way to generate real-world traces for model training.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Tech] Which Country Has The Fastest Government Website?</title>
+      <link>https://www.debugbear.com/blog/which-government-website-is-the-fastest</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-24/8d543e390b01058ed63fcc09d55589e5e8d4a9a8</guid>
+      <pubDate>Fri, 24 Apr 2026 13:10:38 +0000</pubDate>
+      <category>Tech</category>
+      <description>&lt;p&gt;DebugBear compares 25 government homepages using CrUX LCP, CLS, and INP data, then ties the ranking to concrete implementation choices. The useful part is the performance diagnosis: gov.uk wins through a mobile-first text-heavy design, CDN investment, and low TTFB, while slower sites expose common LCP failures such as render-blocking resources, background-image discovery delays, late client-side rendering, and hidden content.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Real-user Core Web Vitals are a better starting point than local lab scores when comparing public-service websites.&lt;/li&gt;&lt;li&gt;Text-first layouts, fast TTFB, and simple initial rendering create measurable LCP advantages.&lt;/li&gt;&lt;li&gt;Background images, render-blocking JavaScript, and CSS-hidden content can turn otherwise reasonable pages into slow pages.&lt;/li&gt;&lt;li&gt;Performance and accessibility overlap for public services because slow pages exclude users on weaker devices and networks.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Informatics] Recreating Apple’s Vision Pro Animation in CSS</title>
-      <link>https://css-tricks.com/recreating-apples-vision-pro-animation-in-css/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-23/37eb2af1aa977bc4c3086994b0e690ba73c40a9c</guid>
-      <pubDate>Thu, 23 Apr 2026 20:19:48 +0000</pubDate>
-      <category>Informatics</category>
-      <description>&lt;p&gt;John Rhea rebuilds Apple’s Vision Pro scroll animation with modern CSS primitives, using view timelines, sticky positioning, grid-overlaid background layers, and viewport-derived geometry to reproduce a complex staged effect without JavaScript scroll control. The useful signal is in the implementation tradeoffs: responsive motion becomes tractable, while Firefox support and frame-by-frame image swapping remain hard limits.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A single CSS grid cell with layered background elements can recreate the front-and-back depth effect without absolute-position sprawl.&lt;/li&gt;&lt;li&gt;View timelines plus a sticky container let the animation begin when the component enters view and stay pinned while it plays.&lt;/li&gt;&lt;li&gt;Custom properties derived from viewport dimensions make multi-stage translation distances responsive enough for intricate scroll animation.&lt;/li&gt;&lt;li&gt;Replacing scroll-scrubbed video with keyframed background-image swaps works as a proof of concept and increases asset and browser-support costs.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Reddit Programming] Why I spent years trying to make CSS states predictable</title>
+      <link>https://www.reddit.com/r/programming/comments/1su7irb/why_i_spent_years_trying_to_make_css_states/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-24/e46b0089fc2a42996efd65449e241d64d461edd4</guid>
+      <pubDate>Fri, 24 Apr 2026 13:10:38 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The post documents a concrete frontend design-system problem: CSS component states overlap through specificity and source order, so variant growth turns styling into manual conflict resolution. The proposed Tasty model lets authors declare state priority and compiles mutually exclusive selectors, which is relevant to long-lived component libraries where hover, disabled, theme, breakpoint, container, and modifier states all interact.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Stateful component styles become fragile when state priority lives implicitly in selector ordering.&lt;/li&gt;&lt;li&gt;A compiler can turn declared priority into non-overlapping selectors and remove a class of cascade regressions.&lt;/li&gt;&lt;li&gt;This abstraction pays off most in design systems with years of variants, themes, and multiple authors.&lt;/li&gt;&lt;li&gt;The useful test for styling abstractions is extension safety under production component pressure.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Philosophy] Pluralistic: The (other) problem with automatic conversion of free software to proprietary software (23 Apr 2026)</title>
-      <link>https://pluralistic.net/2026/04/23/poison-pill/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-23/74ce02621a0cf9d59e689f09d7a7a401ddc821a7</guid>
-      <pubDate>Thu, 23 Apr 2026 20:19:48 +0000</pubDate>
-      <category>Philosophy</category>
-      <description>&lt;p&gt;Cory Doctorow argues that AI clean-room clones of free software do create pressure on the commons, and that the headline proprietary-licensing threat is overstated because fully AI-generated reimplementations are uncopyrightable and land in the public domain. He places the more immediate enclosure mechanisms elsewhere: SaaS loopholes, tivoization, and the ways companies already capture free software without reciprocating.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Clean-room reimplementation separates function from expression, so reproducing behavior is distinct from copying protected source code.&lt;/li&gt;&lt;li&gt;A company cannot rely on fully AI-generated replacement code as proprietary inventory if that code lacks copyright protection.&lt;/li&gt;&lt;li&gt;Server-side deployment and hardware lockdown already weaken copyleft more effectively than speculative AI cloning schemes.&lt;/li&gt;&lt;li&gt;Reimplementation is part of free-software history, so the strategic question is how licensing and governance adapt to new tooling.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Reddit Programming] While GitHub Actions remains a key part of this vision, we are allocating resources towards other areas ...</title>
+      <link>https://www.reddit.com/r/programming/comments/1su5w1d/while_github_actions_remains_a_key_part_of_this/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-24/4d02359542ef1c4a461023b3b770420af1d91ad8</guid>
+      <pubDate>Fri, 24 Apr 2026 13:10:38 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The thread collects sharp GitHub Actions ergonomics failures around reusable workflows, composite actions, GHCR-backed jobs, secrets handling, input typing, artifact actions, and abandoned official action repositories. It is useful as a field report on CI platform risk: production workflows often depend on loosely maintained primitives whose edges only appear during real pipeline design.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Reusable workflows and composite actions have different checkout, input, and secret semantics, which raises maintenance cost.&lt;/li&gt;&lt;li&gt;Official action repositories can remain central to production CI while accepting little or no external contribution.&lt;/li&gt;&lt;li&gt;CI design should treat marketplace and official actions as dependencies with ownership, support, and lifecycle risk.&lt;/li&gt;&lt;li&gt;Shared scripts and generated workflow code can be more predictable than deeply nested Actions abstractions.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Bitwarden CLI Compromised in Ongoing Checkmarx Supply Chain Campaign</title>
+      <link>https://socket.dev/blog/bitwarden-cli-compromised</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-24/18720bc1ae06b7ab77917a548620132c4bd57d05</guid>
+      <pubDate>Fri, 24 Apr 2026 13:10:38 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Socket reports that the Bitwarden CLI npm package version 2026.4.0 was compromised through a GitHub Actions supply-chain path connected to the broader Checkmarx campaign. The payload targeted developer and CI secrets, including GitHub, npm, cloud, SSH, environment, and AI-tool configuration data, which makes the incident more relevant than ordinary package malware for engineering teams that automate releases through npm and Actions.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A trusted security tool can become a CI/CD entry point when its npm distribution path is compromised.&lt;/li&gt;&lt;li&gt;Blast-radius analysis should include developer workstations, GitHub Actions runners, npm tokens, cloud credentials, SSH keys, and AI-tool config files.&lt;/li&gt;&lt;li&gt;Affected environments should rotate exposed secrets, review unexpected workflows, inspect public repository creation, and hunt for published package changes.&lt;/li&gt;&lt;li&gt;Short-lived credentials, narrow token scopes, locked-down workflow permissions, and package provenance checks reduce recovery cost.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Devirtualization and Static Polymorphism</title>
+      <link>https://david.alvarezrosa.com/posts/devirtualization-and-static-polymorphism/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-24/6ab28520eb67300d0a4f4978d9ea78385596d680</guid>
+      <pubDate>Fri, 24 Apr 2026 13:10:38 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The article explains virtual dispatch cost at the assembly level, then shows when compilers can devirtualize calls and when static polymorphism can remove runtime dispatch from latency-sensitive paths. The value is the concrete bridge from object layout and vtables to branch prediction, inlining, cache behavior, CRTP, and C++20 concepts.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Virtual dispatch adds an object pointer and an indirect call path that can block inlining and hurt prediction.&lt;/li&gt;&lt;li&gt;Compilers can devirtualize only when the concrete target is provable at compile time.&lt;/li&gt;&lt;li&gt;Static polymorphism trades runtime flexibility for compile-time specialization and zero-dispatch abstractions.&lt;/li&gt;&lt;li&gt;The right decision depends on whether extension at runtime is required or performance-critical call sites dominate.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] How good engineers write bad code at big companies</title>
+      <link>https://www.seangoedecke.com/bad-code-at-big-companies/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-24/c590f1a8e898cc3f0835fcfe0b3f03cad24798ea</guid>
+      <pubDate>Fri, 24 Apr 2026 13:10:38 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Sean Goedecke argues that bad code in large companies often comes from organizational design, not weak engineers: teams rotate, codebases outlive owners, and many changes are made by people new to the system under deadline pressure. The useful framing is that code quality depends on preserving system expertise and making review load explicit.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Large organizations trade local code expertise for staffing flexibility and frequent internal mobility.&lt;/li&gt;&lt;li&gt;Long-lived systems accumulate changes from engineers who are competent yet new to that specific codebase.&lt;/li&gt;&lt;li&gt;Informal reliance on old hands creates hidden review bottlenecks and fragile ownership.&lt;/li&gt;&lt;li&gt;Improving quality requires retention of system knowledge, explicit ownership, and review capacity.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] An update on the rust-coreutils rewrite for Ubuntu 26.04</title>
+      <link>https://discourse.ubuntu.com/t/an-update-on-rust-coreutils/80773</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-24/cab39f19a762c975553d64832d5f936a8f8d4912</guid>
+      <pubDate>Fri, 24 Apr 2026 13:10:38 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Canonical explains how the uutils/rust-coreutils migration for Ubuntu 26.04 moved from ambition to release engineering: internal review was judged insufficient, Zellic performed a two-phase external audit, 113 findings were reported, upstream fixed most of them, and the team adjusted the LTS scope based on remaining risk. It is a strong case study in shipping foundational rewrites under security and compatibility constraints.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Core infrastructure rewrites need independent security review before LTS-level trust.&lt;/li&gt;&lt;li&gt;Audit findings should feed upstream fixes rather than stay as private downstream patches.&lt;/li&gt;&lt;li&gt;Shipping a partial scope can be the correct release decision when the remaining risk is known.&lt;/li&gt;&lt;li&gt;Transparent migration notes make risk posture inspectable for downstream users.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] How do you keep your understanding of your codebase and systems consistently high?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1stm1uw/how_do_you_keep_your_understanding_of_your/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-24/963ca5fe12cb9e2f78dc083f57b0e0afec79e0a4</guid>
+      <pubDate>Fri, 24 Apr 2026 13:10:38 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The thread prompt is useful because it names a failure mode of AI-assisted coding: engineers can produce code they cannot explain. The proposed countermeasure is lightweight self-interrogation during coding, with questions about assumptions, production breakage, and whether the implementation can be explained without rereading it.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI-assisted output still needs causal understanding from the engineer who ships it.&lt;/li&gt;&lt;li&gt;Useful review questions include assumptions, production failure modes, and plain-language explanation.&lt;/li&gt;&lt;li&gt;Reflection prompts are cheap enough to use during coding, review, and debugging.&lt;/li&gt;&lt;li&gt;Team rituals around review and knowledge sharing need consistency to prevent understanding drift.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Transactional outbox pattern, apply or not to</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1stkmw4/transactional_outbox_pattern_apply_or_not_to/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-24/a6e656048d2eca1b3074a3e1afe0d60db13673ce</guid>
+      <pubDate>Fri, 24 Apr 2026 13:10:38 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The thread presents a classic dual-write failure mode: a service writes DynamoDB status first, then sends to SQS, with a compensating status update if the send fails. The useful lesson is the framing: rare failure plus manual support is a business decision, while DynamoDB streams, EventBridge, or an outbox-style flow make the event emission path explicit and recoverable.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Dual writes create correctness risk even when the second operation rarely fails.&lt;/li&gt;&lt;li&gt;Manual remediation through logs and support alerts should be treated as an operational contract.&lt;/li&gt;&lt;li&gt;DynamoDB streams or an outbox-style handoff can make state changes the durable source of event emission.&lt;/li&gt;&lt;li&gt;The design argument should compare failure impact, detection time, recovery cost, and extra infrastructure cost.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
