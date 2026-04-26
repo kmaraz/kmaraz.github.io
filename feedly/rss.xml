@@ -4,62 +4,86 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Sat, 25 Apr 2026 08:28:10 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 26 Apr 2026 11:57:47 +0000</lastBuildDate>
     <item>
-      <title>[Reddit Programming] A Dab of DuckDB</title>
-      <link>https://peterdohertys.website/blog-posts/dab-of-duck.html</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-25/96bfc2586772952a5d791896fb4534c3d516fc80</guid>
-      <pubDate>Sat, 25 Apr 2026 08:28:10 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;The post shows DuckDB as a local analytical workbench that can query JSON, CSV, TSV, and Parquet with SQL, then gives a concrete 22,229-file JSON import example. The useful part is the boundary setting: DuckDB fits read-heavy single-node analytics on local SSDs, handles datasets larger than RAM, and can move from exploratory imports to file-backed databases and Parquet for repeat work.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;DuckDB can turn a directory of semi-structured files into a queryable SQL table with little setup.&lt;/li&gt;&lt;li&gt;The best fit is local analytical work where the dataset fits on one machine and random writes are limited.&lt;/li&gt;&lt;li&gt;Resource pragmas let you cap memory and CPU when running DuckDB inside normal developer workflows.&lt;/li&gt;&lt;li&gt;Converting raw JSON to Parquet or using file-backed databases changes performance characteristics for repeated analysis.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Engineering] TBM 419: Stop Being So Negative! Stop Being So Naive!</title>
+      <link>https://cutlefish.substack.com/p/tbm-419-stop-being-so-negative-stop</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-26/243858733ca2bcf887a452ad04bd93c9031f7867</guid>
+      <pubDate>Sun, 26 Apr 2026 11:57:47 +0000</pubDate>
+      <category>Engineering</category>
+      <description>&lt;p&gt;John Cutler separates outcome optimism from capability optimism: one protects momentum, the other pressure-tests reality so the plan survives contact with it. The useful model is explicit sequencing between debate mode and execution mode, with responsibility on question-askers to connect risks to constructive action.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Teams need both morale-preserving optimism and risk-facing optimism; each protects a different part of delivery.&lt;/li&gt;&lt;li&gt;Conflict becomes useful when the group names the mode: pressure-test the route first, then commit to the climb.&lt;/li&gt;&lt;li&gt;Critical questions lose value when they raise fear without proposing a response or a decision path.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] How the Lobsters front page works</title>
-      <link>https://blog.nilenso.com/blog/2026/01/20/lobsters-front-page/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-25/1dba721ad07608a2de7250702cd85b5d75242a77</guid>
-      <pubDate>Sat, 25 Apr 2026 08:28:10 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;The article reverse-engineers Lobsters ranking into base tag modifiers, logarithmic vote and comment-point terms, a fixed age term, and gates that limit controversial low-score posts. The algorithm section is concrete, and the closing reflection is useful because it separates ranking mechanics from the moderation, invite, and participation norms that shape the community.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Tag modifiers and self-authored status set the initial rank before engagement arrives.&lt;/li&gt;&lt;li&gt;Votes and eligible comment points grow logarithmically, so early engagement matters more than late volume.&lt;/li&gt;&lt;li&gt;Age grows linearly and eventually dominates, which prevents old posts from staying on the front page indefinitely.&lt;/li&gt;&lt;li&gt;Community quality comes from moderation and participation incentives as much as ranking math.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Informatics] AI Makes Sitting With Discomfort Feel Shameful</title>
+      <link>https://www.bennadel.com/blog/4890-ai-makes-sitting-with-discomfort-feel-shameful.htm</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-26/961f9d98a0b61290497ff45628912ac9360a3179</guid>
+      <pubDate>Sun, 26 Apr 2026 11:57:47 +0000</pubDate>
+      <category>Informatics</category>
+      <description>&lt;p&gt;Ben Nadel documents a real cost of AI tooling hype: slow technical exploration now feels socially inefficient even when it builds durable judgment, taste, and debugging depth. The piece is a useful counterweight to productivity framing because it names the craft value of sitting with a hard problem before delegating it.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI changes the emotional baseline around slow learning; exploratory discomfort starts to feel like waste.&lt;/li&gt;&lt;li&gt;Manual investigation still builds domain judgment that short prompting loops often skip.&lt;/li&gt;&lt;li&gt;The productivity story is incomplete when it ignores taste, context, and the ability to reason through unfamiliar failure modes.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] My audio interface has ssh enabled by default</title>
-      <link>https://hhh.hn/rodecaster-duo-fw/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-25/433f0658396ae53333ee094293c52ae550941178</guid>
-      <pubDate>Sat, 25 Apr 2026 08:28:10 +0000</pubDate>
+      <title>[Reddit Programming] Java Virtual Threads: The Pinning Problem, the Deadlock, and the Fix in Java 24</title>
+      <link>https://shbhmrzd.github.io/java/concurrency/virtual-threads/2026/04/25/java-virtual-threads-pinning-and-the-deadlock-problem.html</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-26/b6f695f44507dbd0a2fb91fb0b382878be7547fb</guid>
+      <pubDate>Sun, 26 Apr 2026 11:57:47 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The author captures a Rodecaster Duo firmware update, finds a gzipped tarball without signature enforcement, observes default SSH public keys, and reconstructs the HID update flow with two simple commands. It is a compact hardware-security case study with a practical AI-assisted debugging angle: packet capture plus Claude Code was enough to map the update protocol and build custom firmware.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Firmware-update paths need signature checks, recovery design, and explicit remote-access posture.&lt;/li&gt;&lt;li&gt;Default SSH keys on embedded devices create unclear ownership and disclosure risk even when password login is disabled.&lt;/li&gt;&lt;li&gt;Capturing disk and USB traffic can expose enough protocol structure to reproduce an updater manually.&lt;/li&gt;&lt;li&gt;AI assistance can accelerate reverse-engineering chores when the human validates packet boundaries and device behavior.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The article explains why Java virtual threads improve throughput for blocking I/O, how carrier threads get exhausted by pinning, and why synchronized blocks caused real production stalls at scale. The Java 24 fix matters because it removes a sharp edge that made virtual-thread adoption look safe until traffic exposed hidden blocking.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Virtual threads improve concurrency by unmounting during blocking operations; latency still depends on the executed code and I/O path.&lt;/li&gt;&lt;li&gt;Pinned virtual threads can monopolize carrier threads and turn lightweight concurrency into a service-wide stall.&lt;/li&gt;&lt;li&gt;Thread dumps and carrier-thread behavior are the practical diagnostic surface for this failure mode.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] On sabotaging projects by overthinking, scope creep, and structural diffing</title>
-      <link>https://kevinlynagh.com/newsletter/2026_04_overthinking/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-25/77cc3a841de443e416afd95d8f5c60fb77659d5c</guid>
-      <pubDate>Sat, 25 Apr 2026 08:28:10 +0000</pubDate>
+      <title>[Reddit Programming] Npm Slop &amp; Wonky Software Supply Chains</title>
+      <link>https://simonramstedt.com/blog/2026-04-09-npm-slop-and-wonky-software-supply-chains/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-26/796be74f92b6208866e12717ba1adf81fba7b1ef</guid>
+      <pubDate>Sun, 26 Apr 2026 11:57:47 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The essay uses woodworking and software-tool experiments to show how searching for prior art can silently expand a small project into a vague research program. The durable lesson is to define success criteria early, especially for agent-built tooling, because exploration around structural diffing, fuzzy search, or LLM workflows can consume the time that should have produced the minimal useful result.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Clear success criteria keep project scope tied to the original problem.&lt;/li&gt;&lt;li&gt;Prior-art research is valuable when it informs a decision, and expensive when it keeps redefining the target.&lt;/li&gt;&lt;li&gt;Tool-building projects need a deliberate stop condition before abstraction work begins.&lt;/li&gt;&lt;li&gt;Small finished utilities can teach more than large design spaces left unresolved.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Simon Ramstedt argues that npm and PyPI center uploaded artifacts, leaving consumers with weak evidence that a package matches its public repository and original source. The strongest point is the attestation gap: source commits and workflows help, while runner images, tool downloads, and binary dependencies can remain outside the trust chain.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Package hashes usually pin built artifacts; source and build-environment identity require separate provenance.&lt;/li&gt;&lt;li&gt;Attestations improve provenance, yet they can leave base images and runtime-downloaded tools unpinned.&lt;/li&gt;&lt;li&gt;Source pinning through git commits, vendoring, Nix, or Guix gives stronger control when the ecosystem allows it.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Modern LZ Compression Part 2: FSE and Arithmetic Coding</title>
-      <link>https://glinscott.github.io/lz/part2.html</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-25/867fcaaa3088f774e9926381cf038bef72507dff</guid>
-      <pubDate>Sat, 25 Apr 2026 08:28:10 +0000</pubDate>
+      <title>[Reddit Programming] In-Flight Request Tracking: Lessons from Card Payments and HTTP/2</title>
+      <link>https://madflojo.dev/posts/in-flight-request-tracking-in-asynchronous-systems/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-26/9728750d4f4d0f0a81ab73b570d231a0f9759c19</guid>
+      <pubDate>Sun, 26 Apr 2026 11:57:47 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The article takes a working LZ plus Huffman compressor and moves it toward modern practice with Silesia benchmarks, arithmetic-coding background, ANS and FSE explanation, FSE-coded sequence streams, repeat offsets, parser changes, and literal-table cleanup. The strongest idea is that compression gains often come from designing a better symbol stream before tuning the entropy coder.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A wider benchmark set exposes whether compression changes generalize beyond one friendly corpus.&lt;/li&gt;&lt;li&gt;FSE and ANS give arithmetic-coding-like compression with implementation tradeoffs suited to modern codecs.&lt;/li&gt;&lt;li&gt;Repeat offsets and sequence-aware parsing improve the model the entropy coder sees.&lt;/li&gt;&lt;li&gt;Table representation and symbol-stream structure can matter as much as the coding algorithm itself.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The post uses card payments and HTTP/2 to explain why overlapping requests turn correlation, timeout handling, and recovery into first-class architecture concerns. The practical lesson is that concurrency replaces implicit request-response certainty with identifiers, atomic state transitions, locality constraints, and reconciliation paths.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Once requests overlap, a response needs an explicit correlation key and tracked in-flight state.&lt;/li&gt;&lt;li&gt;A timeout means no response matched before the deadline; the real operation may still succeed later.&lt;/li&gt;&lt;li&gt;Transport multiplexing solves stream correlation, while application retries, duplicates, and compensation remain product-level design work.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] The Contract Your Test Did Not Mean to Sign</title>
-      <link>https://www.reddit.com/r/programming/comments/1sugrij/the_contract_your_test_didnt_mean_to_sign/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-25/b0625e0a47bab9249cd06fc937ca14e70156f595</guid>
-      <pubDate>Sat, 25 Apr 2026 08:28:10 +0000</pubDate>
+      <title>[Reddit Programming] I am the platform now</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1svlq5z/i_am_the_platform_now/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-26/7d745ed3a6576d53e8abae68ecf47e6c52d7ea60</guid>
+      <pubDate>Sun, 26 Apr 2026 11:57:47 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The post argues that tests encode contracts at a specific scope, and brittle e2e suites often fail because the encoded contract moves faster than the product promise. The practical lens is to choose the surface deliberately: UI-scope tests protect UI behavior, application-scope tests protect capabilities, and lower-level checks should absorb mechanical churn where possible.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Readable test code can still bind a suite to unstable interface mechanics.&lt;/li&gt;&lt;li&gt;The first design question for a test is the promise it protects and the conditions that should make it change.&lt;/li&gt;&lt;li&gt;Application-scope helpers can protect capabilities across UI, API, MCP, or other entry points.&lt;/li&gt;&lt;li&gt;Clear contract scope creates faster feedback loops for humans and coding agents.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The thread opener captures the hidden platform cost of headless ecommerce: a frontend decoupling decision moved routing, checkout glue, SEO metadata, caching, observability, and third-party failure handling onto one engineer. The signal is the ownership trap, where architectural flexibility becomes invisible operational load without a funded platform boundary.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Headless architecture can transfer platform responsibilities into the product layer when ownership is underspecified.&lt;/li&gt;&lt;li&gt;Small operational fixes hide systemic platform work because fixing the ticket is faster than explaining the missing boundary.&lt;/li&gt;&lt;li&gt;Decoupling decisions need explicit owners for SEO, redirects, checkout resilience, caching, and integration failure modes.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Clock Synchronization Is a Nightmare</title>
-      <link>https://arpitbhayani.me/blogs/clock-sync-nightmare/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-25/2627823e968638e760e88df96a10741accbe38ba</guid>
-      <pubDate>Sat, 25 Apr 2026 08:28:10 +0000</pubDate>
+      <title>[Reddit Programming] A Field Guide to Bugs</title>
+      <link>https://www.stephendiehl.com/posts/field_guide_to_bugs/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-26/f624198c53ce36f4e2c3eb487dbd8cab95d266d8</guid>
+      <pubDate>Sun, 26 Apr 2026 11:57:47 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The article surveys clock drift, skew, and ordering failures across builds, databases, tracing, NTP, PTP, logical clocks, vector clocks, and Spanner TrueTime. The useful model is bounded uncertainty: physical clocks can support distributed guarantees only when the system carries explicit uncertainty or shifts ordering to causality-aware logical time.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Clock skew breaks build systems, databases, and traces by making effects appear before causes.&lt;/li&gt;&lt;li&gt;NTP works for millisecond-class synchronization, while PTP needs hardware timestamping and network support for sub-microsecond precision.&lt;/li&gt;&lt;li&gt;Logical and vector clocks model causality without depending on one global physical timestamp.&lt;/li&gt;&lt;li&gt;TrueTime-style APIs expose an uncertainty interval, which lets systems wait or reason before committing ordering-sensitive work.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Stephen Diehl turns common bug classes into a debugging taxonomy: reproducible failures, observation-sensitive failures, races, deadlocks, stale comments, wrong specs, and environmental drift. The piece is useful because it reinforces the habit of classifying the failure mode before changing code.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A reproducible bug is a gift because it gives the scientific method something stable to work on.&lt;/li&gt;&lt;li&gt;Heisenbugs, races, and deadlocks require instrumentation and timing awareness before any fix has meaning.&lt;/li&gt;&lt;li&gt;Comments, docs, and specs can be the defective component even when the code follows them correctly.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Caching Beyond Redis: Real-World Strategies That Do Not Break Your System</title>
+      <link>https://commitlog.cc/posts/caching-beyond-redis</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-26/f8dc5d1b960a7c6a10de9301d0a35cced256b5de</guid>
+      <pubDate>Sun, 26 Apr 2026 11:57:47 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The article frames caching as a deliberate tradeoff between speed and correctness, then walks through in-process, distributed, and CDN caching failure modes. The useful part is the decision lens: cache only after choosing the expected latency gain, freshness tolerance, memory cost, invalidation path, and privacy boundary.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Caching is a correctness tradeoff; every cached value needs a freshness policy and invalidation story.&lt;/li&gt;&lt;li&gt;In-process caches fit stable local lookups, distributed caches fit shared state, and CDNs fit public responses.&lt;/li&gt;&lt;li&gt;A fast stale value can be a production bug when the system never made staleness an explicit product choice.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] What the Heck Does a Good Experienced Dev Interview Even Look Like in 2026?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1su50a4/what_the_heck_does_a_good_experienced_dev/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-26/ff980297cd0277226e1bff0c8e4ca3d75f8ede70</guid>
+      <pubDate>Sun, 26 Apr 2026 11:57:47 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The thread surfaces a repeated hiring problem in the AI era: traditional senior-engineer signals are easier to rehearse, generate, or obscure, so interview design drifts toward anti-cheating theatrics. The useful signal is the shift from puzzle difficulty toward live reasoning, project judgment, review behavior, and evidence of operating inside messy systems.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI-era interviews need live reasoning under follow-up questions, code review, and tradeoff discussion around polished artifacts.&lt;/li&gt;&lt;li&gt;Over-indexing on bot resistance can make interviews adversarial without measuring senior engineering judgment.&lt;/li&gt;&lt;li&gt;Code review, tradeoff discussion, and system-debugging walkthroughs map better to experienced-dev work than isolated timed exams.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] How Are You Structuring AI-Assisted Product Development Workflows?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1sv7qpv/how_are_you_structuring_aiassisted_product/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-26/0679858cdf7f2e7fea52ef3f0904782cee805f71</guid>
+      <pubDate>Sun, 26 Apr 2026 11:57:47 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The ExperiencedDevs thread asks for real workflow structure around AI-assisted product development, from requirements and generated mockups to implementation and test review. The value is the operational framing: AI changes the loop only when requirements, review checkpoints, test ownership, and iteration artifacts are explicit enough to survive generated output.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI-assisted product work still needs structured requirements and saved decisions before generation starts.&lt;/li&gt;&lt;li&gt;Generated UI, implementation, and tests require human review gates tied to product behavior and maintainability.&lt;/li&gt;&lt;li&gt;The hard part is process design: deciding what gets delegated, what gets verified, and what becomes the durable source of truth.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
