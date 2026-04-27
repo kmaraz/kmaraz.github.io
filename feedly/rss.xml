@@ -4,86 +4,86 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Mon, 27 Apr 2026 08:32:41 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Apr 2026 19:40:33 +0000</lastBuildDate>
     <item>
-      <title>[Frontend] The React Compiler at Eighteen Months: The Arc, the Debates, and What's Next</title>
-      <link>https://saschb2b.com/blog/react-compiler-year-in-review</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-27/2c9808cffd1f4373f28f08dbe041bdf064c7c52d</guid>
-      <pubDate>Mon, 27 Apr 2026 08:32:41 +0000</pubDate>
-      <category>Frontend</category>
-      <description>&lt;p&gt;Sascha Becker reviews the React Compiler after 18 months, framing its impact as fewer re-render bugs, less manual memoization, and stricter enforcement of the Rules of React. The useful part is the migration map: start with the ESLint plugin, measure real interactions, and track every `use no memo` escape hatch as debt.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Greenfield adoption is mostly build configuration; brownfield adoption is a cleanup project.&lt;/li&gt;&lt;li&gt;Compiler wins target rerender scaling. Network waterfalls, bundle size, and startup cost remain separate bottlenecks.&lt;/li&gt;&lt;li&gt;Rules of React violations become observable through lint failures and skipped compilation.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Reddit Programming] The Friendly Rewrite · thehardparts.dev</title>
+      <link>https://thehardparts.dev/failure-modes/friendly-rewrite</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-27/379e2fcb82c68f2c073244521abf97cd611d2828</guid>
+      <pubDate>Mon, 27 Apr 2026 19:40:33 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The piece names the clean-slate rewrite failure mode: pain in the current system turns into a parallel replacement with no explicit migration slice, cutover criteria, or retirement plan. The AI angle is sharp because generation can make the wrong rewrite look cheaper than the coordination work needed to land it.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Freeze new rewrite scope until the first valuable migration slice and exit criteria are explicit.&lt;/li&gt;&lt;li&gt;Track parity, usage, and retirement as first-class delivery milestones.&lt;/li&gt;&lt;li&gt;Use AI for inventorying legacy behavior and dependency maps; keep migration strategy human-owned.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Frontend] How to hire people who are better than you</title>
-      <link>https://longform.asmartbear.com/hire-better-than-you/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-27/e455b86207cc6424dbdcadc50d72cf7c37ee9ad3</guid>
-      <pubDate>Mon, 27 Apr 2026 08:32:41 +0000</pubDate>
-      <category>Frontend</category>
-      <description>&lt;p&gt;Jason Cohen gives a practical hiring test for roles where the interviewer cannot evaluate domain expertise: look for candidates whose ideas immediately change how you see your company, whose questions expose real constraints, and whose reference checks reveal the environment where they thrive.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Use real company problems to watch how a candidate clarifies constraints and applies experience.&lt;/li&gt;&lt;li&gt;Strong candidates make you want to act on their ideas during or immediately after the interview.&lt;/li&gt;&lt;li&gt;Reference checks should map fit conditions, failure modes, and natural strengths.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Reddit Programming] How I reverse-engineered a SQLite WAL database inside a VS Code extension - custom merge engine, header byte patching, and protobuf decoding without a schema</title>
+      <link>https://medium.com/@ameyakulkarni2023/how-i-reverse-engineered-my-ides-database-to-build-a-real-time-ai-dashboard-e6b977819856</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-27/50c875580a64a79e490e238a80059558ef4add39</guid>
+      <pubDate>Mon, 27 Apr 2026 19:40:33 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;A practical reverse-engineering writeup follows an AI IDE quota tracker from stale SQLite reads to WAL merging and schema-less protobuf decoding. The durable lesson is that local tool state can look accessible while the freshness and encoding layers carry the real complexity.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;SQLite WAL files can make a direct database read silently stale unless the write-ahead log is merged or interpreted.&lt;/li&gt;&lt;li&gt;Protobuf payloads can be inspected without a schema by walking wire tags and validating candidate fields against observed behavior.&lt;/li&gt;&lt;li&gt;Developer-tool integrations need freshness checks as much as data extraction code.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Informatics] How Bitwarden Encrypts and Decrypts Secrets</title>
-      <link>https://blog.miguelgrinberg.com/post/how-bitwarden-encrypts-and-decrypts-secrets</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-27/512d3b40a5321ab649044dc2f9c4a13481ac3d8b</guid>
-      <pubDate>Mon, 27 Apr 2026 08:32:41 +0000</pubDate>
+      <title>[Reddit Programming] The fastest Linux timestamps</title>
+      <link>https://www.hmpcabral.com/2026/04/26/the-fastest-linux-timestamps/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-27/42ce735eeb7945228b325695201f62b48c7b76d9</guid>
+      <pubDate>Mon, 27 Apr 2026 19:40:33 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Henrique Cabral documents a low-latency tracing constraint where timestamp cost matters at tens of nanoseconds, then compares Linux clock paths and a custom TSC-based timer. The useful part is the methodology: tail latency, precision, stability, and operational safety all matter before replacing vDSO-backed clocks.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;At microsecond pipeline stages, timestamp calls can become visible tracing overhead.&lt;/li&gt;&lt;li&gt;Clock benchmarks need tail distributions, stability checks, and average call cost in the same measurement loop.&lt;/li&gt;&lt;li&gt;Custom timers can win narrow performance budgets while adding portability and correctness risk.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Message Brokers Are Modern Grids</title>
+      <link>https://yusufaytas.com/message-brokers-are-modern-grids</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-27/4d2c45528378b9a50e047a4f37eb9dd376b7af56</guid>
+      <pubDate>Mon, 27 Apr 2026 19:40:33 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Yusuf Aytas argues that shared Kafka and RabbitMQ clusters start behaving like utility grids once many teams use them for unrelated workloads. Average throughput hides the operational hazards: replay storms, retry loops, dead-letter ambiguity, and ownership gaps across tenants.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Shared brokers need tenant-aware capacity thinking because replay and catch-up traffic differ from live traffic.&lt;/li&gt;&lt;li&gt;Dead-letter handling, replay permissions, retention, and ownership need explicit contracts per topic or queue.&lt;/li&gt;&lt;li&gt;The team creating broker load should stay close to the team paying the operational cost.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Box to save memory in Rust</title>
+      <link>https://dystroy.org/blog/box-to-save-memory/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-27/df7df6b2b463345f59b085888c0529d1c3132c70</guid>
+      <pubDate>Mon, 27 Apr 2026 19:40:33 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;A real Rust memory case study reduces a Smithy model loader from 895 MB by changing struct layout and boxing large optional fields during serde deserialization. The article is concrete about why enum and struct size propagate through collections and how to verify memory wins.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Large optional fields inside frequently repeated structs can dominate memory through layout amplification.&lt;/li&gt;&lt;li&gt;Boxing selected fields trades pointer indirection for a smaller hot struct footprint.&lt;/li&gt;&lt;li&gt;Memory optimization should be proven with before-and-after measurement on the real dataset.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Dealing with Career Fatigue</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1sx352a/dealing_with_career_fatigue/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-27/608e01179024496dd051d41c1d8b002b5e96e514</guid>
+      <pubDate>Mon, 27 Apr 2026 19:40:33 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The r/ExperiencedDevs thread surfaces a common senior-engineer fatigue pattern: endless firefighting, weak onboarding, poor management, job-market friction, and AI uncertainty compound into career exhaustion. The highest-signal replies frame recovery around detachment from company chaos, active optionality, and energy spent outside digital work.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Treating employment as a time-for-money contract can reduce emotional coupling to broken systems.&lt;/li&gt;&lt;li&gt;Keeping interview readiness and exit options lowers the cost of leaving a chronically unhealthy team.&lt;/li&gt;&lt;li&gt;Non-digital hobbies and boundaries are recurring mitigations from experienced commenters.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Tech] New to the web platform in April</title>
+      <link>https://web.dev/blog/web-platform-04-2026?hl=en</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-27/4a793c5fdd280855588a6d95311402d82ace4a63</guid>
+      <pubDate>Mon, 27 Apr 2026 19:40:33 +0000</pubDate>
+      <category>Tech</category>
+      <description>&lt;p&gt;The April web platform roundup is worth scanning for concrete browser changes: `contrast-color()` reaches Baseline, scroll-driven animation range properties land across engines, Firefox adds `ariaNotify()`, and lazy-loaded image sizing gets simpler.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;`contrast-color()` can simplify accessible foreground selection across major engines.&lt;/li&gt;&lt;li&gt;`ariaNotify()` gives authors a direct path for queued screen-reader announcements where live regions are awkward.&lt;/li&gt;&lt;li&gt;Scroll animation range properties and lazy image `sizes=&amp;quot;auto&amp;quot;` reduce JavaScript and markup work in common UI cases.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Informatics] Let’s Use the Nonexistent ::nth-letter Selector Now</title>
+      <link>https://css-tricks.com/using-nonexistent-nth-letter-selector-now/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-27/b417e6e195b99dd1aae0b2179f38007fd887adbf</guid>
+      <pubDate>Mon, 27 Apr 2026 19:40:33 +0000</pubDate>
       <category>Informatics</category>
-      <description>&lt;p&gt;Miguel Grinberg explains Bitwarden and Vaultwarden client-side encryption: the passphrase unlocks a random master key, the master key splits into encryption and MAC keys, and the server stores encrypted blobs. The working Python walkthrough ties security architecture to concrete decryption and integrity checks.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Secrets are encrypted with a random master key; the account passphrase unlocks that master key.&lt;/li&gt;&lt;li&gt;Encrypted fields include IV, ciphertext, and HMAC; integrity verification precedes AES-CBC decryption.&lt;/li&gt;&lt;li&gt;Self-hosted password managers still depend on client trust and supply-chain exposure.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Lee Meyer builds a working `::nth-letter` experiment through JavaScript, SplitText, and stylesheet rewriting, which makes the missing CSS primitive concrete. The article is most valuable as a tour of why custom CSS syntax is hard: invalid selectors disappear before scripts can inspect them, so the workaround has to intercept raw stylesheet text.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The platform lacks a native per-letter pseudo-element, so demos still rely on generated spans or script-driven rewrites.&lt;/li&gt;&lt;li&gt;Invalid CSS selectors are discarded by the parser before normal CSSOM access, which blocks simple polyfills.&lt;/li&gt;&lt;li&gt;Custom CSS syntax needs raw stylesheet interception and carries risks similar to monkey-patching JavaScript globals.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Psychology] The Lightening of Intent: Why Execution Got Cheap and Intent Got Live</title>
-      <link>https://aneeshsathe.com/the-lightening-of-intent/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-27/db605dc97848044002344fc3f96b2f3d62c190d4</guid>
-      <pubDate>Mon, 27 Apr 2026 08:32:41 +0000</pubDate>
-      <category>Psychology</category>
-      <description>&lt;p&gt;Aneesh Sathe argues that AI collapses execution cost and makes intent the scarce resource: direction-setting, taste, and the ability to hold confusion long enough to choose. The piece is a useful mental model for why agents amplify explicit intent and also magnify poor intent.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;When output generation gets cheap, selection and direction become bottlenecks.&lt;/li&gt;&lt;li&gt;AI makes infrastructure responsive to prompts, so taste and goal formulation govern quality.&lt;/li&gt;&lt;li&gt;Intent collisions will push competition toward better judgment, access, and substrate design.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Informatics] The “Bug-Free” Workforce: How AI Efficiency Is Subtly Disrupting The Interactions That Build Strong Teams</title>
+      <link>https://www.smashingmagazine.com/2026/04/bug-free-workforce-ai-disrupting-teams/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-27/3e6ccf500ea6193ca1a6d69350ab4d39b9f097f9</guid>
+      <pubDate>Mon, 27 Apr 2026 19:40:33 +0000</pubDate>
+      <category>Informatics</category>
+      <description>&lt;p&gt;Casey Hudetz and Eric Olive argue that AI removes many small cross-functional interruptions, and those interruptions also build trust, context, and coordination. The practical point is to preserve intentional collaboration paths while automating narrow lookup and drafting work.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI self-service can reduce coordination load and also remove weak social ties that teams depend on later.&lt;/li&gt;&lt;li&gt;Team AI adoption should track trust, psychological safety, and coordination failures alongside task speed.&lt;/li&gt;&lt;li&gt;Structured cross-functional reviews, office hours, and shared experiments can replace some lost informal contact.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Programming] Floating point from scratch: Hard Mode</title>
-      <link>https://essenceia.github.io/projects/floating_dragon/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-27/4b5d636a376403bab7cd4072ae25f5f6afa9e636</guid>
-      <pubDate>Mon, 27 Apr 2026 08:32:41 +0000</pubDate>
-      <category>Programming</category>
-      <description>&lt;p&gt;Julia Desmazes rebuilds floating point from IEEE 754 semantics through a bfloat16 hardware implementation, including NaNs, signed zero, denormals, rounding, verification, and ASIC constraints. It is a rare end-to-end account of how abstract numeric rules turn into silicon behavior and compiler surprises.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Using floats and understanding the representation are separate levels of competence.&lt;/li&gt;&lt;li&gt;Edge cases such as NaNs, signed zero, subnormals, and rounding modes drive hardware complexity.&lt;/li&gt;&lt;li&gt;Verification has to check language behavior, standard-library assumptions, and synthesized hardware.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Programming] Agent Harness Engineering</title>
-      <link>https://addyosmani.com/blog/agent-harness-engineering/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-27/33394a7c0c0f881e1a6d21861c003e990669270d</guid>
-      <pubDate>Mon, 27 Apr 2026 08:32:41 +0000</pubDate>
-      <category>Programming</category>
-      <description>&lt;p&gt;Addy Osmani frames coding agents as model plus harness: prompts, tools, memory, sandboxes, hooks, observability, and verification loops. The core engineering point is to treat every repeated agent failure as harness feedback and encode durable guardrails around the model.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Capability often comes from tooling, context policy, and feedback loops around the model.&lt;/li&gt;&lt;li&gt;AGENTS files, skills, sandbox defaults, and verification hooks are production infrastructure.&lt;/li&gt;&lt;li&gt;Long-horizon agent work needs explicit planning, resumable filesystem state, and repeated verification.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] Parse, don't validate through the years with C++</title>
-      <link>https://derekrodriguez.dev/parse-dont-validate-through-the-years-with-c-/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-27/0a23c69f2173d6922d861d14bf0bd1e50cb2c26f</guid>
-      <pubDate>Mon, 27 Apr 2026 08:32:41 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;Derek Rodriguez applies the classic parse, do not validate idea across C++98 through C++23, showing how parsing can produce types that encode valid data at the boundary. The value is the progression from manual status codes to stronger language support for making invalid states unrepresentable.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Parsing at boundaries keeps bad input from spreading as partially valid structs.&lt;/li&gt;&lt;li&gt;Type design removes repeated downstream validation branches and clarifies ownership of correctness.&lt;/li&gt;&lt;li&gt;Newer C++ features improve ergonomics; the core invariant still belongs in the domain type.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] Fast16: High-Precision Software Sabotage 5 Years Before Stuxnet</title>
-      <link>https://www.sentinelone.com/labs/fast16-mystery-shadowbrokers-reference-reveals-high-precision-software-sabotage-5-years-before-stuxnet/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-27/fd593673a22089ce5bd7de65c5bad3baccd7bf14</guid>
-      <pubDate>Mon, 27 Apr 2026 08:32:41 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;SentinelLabs documents fast16, a 2005 Lua-powered sabotage framework with a boot-start filesystem driver that patched high-precision calculation software in memory. The strongest signal is the architecture: modular encrypted Lua payloads, propagation through Windows admin surfaces, environment-aware evasion, and deterministic tampering before Stuxnet.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Scripting engines inside implants let operators change behavior without recompiling.&lt;/li&gt;&lt;li&gt;Filesystem-level interception let the payload alter executable code as it was read from disk.&lt;/li&gt;&lt;li&gt;Precision sabotage targets trust in computational results, which makes detection harder than availability attacks.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] How I Made My Vector Search Engine 16x Faster Without Changing the Algorithm</title>
-      <link>https://dubeykartikay.com/posts/sembed-engine-vector-search-performance/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-27/ce7da76c4e38b35e66083e55bf84720a10384f63</guid>
-      <pubDate>Mon, 27 Apr 2026 08:32:41 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;Kartikay Dubey shows a 16x vector-search speedup from data layout changes with the same Vamana algorithm and unchanged recall. The useful lesson is mechanical: flatten vectors, reduce pointer chasing, remove square roots from ordering, cache scores, and inspect the generated assembly around hot loops.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Big-O hides CPU costs from cache misses, indirection, virtual calls, and scalar math.&lt;/li&gt;&lt;li&gt;Contiguous arrays and lightweight views made each node visit cheaper without changing search behavior.&lt;/li&gt;&lt;li&gt;Performance claims are stronger when paired with before/after latency, build time, visited-node, and recall measurements.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] The West Forgot How to Make Things. Now It's Forgetting How to Code</title>
-      <link>https://techtrenches.dev/p/the-west-forgot-how-to-make-things</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-27/15704a46509864835139e57d0a2097fc27b844be</guid>
-      <pubDate>Mon, 27 Apr 2026 08:32:41 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;Denis Stetskov compares AI-driven junior hiring cuts to lost manufacturing know-how in defense production, using Stinger, shells, and Fogbank as evidence that tacit capability takes years to rebuild. The software argument is operational: generated code moves the bottleneck to review, ownership, and judgment.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Skipping junior pipelines can create senior-engineer shortages several years later.&lt;/li&gt;&lt;li&gt;Documentation preserves facts; tacit debugging and systems judgment require practice.&lt;/li&gt;&lt;li&gt;AI-heavy workflows need stronger PR context, reviewer ownership, and explicit mechanisms for transferring expertise.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Philosophy] Pluralistic: The enshittification multiverse (27 Apr 2026)</title>
+      <link>https://pluralistic.net/2026/04/27/analogs-and-analogies/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-27/f1fd04d02b651287e997b93fcbe8b74f1826057a</guid>
+      <pubDate>Mon, 27 Apr 2026 19:40:33 +0000</pubDate>
+      <category>Philosophy</category>
+      <description>&lt;p&gt;Cory Doctorow extends enshittification from digital platforms to any mechanism that worsens an experience to shift value from users to the operator. The useful frame is zero-sum extraction: surveillance pricing, degraded service, and artificial scarcity become comparable value-transfer patterns.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Enshittification is framed as value transfer through deliberate degradation across platforms, pricing systems, and service design.&lt;/li&gt;&lt;li&gt;Surveillance pricing can extract from one buyer while harming other sellers that depend on the same buyer budget.&lt;/li&gt;&lt;li&gt;The analogy is useful when it identifies who profits from worsening the system and who absorbs the cost.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
